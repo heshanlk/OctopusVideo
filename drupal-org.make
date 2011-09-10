@@ -6,8 +6,8 @@ core = 7.x
 projects[admin_menu][subdir] = contrib
 projects[admin_menu][version] = 3.0-rc1
 
-projects[AmazonS3][subdir] = contrib
-projects[AmazonS3][version] = 1.0-beta5
+projects[amazons3][subdir] = contrib
+projects[amazons3][version] = 1.0-beta5
 
 projects[awssdk][subdir] = contrib
 projects[awssdk][version] = 4.2
