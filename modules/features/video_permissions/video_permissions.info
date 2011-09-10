@@ -1,0 +1,7 @@
+core = "7.x"
+dependencies[] = "features"
+dependencies[] = "video"
+description = "Video permissions and its related stuff."
+features[user_permission][] = "transocder postback"
+name = "Video permissions"
+package = "Features"

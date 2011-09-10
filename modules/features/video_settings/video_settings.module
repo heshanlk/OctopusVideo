@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Video_settings feature.
+ */
+
+include_once('video_settings.features.inc');

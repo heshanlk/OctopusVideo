@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Video_video feature.
+ */
+
+include_once('video_video.features.inc');
