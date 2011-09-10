@@ -6,6 +6,10 @@ core = 7.x
 projects[admin_menu][subdir] = contrib
 projects[admin_menu][version] = 3.0-rc1
 
+projects[videojs][subdir] = contrib
+projects[videojs][version] = 1.7
+
+
 projects[amazons3][subdir] = contrib
 projects[amazons3][version] = 1.0-beta5
 
@@ -44,9 +48,6 @@ projects[video][version] = 2.0-alpha4
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.0
-
-projects[videojs][subdir] = contrib
-projects[videojs][version] = 1.6
 
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
