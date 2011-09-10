@@ -47,7 +47,7 @@ projects[video_presets][version] = 2.0
 
 ; @todo : add videojs library download code
 projects[videojs][subdir] = contrib
-projects[videojs][version] = 1.4
+projects[videojs][version] = 1.5
 
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
