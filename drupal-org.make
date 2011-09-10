@@ -45,11 +45,8 @@ projects[video][version] = 2.0-alpha4
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.0
 
-projects[video][subdir] = contrib
-projects[video][type] = module
-projects[video][download][type] = git
-projects[video][download][url] = http://git.drupal.org/project/videojs.git
-projects[video][download][branch] = 7.x-1.x
+projects[videojs][subdir] = contrib
+projects[videojs][version] = 1.6
 
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
