@@ -6,10 +6,6 @@ core = 7.x
 projects[admin_menu][subdir] = contrib
 projects[admin_menu][version] = 3.0-rc1
 
-projects[videojs][subdir] = contrib
-projects[videojs][version] = 1.7
-
-
 projects[amazons3][subdir] = contrib
 projects[amazons3][version] = 1.0-beta5
 
@@ -49,6 +45,9 @@ projects[video][version] = 2.0-alpha4
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.0
 
+projects[videojs][subdir] = contrib
+projects[videojs][version] = 1.9
+
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
 
@@ -56,3 +55,9 @@ projects[views][version] = 3.0-rc1
 
 ;projects[tao][version] = 3.0-beta3
 ;projects[rubik][version] = 4.0-beta6
+
+; Libraries ======================================================================
+
+libraries[video-js][type] = "libraries"
+libraries[video-js][download][type] = "git"
+libraries[video-js][download][url] = "https://github.com/zencoder/video-js.git"
