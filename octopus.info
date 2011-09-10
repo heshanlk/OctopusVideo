@@ -1,0 +1,31 @@
+name = Octopus
+core = 7.x
+description = Social video platform.
+
+; Core
+dependencies[] = contact
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = menu
+dependencies[] = path
+dependencies[] = taxonomy
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = openid
+dependencies[] = openidadmin
+dependencies[] = context
+dependencies[] = context_ui
+dependencies[] = ctools
+dependencies[] = devel
+dependencies[] = diff
+dependencies[] = features
+dependencies[] = flowplayer
+dependencies[] = strongarm
+dependencies[] = video
+dependencies[] = video_presets
+dependencies[] = video_ui
+dependencies[] = views
+dependencies[] = views_ui

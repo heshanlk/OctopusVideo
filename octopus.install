@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function octopus_install() {
+  theme_enable(array('bartik'));
+  variable_set('theme_default', 'bartik');
+  theme_enable(array('seven'));
+  variable_set('admin_theme', 'seven');
+}
