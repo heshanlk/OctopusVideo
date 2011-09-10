@@ -47,7 +47,7 @@ projects[video_presets][version] = 2.0
 
 ; @todo : add videojs library download code
 projects[videojs][subdir] = contrib
-projects[videojs][version] = 1.3
+projects[videojs][version] = 1.4
 
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
@@ -56,11 +56,3 @@ projects[views][version] = 3.0-rc1
 
 ;projects[tao][version] = 3.0-beta3
 ;projects[rubik][version] = 4.0-beta6
-
-; Libraries ======================================================================
-
-libraries[video-js][type] = "libraries"
-libraries[video-js][download][type] = "git"
-libraries[video-js][download][url] = "https://github.com/zencoder/video-js.git"
-
-

@@ -29,3 +29,9 @@ dependencies[] = video_presets
 dependencies[] = video_ui
 dependencies[] = views
 dependencies[] = views_ui
+
+; Features
+dependencies[] = video_permissions
+dependencies[] = video_settings
+dependencies[] = video_styles
+dependencies[] = video_video
