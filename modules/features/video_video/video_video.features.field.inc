@@ -137,7 +137,7 @@ function video_video_field_default_fields() {
           'weight' => '0',
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'video',
           'settings' => array(
             'image_link' => 'content',

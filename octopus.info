@@ -28,7 +28,11 @@ dependencies[] = video
 dependencies[] = video_presets
 dependencies[] = video_ui
 dependencies[] = views
-dependencies[] = views_ui
+dependencies[] = amazons3
+dependencies[] = awssdk
+dependencies[] = awssdk_ui
+dependencies[] = libraries
+dependencies[] = videojs
 
 ; Features
 dependencies[] = video_permissions

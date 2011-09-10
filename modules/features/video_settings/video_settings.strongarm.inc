@@ -13,67 +13,6 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_video';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
-  $export['menu_options_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_video';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_video';
-  $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
-  );
-  $export['node_options_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_video';
-  $strongarm->value = '1';
-  $export['node_preview_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_video';
-  $strongarm->value = 1;
-  $export['node_submitted_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_continue_video';
-  $strongarm->value = 'Save and add fields';
-  $export['save_continue_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'show_diff_inline_video';
-  $strongarm->value = 0;
-  $export['show_diff_inline_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'show_preview_changes_video';
-  $strongarm->value = 1;
-  $export['show_preview_changes_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_autobuffering';
   $strongarm->value = 0;
   $export['video_autobuffering'] = $strongarm;
@@ -376,7 +315,7 @@ function video_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_mp4_html5_player';
-  $strongarm->value = 'video';
+  $strongarm->value = 'videojs';
   $export['video_extension_mp4_html5_player'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -439,7 +378,7 @@ function video_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_ogg_html5_player';
-  $strongarm->value = 'video';
+  $strongarm->value = 'videojs';
   $export['video_extension_ogg_html5_player'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -460,7 +399,7 @@ function video_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_ogv_html5_player';
-  $strongarm->value = 'video';
+  $strongarm->value = 'videojs';
   $export['video_extension_ogv_html5_player'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -523,7 +462,7 @@ function video_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_webm_html5_player';
-  $strongarm->value = 'video';
+  $strongarm->value = 'videojs';
   $export['video_extension_webm_html5_player'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -635,6 +574,20 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'video_thumbnail_count';
+  $strongarm->value = '5';
+  $export['video_thumbnail_count'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'video_thumbnail_path';
+  $strongarm->value = 'videos/thumbnails';
+  $export['video_thumbnail_path'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'video_use_default_thumb';
   $strongarm->value = 0;
   $export['video_use_default_thumb'] = $strongarm;
@@ -645,6 +598,20 @@ function video_settings_strongarm() {
   $strongarm->name = 'video_use_preset_wxh';
   $strongarm->value = 0;
   $export['video_use_preset_wxh'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'videojs_directory';
+  $strongarm->value = 'profiles/octopus/libraries/video-js';
+  $export['videojs_directory'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'videojs_skin';
+  $strongarm->value = 'tube-css';
+  $export['videojs_skin'] = $strongarm;
 
   return $export;
 }
