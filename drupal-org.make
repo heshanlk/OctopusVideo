@@ -43,7 +43,7 @@ projects[video][subdir] = contrib
 projects[video][version] = 2.0-alpha4
 
 projects[video_presets][subdir] = contrib
-projects[video_presets][version] = 2.0
+projects[video_presets][version] = 2.1
 
 projects[videojs][subdir] = contrib
 projects[videojs][version] = 1.9
