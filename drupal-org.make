@@ -27,6 +27,9 @@ projects[diff][version] = 2.0
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta3
 
+projects[flag][subdir] = contrib
+projects[flag][version] = 2.0-beta6
+
 projects[flowplayer][subdir] = contrib
 projects[flowplayer][version] = 1.0-alpha1
 
@@ -36,11 +39,20 @@ projects[libraries][version] = 2.x-dev
 projects[openidadmin][subdir] = contrib
 projects[openidadmin][version] = 1.0
 
+projects[pathauto][subdir] = contrib
+projects[pathauto][version] = 1.0-rc2
+
+projects[quicktabs][subdir] = contrib
+projects[quicktabs][version] = 3.0
+
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta2
 
+projects[token][subdir] = contrib
+projects[token][version] = 1.0-beta5
+
 projects[video][subdir] = contrib
-projects[video][version] = 2.0-alpha4
+projects[video][version] = 2.0-alpha5
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1

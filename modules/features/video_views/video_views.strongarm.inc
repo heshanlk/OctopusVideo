@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * video_video.strongarm.inc
+ * video_views.strongarm.inc
  */
 
 /**
  * Implementation of hook_strongarm().
  */
-function video_video_strongarm() {
+function video_views_strongarm() {
   $export = array();
 
   $strongarm = new stdClass;

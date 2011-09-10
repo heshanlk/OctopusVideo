@@ -1,23 +1,23 @@
 <?php
 /**
  * @file
- * video_video.strongarm.inc
+ * video_flags.strongarm.inc
  */
 
 /**
  * Implementation of hook_strongarm().
  */
-function video_video_strongarm() {
+function video_flags_strongarm() {
   $export = array();
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_video';
+  $strongarm->name = 'flag_default_flag_status';
   $strongarm->value = array(
-    0 => 'status',
+    'friend' => FALSE,
   );
-  $export['node_options_video'] = $strongarm;
+  $export['flag_default_flag_status'] = $strongarm;
 
   return $export;
 }
