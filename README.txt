@@ -24,7 +24,7 @@ patches as well as a copy of the `videokit` install profile.
 
    or use its url on Drupal.org directly:
 
-        $ drush make "http://drupalcode.org/project/videokit.git/blob_plain/refs/heads/7.x-1.x:/distro.make" [directory]
+        $ drush make https://raw.github.com/heidisoft/Octopus/master/distro.make [directory]
 
 2. Choose the "Octopus" install profile when installing Drupal
 
