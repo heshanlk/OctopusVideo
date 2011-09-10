@@ -27,4 +27,4 @@ projects[drupal][patch][995156] = http://drupal.org/files/issues/995156-5_portab
 
 projects[videokit][type] = profile
 projects[videokit][download][type] = git
-projects[videokit][download][url] = https://heshanlk@github.com/heidisoft/Octopus.git
+projects[videokit][download][url] = https://github.com/heidisoft/Octopus.git
