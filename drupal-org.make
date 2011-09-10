@@ -40,10 +40,7 @@ projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta2
 
 projects[video][subdir] = contrib
-projects[video][type] = module
-projects[video][download][type] = git
-projects[video][download][url] = http://git.drupal.org/project/video.git
-projects[video][download][branch] = 7.x-2.x
+projects[video][version] = 2.0-alpha4
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.0
