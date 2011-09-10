@@ -25,6 +25,6 @@ projects[drupal][patch][903730] = http://drupal.org/files/issues/drupal.filter-a
 ; http://drupal.org/node/995156
 projects[drupal][patch][995156] = http://drupal.org/files/issues/995156-5_portable_taxonomy_permissions.patch
 
-projects[videokit][type] = profile
-projects[videokit][download][type] = git
-projects[videokit][download][url] = https://github.com/heidisoft/Octopus.git
+projects[octopus][type] = profile
+projects[octopus][download][type] = git
+projects[octopus][download][url] = https://github.com/heidisoft/Octopus.git
