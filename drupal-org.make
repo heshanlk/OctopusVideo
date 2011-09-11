@@ -24,6 +24,9 @@ projects[devel][version] = 1.2
 projects[diff][subdir] = contrib
 projects[diff][version] = 2.0
 
+projects[entity][subdir] = contrib
+projects[entity][version] = 1.0-beta10
+
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta3
 
@@ -44,6 +47,9 @@ projects[pathauto][version] = 1.0-rc2
 
 projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.0
+
+projects[rules][subdir] = contrib
+projects[rules][version] = 2.0-rc1
 
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta2

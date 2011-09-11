@@ -37,9 +37,14 @@ dependencies[] = awssdk
 dependencies[] = awssdk_ui
 dependencies[] = libraries
 dependencies[] = videojs
+dependencies[] = rules
+dependencies[] = entity
 
 ; Features
 dependencies[] = video_permissions
 dependencies[] = video_settings
 dependencies[] = video_styles
 dependencies[] = video_video
+
+; custom
+dependencies[] = jwplayer

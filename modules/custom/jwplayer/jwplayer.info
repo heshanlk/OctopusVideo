@@ -1,0 +1,4 @@
+name = JWPlayer
+description = "A simple wrapper for including the JWPlayer video player and a formatter for filefields."
+core = 7.x
+dependencies[] = video
