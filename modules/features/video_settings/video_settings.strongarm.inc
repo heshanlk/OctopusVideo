@@ -608,7 +608,9 @@ function video_settings_strongarm() {
 1280x720
 1920x1080
 640x360
-320x180';
+320x180
+640x264
+960x396';
   $export['video_metadata_dimensions'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -623,8 +625,8 @@ function video_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'video_preset';
   $strongarm->value = array(
-    'FLV' => 'FLV',
-    'Mp4' => 0,
+    'Mp4' => 'Mp4',
+    'FLV' => 0,
     'Ogg' => 0,
     'WebM' => 0,
   );
