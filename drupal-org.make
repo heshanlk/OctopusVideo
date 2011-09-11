@@ -58,7 +58,7 @@ projects[token][subdir] = contrib
 projects[token][version] = 1.0-beta5
 
 projects[video][subdir] = contrib
-projects[video][version] = 2.0-alpha5
+projects[video][version] = 2.1-alpha2
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
