@@ -47,6 +47,7 @@ dependencies[] = video_styles
 dependencies[] = video_video
 dependencies[] = video_flags
 dependencies[] = video_views
+dependencies[] = video_rules
 
 ; custom
 dependencies[] = jwplayer
