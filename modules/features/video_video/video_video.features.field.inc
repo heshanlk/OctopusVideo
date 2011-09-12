@@ -127,7 +127,7 @@ function video_video_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 2,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -197,7 +197,7 @@ function video_video_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 3,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -272,9 +272,7 @@ function video_video_field_default_fields() {
           'label' => 'above',
           'module' => 'video',
           'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-            'widthxheight' => '640x360',
+            'widthxheight' => '640x350',
           ),
           'type' => 'video_formatter_player',
           'weight' => '0',

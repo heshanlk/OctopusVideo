@@ -80,9 +80,250 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_add_css';
+  $strongarm->value = 1;
+  $export['plus1_add_css'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_add_js';
+  $strongarm->value = 1;
+  $export['plus1_add_js'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_comment_undo_vote';
+  $strongarm->value = 0;
+  $export['plus1_comment_undo_vote'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_comment_undo_vote_text';
+  $strongarm->value = '';
+  $export['plus1_comment_undo_vote_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_comment_vote_text';
+  $strongarm->value = 'Vote';
+  $export['plus1_comment_vote_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_comment_voted_text';
+  $strongarm->value = '';
+  $export['plus1_comment_voted_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_comment_widget_show';
+  $strongarm->value = 1;
+  $export['plus1_comment_widget_show'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_comment_widget_weight';
+  $strongarm->value = '100';
+  $export['plus1_comment_widget_weight'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_node_in_full_view';
+  $strongarm->value = 1;
+  $export['plus1_node_in_full_view'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_node_in_teaser';
+  $strongarm->value = 1;
+  $export['plus1_node_in_teaser'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_node_types';
+  $strongarm->value = array(
+    0 => 'video',
+  );
+  $export['plus1_node_types'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_node_undo_vote';
+  $strongarm->value = 0;
+  $export['plus1_node_undo_vote'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_node_undo_vote_text';
+  $strongarm->value = '';
+  $export['plus1_node_undo_vote_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_node_vote_text';
+  $strongarm->value = 'Vote';
+  $export['plus1_node_vote_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_node_voted_text';
+  $strongarm->value = 'You voted';
+  $export['plus1_node_voted_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_node_widget_weight';
+  $strongarm->value = '100';
+  $export['plus1_node_widget_weight'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_taxonomy_term_undo_vote';
+  $strongarm->value = 0;
+  $export['plus1_taxonomy_term_undo_vote'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_taxonomy_term_undo_vote_text';
+  $strongarm->value = '';
+  $export['plus1_taxonomy_term_undo_vote_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_taxonomy_term_vote_text';
+  $strongarm->value = 'Vote';
+  $export['plus1_taxonomy_term_vote_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_taxonomy_term_voted_text';
+  $strongarm->value = 'You voted';
+  $export['plus1_taxonomy_term_voted_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_taxonomy_term_widget_show';
+  $strongarm->value = 1;
+  $export['plus1_taxonomy_term_widget_show'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_taxonomy_term_widget_weight';
+  $strongarm->value = '100';
+  $export['plus1_taxonomy_term_widget_weight'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'plus1_taxonomy_vocabularies';
+  $strongarm->value = array(
+    0 => 1,
+  );
+  $export['plus1_taxonomy_vocabularies'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
   $strongarm->value = 'video';
   $export['site_frontpage'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_account';
+  $strongarm->value = '';
+  $export['tweetbutton_account'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_button';
+  $strongarm->value = 'horizontal';
+  $export['tweetbutton_button'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_language';
+  $strongarm->value = 'en';
+  $export['tweetbutton_language'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_node_location';
+  $strongarm->value = array(
+    'full' => 'full',
+    'teaser' => 0,
+  );
+  $export['tweetbutton_node_location'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_node_types';
+  $strongarm->value = array(
+    'video' => 'video',
+    'page' => 0,
+  );
+  $export['tweetbutton_node_types'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_node_weight';
+  $strongarm->value = '-5';
+  $export['tweetbutton_node_weight'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_rel_account_description';
+  $strongarm->value = '';
+  $export['tweetbutton_rel_account_description'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_rel_account_name';
+  $strongarm->value = '';
+  $export['tweetbutton_rel_account_name'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_tweet_text';
+  $strongarm->value = '';
+  $export['tweetbutton_tweet_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweetbutton_tweet_url';
+  $strongarm->value = '';
+  $export['tweetbutton_tweet_url'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -610,7 +851,8 @@ function video_settings_strongarm() {
 640x360
 320x180
 640x264
-960x396';
+960x396
+930x373';
   $export['video_metadata_dimensions'] = $strongarm;
 
   $strongarm = new stdClass;

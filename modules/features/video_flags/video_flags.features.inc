@@ -26,10 +26,10 @@ function video_flags_flag_default_flags() {
     'global' => '0',
     'types' => array(),
     'flag_short' => 'Follow',
-    'flag_long' => '',
-    'flag_message' => '',
-    'unflag_short' => 'Your Following! Cancel?',
-    'unflag_long' => '',
+    'flag_long' => 'Add this user to your list of followers.',
+    'flag_message' => 'Your following',
+    'unflag_short' => 'Unfollow',
+    'unflag_long' => 'Remove this user from your list of followers.',
     'unflag_message' => '',
     'unflag_denied_text' => '',
     'link_type' => 'toggle',
@@ -49,20 +49,20 @@ function video_flags_flag_default_flags() {
       0 => 'name',
     ),
   );
-  // Exported flag: "Watch later".
+  // Exported flag: "Watch Later".
   $flags['watch_later'] = array(
     'content_type' => 'node',
-    'title' => 'Watch later',
+    'title' => 'Watch Later',
     'global' => '0',
     'types' => array(
       0 => 'video',
     ),
-    'flag_short' => 'Watch this video later!',
-    'flag_long' => '',
-    'flag_message' => '',
-    'unflag_short' => 'Remove from the list!',
-    'unflag_long' => '',
-    'unflag_message' => '',
+    'flag_short' => 'Add to Watch Later',
+    'flag_long' => 'Add this post to your Watch Later video channel',
+    'flag_message' => 'This post has been added to your Watch Later channel',
+    'unflag_short' => 'Remove?',
+    'unflag_long' => 'Remove this post from your Watch Later video channel',
+    'unflag_message' => 'This post has been removed from your Watch Later channel',
     'unflag_denied_text' => '',
     'link_type' => 'toggle',
     'roles' => array(
@@ -75,14 +75,14 @@ function video_flags_flag_default_flags() {
     ),
     'show_on_page' => 1,
     'show_on_teaser' => 1,
-    'show_on_form' => 0,
-    'access_author' => 'others',
+    'show_on_form' => 1,
+    'access_author' => '',
     'i18n' => 0,
-    'api_version' => 2,
     'module' => 'video_flags',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 2,
   );
   return $flags;
 }

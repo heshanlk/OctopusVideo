@@ -39,6 +39,9 @@ dependencies[] = libraries
 dependencies[] = videojs
 dependencies[] = rules
 dependencies[] = entity
+dependencies[] = plus1
+dependencies[] = votingapi
+dependencies[] = tweetbutton
 
 ; Features
 dependencies[] = video_permissions

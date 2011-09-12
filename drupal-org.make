@@ -45,6 +45,9 @@ projects[openidadmin][version] = 1.0
 projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0-rc2
 
+projects[plus1][subdir] = contrib
+projects[plus1][version] = 1.x-dev
+
 projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.0
 
@@ -57,6 +60,9 @@ projects[strongarm][version] = 2.0-beta2
 projects[token][subdir] = contrib
 projects[token][version] = 1.0-beta5
 
+projects[tweetbutton][subdir] = contrib
+projects[tweetbutton][version] = 1.1
+
 projects[video][subdir] = contrib
 projects[video][version] = 2.1-alpha2
 
@@ -68,6 +74,9 @@ projects[videojs][version] = 1.9
 
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
+
+projects[votingapi][subdir] = contrib
+projects[votingapi][version] = 2.4
 
 ; Themes ======================================================================
 
