@@ -15,8 +15,6 @@ function video_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
-    'node' => TRUE,
-    'taxonomy' => TRUE,
     'user' => TRUE,
   );
   $export['path_alias_whitelist'] = $strongarm;
@@ -88,7 +86,7 @@ function video_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_user_pattern';
-  $strongarm->value = '[user:name]';
+  $strongarm->value = 'users/[user:name]';
   $export['pathauto_user_pattern'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -262,13 +260,6 @@ function video_settings_strongarm() {
   $strongarm->name = 'site_frontpage';
   $strongarm->value = 'video';
   $export['site_frontpage'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'site_name';
-  $strongarm->value = 'Octopus';
-  $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
