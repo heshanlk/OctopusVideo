@@ -25,7 +25,7 @@ function create_categories_form() {
   $form['term_name_1'] = array(
     '#type' => 'textfield',
     '#title' => st('Term name one'),
-    '#default_value' => 'Edicational',
+    '#default_value' => 'Educational',
     '#required' => TRUE,
   );
   $form['term_name_2'] = array(
