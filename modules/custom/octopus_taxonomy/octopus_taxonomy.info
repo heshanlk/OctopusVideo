@@ -1,0 +1,4 @@
+name = Octopus taxonomy setup
+description = "Set up site wide taxonomy fields."
+core = 7.x
+package = "Octopus"

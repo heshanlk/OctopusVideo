@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * video_views.context.inc
+ * video_video.context.inc
  */
 
 /**
  * Implementation of hook_context_default_contexts().
  */
-function video_views_context_default_contexts() {
+function video_video_context_default_contexts() {
   $export = array();
 
   $context = new stdClass;
@@ -26,23 +26,17 @@ function video_views_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-video-block_3' => array(
-          'module' => 'views',
-          'delta' => 'video-block_3',
-          'region' => 'featured',
-          'weight' => '-10',
-        ),
-        'views-video-block_5' => array(
-          'module' => 'views',
-          'delta' => 'video-block_5',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
         'views-video-block_4' => array(
           'module' => 'views',
           'delta' => 'video-block_4',
           'region' => 'content',
-          'weight' => '-10',
+          'weight' => '-13',
+        ),
+        'views-flag_watch_later-block_1' => array(
+          'module' => 'views',
+          'delta' => 'flag_watch_later-block_1',
+          'region' => 'content',
+          'weight' => '-12',
         ),
       ),
     ),

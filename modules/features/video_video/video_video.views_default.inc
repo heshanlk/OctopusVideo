@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * video_views.views_default.inc
+ * video_video.views_default.inc
  */
 
 /**
  * Implementation of hook_views_default_views().
  */
-function video_views_views_default_views() {
+function video_video_views_default_views() {
   $export = array();
 
   $view = new view;

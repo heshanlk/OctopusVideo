@@ -1,9 +1,10 @@
 name = Octopus
 core = 7.x
 description = Social video platform.
+files[] = octopus.profile
 
 ; Core
-dependencies[] = contact
+dependencies[] = comment
 dependencies[] = dblog
 dependencies[] = field_ui
 dependencies[] = file
@@ -49,7 +50,6 @@ dependencies[] = video_settings
 dependencies[] = video_styles
 dependencies[] = video_video
 dependencies[] = video_flags
-dependencies[] = video_views
 dependencies[] = video_rules
 
 ; custom

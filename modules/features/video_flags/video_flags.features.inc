@@ -43,11 +43,11 @@ function video_flags_flag_default_flags() {
     ),
     'show_on_profile' => 1,
     'access_uid' => '',
-    'api_version' => 2,
     'module' => 'video_flags',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 2,
   );
   // Exported flag: "Watch Later".
   $flags['watch_later'] = array(
