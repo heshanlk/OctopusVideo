@@ -436,11 +436,11 @@ function video_video_views_default_views() {
   $handler->display->display_options['arguments']['uid']['table'] = 'users';
   $handler->display->display_options['arguments']['uid']['field'] = 'uid';
   $handler->display->display_options['arguments']['uid']['relationship'] = 'uid';
-  $handler->display->display_options['arguments']['uid']['default_action'] = 'empty';
+  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
   $handler->display->display_options['arguments']['uid']['exception']['title_enable'] = 1;
   $handler->display->display_options['arguments']['uid']['title_enable'] = 1;
-  $handler->display->display_options['arguments']['uid']['title'] = '%1\'s Watch Later channel';
-  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['uid']['title'] = '%1\'s Watch Later';
+  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
   $handler->display->display_options['arguments']['uid']['default_argument_skip_url'] = 0;
   $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
@@ -464,6 +464,23 @@ function video_video_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: User: Uid */
+  $handler->display->display_options['arguments']['uid']['id'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['table'] = 'users';
+  $handler->display->display_options['arguments']['uid']['field'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['relationship'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid']['exception']['title_enable'] = 1;
+  $handler->display->display_options['arguments']['uid']['title'] = '%1\'s Watch Later';
+  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['uid']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['uid']['specify_validation'] = 1;
+  $handler->display->display_options['arguments']['uid']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['uid']['not'] = 0;
   $handler->display->display_options['path'] = 'watch-later';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Watch Later';
@@ -1262,6 +1279,8 @@ function video_video_views_default_views() {
 
   /* Display: Most voted block */
   $handler = $view->new_display('block', 'Most voted block', 'block_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Most voted';
   $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Vote results: Function */
@@ -1270,6 +1289,327 @@ function video_video_views_default_views() {
   $handler->display->display_options['sorts']['function']['field'] = 'function';
   $handler->display->display_options['sorts']['function']['relationship'] = 'votingapi_cache';
   $handler->display->display_options['sorts']['function']['order'] = 'DESC';
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'video' => 'video',
+  );
+
+  /* Display: Popular search block */
+  $handler = $view->new_display('block', 'Popular search block', 'block_5');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Most searched';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Video */
+  $handler->display->display_options['fields']['field_video']['id'] = 'field_video';
+  $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
+  $handler->display->display_options['fields']['field_video']['field'] = 'field_video';
+  $handler->display->display_options['fields']['field_video']['label'] = '';
+  $handler->display->display_options['fields']['field_video']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_video']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_video']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_video']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_video']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_video']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_video']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_video']['type'] = 'video_formatter_thumbnail';
+  $handler->display->display_options['fields']['field_video']['settings'] = array(
+    'image_style' => '200x104',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
+  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['label'] = '';
+  $handler->display->display_options['fields']['field_category']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_category']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_category']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_category']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_category']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_category']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_category']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['field_category']['field_api_classes'] = 0;
+  /* Field: Video: Duration */
+  $handler->display->display_options['fields']['duration']['id'] = 'duration';
+  $handler->display->display_options['fields']['duration']['table'] = 'video_queue';
+  $handler->display->display_options['fields']['duration']['field'] = 'duration';
+  $handler->display->display_options['fields']['duration']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['duration']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['duration']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['duration']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['duration']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
+  $handler->display->display_options['fields']['duration']['suffix'] = 'sec';
+  /* Field: Search: Score */
+  $handler->display->display_options['fields']['score']['id'] = 'score';
+  $handler->display->display_options['fields']['score']['table'] = 'search_index';
+  $handler->display->display_options['fields']['score']['field'] = 'score';
+  $handler->display->display_options['fields']['score']['label'] = '';
+  $handler->display->display_options['fields']['score']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['score']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['score']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['score']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['score']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['score']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['score']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['score']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['score']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['score']['set_precision'] = 0;
+  $handler->display->display_options['fields']['score']['precision'] = '0';
+  $handler->display->display_options['fields']['score']['format_plural'] = 0;
+  $handler->display->display_options['fields']['score']['prefix'] = 'Search hits ';
+  $handler->display->display_options['fields']['score']['suffix'] = ' times';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Search: Score */
+  $handler->display->display_options['sorts']['score']['id'] = 'score';
+  $handler->display->display_options['sorts']['score']['table'] = 'search_index';
+  $handler->display->display_options['sorts']['score']['field'] = 'score';
+  $handler->display->display_options['sorts']['score']['order'] = 'DESC';
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'video' => 'video',
+  );
+
+  /* Display: Popular all time block */
+  $handler = $view->new_display('block', 'Popular all time block', 'block_6');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Most popular all time';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Video */
+  $handler->display->display_options['fields']['field_video']['id'] = 'field_video';
+  $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
+  $handler->display->display_options['fields']['field_video']['field'] = 'field_video';
+  $handler->display->display_options['fields']['field_video']['label'] = '';
+  $handler->display->display_options['fields']['field_video']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_video']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_video']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_video']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_video']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_video']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_video']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_video']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_video']['type'] = 'video_formatter_thumbnail';
+  $handler->display->display_options['fields']['field_video']['settings'] = array(
+    'image_style' => '200x104',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
+  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['label'] = '';
+  $handler->display->display_options['fields']['field_category']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_category']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_category']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_category']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_category']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_category']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_category']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_category']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['field_category']['field_api_classes'] = 0;
+  /* Field: Video: Duration */
+  $handler->display->display_options['fields']['duration']['id'] = 'duration';
+  $handler->display->display_options['fields']['duration']['table'] = 'video_queue';
+  $handler->display->display_options['fields']['duration']['field'] = 'duration';
+  $handler->display->display_options['fields']['duration']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['duration']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['duration']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['duration']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['duration']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
+  $handler->display->display_options['fields']['duration']['suffix'] = 'sec';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content statistics: Total views */
+  $handler->display->display_options['sorts']['totalcount']['id'] = 'totalcount';
+  $handler->display->display_options['sorts']['totalcount']['table'] = 'node_counter';
+  $handler->display->display_options['sorts']['totalcount']['field'] = 'totalcount';
+  $handler->display->display_options['sorts']['totalcount']['order'] = 'DESC';
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'video' => 'video',
+  );
+
+  /* Display: Popular today block */
+  $handler = $view->new_display('block', 'Popular today block', 'block_7');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content statistics: Views today */
+  $handler->display->display_options['sorts']['daycount']['id'] = 'daycount';
+  $handler->display->display_options['sorts']['daycount']['table'] = 'node_counter';
+  $handler->display->display_options['sorts']['daycount']['field'] = 'daycount';
+  $handler->display->display_options['sorts']['daycount']['order'] = 'DESC';
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'video' => 'video',
+  );
+
+  /* Display: Watching now */
+  $handler = $view->new_display('block', 'Watching now', 'block_8');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Watching now';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content statistics: Most recent view */
+  $handler->display->display_options['sorts']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['sorts']['timestamp']['table'] = 'node_counter';
+  $handler->display->display_options['sorts']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['sorts']['timestamp']['order'] = 'DESC';
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';

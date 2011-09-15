@@ -13,6 +13,13 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'flag_watch_later_default_video';
+  $strongarm->value = 0;
+  $export['flag_watch_later_default_video'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_confirm_email_at_registration';
   $strongarm->value = '0';
   $export['logintoboggan_confirm_email_at_registration'] = $strongarm;
@@ -93,6 +100,20 @@ function video_settings_strongarm() {
   $strongarm->name = 'og_group_content_type_channel';
   $strongarm->value = 'omitted';
   $export['og_group_content_type_channel'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_group_content_type_page';
+  $strongarm->value = 'omitted';
+  $export['og_group_content_type_page'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_group_type_page';
+  $strongarm->value = 'omitted';
+  $export['og_group_type_page'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -351,7 +372,7 @@ function video_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'videos/recent';
+  $strongarm->value = 'frontpage';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -360,6 +381,27 @@ function video_settings_strongarm() {
   $strongarm->name = 'site_slogan';
   $strongarm->value = 'The social video platform';
   $export['site_slogan'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'statistics_count_content_views';
+  $strongarm->value = 1;
+  $export['statistics_count_content_views'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'statistics_enable_access_log';
+  $strongarm->value = 1;
+  $export['statistics_enable_access_log'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'statistics_flush_accesslog_timer';
+  $strongarm->value = '259200';
+  $export['statistics_flush_accesslog_timer'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
