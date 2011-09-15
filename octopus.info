@@ -11,6 +11,9 @@ dependencies[] = file
 dependencies[] = menu
 dependencies[] = path
 dependencies[] = taxonomy
+dependencies[] = search
+dependencies[] = statistics
+dependencies[] = syslog
 
 ; Contrib
 dependencies[] = admin_menu
