@@ -26,17 +26,17 @@ function video_video_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-video-block_4' => array(
-          'module' => 'views',
-          'delta' => 'video-block_4',
-          'region' => 'content',
-          'weight' => '-13',
-        ),
         'views-flag_watch_later-block_1' => array(
           'module' => 'views',
           'delta' => 'flag_watch_later-block_1',
           'region' => 'content',
-          'weight' => '-12',
+          'weight' => '-14',
+        ),
+        'views-video-block_3' => array(
+          'module' => 'views',
+          'delta' => 'video-block_3',
+          'region' => 'content',
+          'weight' => '-10',
         ),
       ),
     ),

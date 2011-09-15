@@ -42,7 +42,7 @@ function video_flags_flag_default_flags() {
       ),
     ),
     'show_on_profile' => 1,
-    'access_uid' => '',
+    'access_uid' => 'others',
     'module' => 'video_flags',
     'locked' => array(
       0 => 'name',
@@ -75,7 +75,7 @@ function video_flags_flag_default_flags() {
     ),
     'show_on_page' => 1,
     'show_on_teaser' => 1,
-    'show_on_form' => 1,
+    'show_on_form' => 0,
     'access_author' => '',
     'i18n' => 0,
     'module' => 'video_flags',

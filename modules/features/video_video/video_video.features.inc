@@ -13,6 +13,10 @@ function video_video_ctools_plugin_api() {
     return array("version" => "3");
   }
   list($module, $api) = func_get_args();
+  if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "quicktabs" && $api == "quicktabs") {
     return array("version" => "1");
   }
@@ -37,6 +41,14 @@ function video_video_views_api() {
  */
 function video_video_node_info() {
   $items = array(
+    'channel' => array(
+      'name' => t('Channel'),
+      'base' => 'node_content',
+      'description' => t('Channels where users can publish their contents and subscribe in the same time.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'page' => array(
       'name' => t('Page'),
       'base' => 'node_content',
