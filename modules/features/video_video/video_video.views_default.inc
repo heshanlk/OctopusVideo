@@ -472,6 +472,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['arguments']['uid']['relationship'] = 'uid';
   $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
   $handler->display->display_options['arguments']['uid']['exception']['title_enable'] = 1;
+  $handler->display->display_options['arguments']['uid']['title_enable'] = 1;
   $handler->display->display_options['arguments']['uid']['title'] = '%1\'s Watch Later';
   $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
   $handler->display->display_options['arguments']['uid']['default_argument_skip_url'] = 0;
@@ -509,6 +510,15 @@ function video_video_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['label'] = 'No channel found!';
+  $handler->display->display_options['empty']['area']['empty'] = FALSE;
+  $handler->display->display_options['empty']['area']['content'] = 'No Channels has been added yet, <a href="/node/add/channel">click here</a> to add a new Channel.';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = 0;
   /* Relationship: Group: Node group */
   $handler->display->display_options['relationships']['og_rel']['id'] = 'og_rel';
   $handler->display->display_options['relationships']['og_rel']['table'] = 'node';
@@ -863,8 +873,8 @@ function video_video_views_default_views() {
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['label'] = 'No video found!';
   $handler->display->display_options['empty']['area']['empty'] = FALSE;
-  $handler->display->display_options['empty']['area']['content'] = 'No video has been added yet to this category.';
-  $handler->display->display_options['empty']['area']['format'] = 'plain_text';
+  $handler->display->display_options['empty']['area']['content'] = 'No Video has been added yet, <a href="/node/add/video">click here</a> to add a new Video.';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
   $handler->display->display_options['empty']['area']['tokenize'] = 0;
   /* Relationship: Content: Vote results */
   $handler->display->display_options['relationships']['votingapi_cache']['id'] = 'votingapi_cache';
