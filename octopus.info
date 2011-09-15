@@ -43,6 +43,15 @@ dependencies[] = entity
 dependencies[] = plus1
 dependencies[] = votingapi
 dependencies[] = tweetbutton
+dependencies[] = list
+dependencies[] = og
+dependencies[] = page_manager
+dependencies[] = views_content
+dependencies[] = panels
+dependencies[] = og_access
+dependencies[] = og_register
+dependencies[] = logintoboggan
+dependencies[] = logintoboggan_rules
 
 ; Features
 dependencies[] = video_permissions
@@ -51,6 +60,7 @@ dependencies[] = video_styles
 dependencies[] = video_video
 dependencies[] = video_flags
 dependencies[] = video_rules
+dependencies[] = video_menu
 
 ; custom
 dependencies[] = jwplayer

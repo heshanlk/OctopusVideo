@@ -39,8 +39,17 @@ projects[flowplayer][version] = 1.0-alpha1
 projects[libraries][subdir] = contrib
 projects[libraries][version] = 2.x-dev
 
+projects[logintoboggan][subdir] = contrib
+projects[logintoboggan][version] = 1.2
+
+projects[og][subdir] = contrib
+projects[og][version] = 1.1
+
 projects[openidadmin][subdir] = contrib
 projects[openidadmin][version] = 1.0
+
+projects[panels][subdir] = contrib
+projects[panels][version] = 3.0-alpha3
 
 projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0-rc2
