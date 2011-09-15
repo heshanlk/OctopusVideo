@@ -10,11 +10,11 @@
 function video_styles_image_default_styles() {
   $styles = array();
 
-  // Exported image style: video_thumbnail_210x118
-  $styles['video_thumbnail_210x118'] = array(
-    'name' => 'video_thumbnail_210x118',
+  // Exported image style: 128x72
+  $styles['128x72'] = array(
+    'name' => '128x72',
     'effects' => array(
-      1 => array(
+      2 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -23,19 +23,19 @@ function video_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '210',
-          'height' => '118',
+          'width' => '128',
+          'height' => '72',
         ),
         'weight' => '1',
       ),
     ),
   );
 
-  // Exported image style: video_thumbnail_80sq
-  $styles['video_thumbnail_80sq'] = array(
-    'name' => 'video_thumbnail_80sq',
+  // Exported image style: 200x104
+  $styles['200x104'] = array(
+    'name' => '200x104',
     'effects' => array(
-      3 => array(
+      7 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -44,8 +44,50 @@ function video_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '80',
-          'height' => '80',
+          'width' => '200',
+          'height' => '104',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: 288x162
+  $styles['288x162'] = array(
+    'name' => '288x162',
+    'effects' => array(
+      5 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '288',
+          'height' => '162',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: 96x54
+  $styles['96x54'] = array(
+    'name' => '96x54',
+    'effects' => array(
+      6 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '96',
+          'height' => '54',
         ),
         'weight' => '1',
       ),
