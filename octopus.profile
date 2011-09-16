@@ -22,22 +22,34 @@ function create_categories_form() {
   drupal_set_title(st('Set up categories'));
   $form['welcome']['#markup'] = '<h1 class="title">Create category terms</h1><p>' . st('Welcome to Octopus! Octopus is managing your videos in social manner.
     It comes with a wide variety of features and categoris also using every where as video channels. You can create some more category terms later on from taxonomy page.') . '</p>';
-  $form['term_name_1'] = array(
-    '#type' => 'textfield',
-    '#title' => st('Term name one'),
-    '#default_value' => 'Education',
-    '#required' => TRUE,
+  $form['taxonomy'] = array(
+    '#type' => 'fieldset',
+    '#title' => st('Import Terms'),
+    '#collapsible' => FALSE,
+    '#collapsed' => FALSE,
+    '#description' => st('Select Term names to import to the Categories taxonomy')
   );
-  $form['term_name_2'] = array(
-    '#type' => 'textfield',
-    '#title' => st('Term name two'),
-    '#default_value' => 'Comedy',
-    '#required' => TRUE,
+  $options = array(
+    'Autos & Vehicles' => 'Autos & Vehicles',
+    'Comedy' => 'Comedy',
+    'Education' => 'Education',
+    'Entertainment' => 'Entertainment',
+    'Film & Animation' => 'Film & Animation',
+    'Gaming' => 'Gaming',
+    'Howto & Style' => 'Howto & Style',
+    'News & Politics' => 'News & Politics',
+    'Nonprofits & Activism' => 'Nonprofits & Activism',
+    'People & Blogs' => 'People & Blogs',
+    'Pets & Animals' => 'Pets & Animals',
+    'Science & Technology' => 'Science & Technology',
+    'Sports' => 'Sports',
+    'Travel & Events' => 'Travel & Events'
   );
-  $form['term_name_3'] = array(
-    '#type' => 'textfield',
-    '#title' => st('Term name three'),
-    '#default_value' => 'Music',
+  $form['taxonomy']['terms'] = array(
+    '#type' => 'checkboxes',
+    '#title' => st('Term names'),
+    '#default_value' => array('Education', 'Comedy', 'People & Blogs'),
+    '#options' => $options,
     '#required' => TRUE,
   );
   $form['actions'] = array('#type' => 'actions');
@@ -53,14 +65,13 @@ function create_categories_form() {
  * Submit callback
  */
 function create_categories_form_submit($form, $form_state) {
-  $term_name_1 = $form_state['values']['term_name_1'];
-  $term_name_2 = $form_state['values']['term_name_2'];
-  $term_name_3 = $form_state['values']['term_name_3'];
+  $terms = $form_state['values']['terms'];
   $vid = db_query("SELECT vid FROM {taxonomy_vocabulary} WHERE machine_name = :machine_name", array(':machine_name' => 'categories'))->fetchField();
-  watchdog('install_p', 'category value = ' . $vid);
-  for ($i = 1; $i <= 3; $i++) {
+  foreach ($terms as $key => $name) {
+    if (empty($name))
+      continue;
     $term = new stdClass;
-    $term->name = $form_state['values']['term_name_' . $i];
+    $term->name = trim($name);
     $term->vid = $vid;
     taxonomy_term_save($term);
   }
