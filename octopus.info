@@ -48,6 +48,7 @@ dependencies[] = votingapi
 dependencies[] = tweetbutton
 dependencies[] = list
 dependencies[] = og
+dependencies[] = og_access
 dependencies[] = page_manager
 dependencies[] = views_content
 dependencies[] = panels

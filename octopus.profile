@@ -144,6 +144,8 @@ function configure_zencoder_form_submit($form, $form_state) {
   variable_set('aws_key', $amazons3_key);
   variable_set('aws_secret_key', $amazons3_secret);
   variable_set('video_zencoder_base_url', 's3://' . $amazons3_bucket);
+  // rebuild node access
+  node_access_rebuild();
   return array();
 }
 
