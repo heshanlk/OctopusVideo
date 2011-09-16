@@ -35,7 +35,7 @@ function video_video_field_default_fields() {
       ),
       'module' => 'text',
       'settings' => array(),
-      'translatable' => '0',
+      'translatable' => '1',
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
@@ -421,7 +421,7 @@ function video_video_field_default_fields() {
       ),
       'module' => 'text',
       'settings' => array(),
-      'translatable' => '0',
+      'translatable' => '1',
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
@@ -571,7 +571,7 @@ function video_video_field_default_fields() {
       ),
       'module' => 'text',
       'settings' => array(),
-      'translatable' => '0',
+      'translatable' => '1',
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
@@ -856,14 +856,7 @@ function video_video_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'group_audience',
-      'foreign keys' => array(
-        'og' => array(
-          'columns' => array(
-            'gid' => 'gid',
-          ),
-          'table' => 'og',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'gid' => array(
           0 => 'gid',
