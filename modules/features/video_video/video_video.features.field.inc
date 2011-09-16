@@ -63,7 +63,7 @@ function video_video_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Body',
+      'label' => 'Mission',
       'required' => 1,
       'settings' => array(
         'display_summary' => 1,
@@ -74,7 +74,7 @@ function video_video_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '20',
+          'rows' => '10',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
@@ -1069,6 +1069,7 @@ function video_video_field_default_fields() {
   t('Groups audience');
   t('Image');
   t('Logo');
+  t('Mission');
   t('Request message');
   t('Tags');
   t('This is the text a user may send to the group administrators.');
