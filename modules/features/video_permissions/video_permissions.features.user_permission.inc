@@ -13,7 +13,11 @@ function video_permissions_user_default_permissions() {
   // Exported permission: access comments
   $permissions['access comments'] = array(
     'name' => 'access comments',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'authenticated user',
+    ),
+    'module' => 'comment',
   );
 
   // Exported permission: access content
@@ -73,13 +77,19 @@ function video_permissions_user_default_permissions() {
   // Exported permission: delete own channel content
   $permissions['delete own channel content'] = array(
     'name' => 'delete own channel content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: delete own video content
   $permissions['delete own video content'] = array(
     'name' => 'delete own video content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: edit own channel content
@@ -139,7 +149,11 @@ function video_permissions_user_default_permissions() {
   // Exported permission: post comments
   $permissions['post comments'] = array(
     'name' => 'post comments',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'authenticated user',
+    ),
+    'module' => 'comment',
   );
 
   // Exported permission: select account cancellation method
@@ -161,8 +175,7 @@ function video_permissions_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
-      0 => 'anonymous user',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'node',
   );
