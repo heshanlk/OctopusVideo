@@ -51,8 +51,6 @@ dependencies[] = og
 dependencies[] = page_manager
 dependencies[] = views_content
 dependencies[] = panels
-dependencies[] = og_access
-dependencies[] = og_register
 dependencies[] = logintoboggan
 dependencies[] = logintoboggan_rules
 

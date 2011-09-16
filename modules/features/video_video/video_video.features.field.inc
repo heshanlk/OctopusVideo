@@ -161,83 +161,6 @@ function video_video_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-channel-group_access'
-  $fields['node-channel-group_access'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'group_access',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'module' => 'list',
-      'no_ui' => TRUE,
-      'settings' => array(
-        'allowed_values' => array(
-          0 => 'Public - accessible to all site users',
-          1 => 'Private - accessible only to group members',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_boolean',
-    ),
-    'field_instance' => array(
-      'bundle' => 'channel',
-      'default_value' => array(
-        0 => array(
-          'value' => 0,
-        ),
-      ),
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 3,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'group_access',
-      'label' => 'Group visibility',
-      'required' => TRUE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'view modes' => array(
-        'full' => array(
-          'label' => 'above',
-          'type' => 'options_onoff',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'type' => 'options_onoff',
-        ),
-      ),
-      'widget' => array(
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '3',
-      ),
-      'widget_type' => 'options_select',
-    ),
-  );
-
   // Exported field: 'node-channel-group_group'
   $fields['node-channel-group_group'] = array(
     'field_config' => array(
@@ -919,83 +842,6 @@ function video_video_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-video-group_content_access'
-  $fields['node-video-group_content_access'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'group_content_access',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'module' => 'list',
-      'no_ui' => TRUE,
-      'settings' => array(
-        'allowed_values' => array(
-          0 => 'Use group defaults',
-          1 => 'Public - accessible to all site users',
-          2 => 'Private - accessible only to group members',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_integer',
-    ),
-    'field_instance' => array(
-      'bundle' => 'video',
-      'default_value' => array(
-        0 => array(
-          'value' => 0,
-        ),
-      ),
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '5',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '0',
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'group_content_access',
-      'label' => 'Group content visibility',
-      'required' => TRUE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'view modes' => array(
-        'full' => array(
-          'label' => 'above',
-          'type' => 'list_default',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'type' => 'list_default',
-        ),
-      ),
-      'widget' => array(
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => 32,
-      ),
-      'widget_type' => 'options_select',
-    ),
-  );
-
   // Exported field: 'og_membership-og_membership_type_default-og_membership_request'
   $fields['og_membership-og_membership_type_default-og_membership_request'] = array(
     'field_config' => array(
@@ -1062,10 +908,8 @@ function video_video_field_default_fields() {
   t('Body');
   t('Category');
   t('Description');
-  t('Group content visibility');
   t('Group roles and permissions');
   t('Group type');
-  t('Group visibility');
   t('Groups audience');
   t('Image');
   t('Logo');
