@@ -18,6 +18,9 @@ projects[context][version] = 3.0-beta2
 projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-rc1
 
+projects[date][subdir] = contrib
+projects[date][version] = 2.0-alpha4
+
 projects[devel][subdir] = contrib
 projects[devel][version] = 1.2
 
@@ -29,6 +32,9 @@ projects[entity][version] = 1.0-beta10
 
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta3
+
+projects[field_group][subdir] = contrib
+projects[field_group][version] = 1.0
 
 projects[flag][subdir] = contrib
 projects[flag][version] = 2.0-beta6

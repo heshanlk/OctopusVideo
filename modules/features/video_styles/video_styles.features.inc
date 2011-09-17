@@ -31,6 +31,27 @@ function video_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: 180x295
+  $styles['180x295'] = array(
+    'name' => '180x295',
+    'effects' => array(
+      1 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '180',
+          'height' => '295',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported image style: 200x104
   $styles['200x104'] = array(
     'name' => '200x104',

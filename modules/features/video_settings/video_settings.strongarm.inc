@@ -21,7 +21,7 @@ function video_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_confirm_email_at_registration';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['logintoboggan_confirm_email_at_registration'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -70,7 +70,7 @@ function video_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_purge_unvalidated_user_interval';
-  $strongarm->value = '7776000';
+  $strongarm->value = '0';
   $export['logintoboggan_purge_unvalidated_user_interval'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -474,6 +474,41 @@ function video_settings_strongarm() {
   $strongarm->name = 'user_email_verification';
   $strongarm->value = FALSE;
   $export['user_email_verification'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_default';
+  $strongarm->value = '';
+  $export['user_picture_default'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_dimensions';
+  $strongarm->value = '85x85';
+  $export['user_picture_dimensions'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_file_size';
+  $strongarm->value = '2048';
+  $export['user_picture_file_size'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_style';
+  $strongarm->value = '180x295';
+  $export['user_picture_style'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_pictures';
+  $strongarm->value = 0;
+  $export['user_pictures'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

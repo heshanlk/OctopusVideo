@@ -53,6 +53,9 @@ dependencies[] = views_content
 dependencies[] = panels
 dependencies[] = logintoboggan
 dependencies[] = logintoboggan_rules
+dependencies[] = field_group
+dependencies[] = date_api
+dependencies[] = date
 
 ; Features
 dependencies[] = video_permissions
@@ -62,6 +65,7 @@ dependencies[] = video_video
 dependencies[] = video_flags
 dependencies[] = video_rules
 dependencies[] = video_menu
+dependencies[] = video_user
 
 ; custom
 dependencies[] = jwplayer

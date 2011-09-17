@@ -851,11 +851,11 @@ function video_video_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'og',
           'settings' => array(),
           'type' => 'og_list_default',
-          'weight' => 0,
+          'weight' => '11',
         ),
       ),
       'entity_type' => 'user',
@@ -883,7 +883,7 @@ function video_video_field_default_fields() {
           'opt_group' => 'auto',
         ),
         'type' => 'group_audience',
-        'weight' => 7,
+        'weight' => '5',
       ),
       'widget_type' => 'group_audience',
     ),
