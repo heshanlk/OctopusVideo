@@ -883,7 +883,7 @@ function video_video_field_default_fields() {
           'opt_group' => 'auto',
         ),
         'type' => 'group_audience',
-        'weight' => '5',
+        'weight' => '1',
       ),
       'widget_type' => 'group_audience',
     ),

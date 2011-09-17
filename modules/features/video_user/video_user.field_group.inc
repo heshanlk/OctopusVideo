@@ -49,20 +49,18 @@ function video_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Activities and interests',
-    'weight' => '9',
+    'weight' => '8',
     'children' => array(
       0 => 'field_interests',
       1 => 'field_activities',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Activities and interests',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 0,
         'classes' => '',
-        'description' => '',
+        'required_fields' => 1,
       ),
-      'formatter' => 'collapsible',
     ),
   );
   $export['group_activities_and_interests|user|user|form'] = $field_group;
@@ -109,7 +107,7 @@ function video_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Arts and entertainment',
-    'weight' => '7',
+    'weight' => '6',
     'children' => array(
       0 => 'field_music',
       1 => 'field_books',
@@ -117,15 +115,13 @@ function video_user_field_group_info() {
       3 => 'field_television',
       4 => 'field_games',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Arts and entertainment',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 0,
         'classes' => '',
-        'description' => '',
+        'required_fields' => 1,
       ),
-      'formatter' => 'collapsible',
     ),
   );
   $export['group_arts_and_entertainment|user|user|form'] = $field_group;
@@ -172,7 +168,7 @@ function video_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Basic information',
-    'weight' => '4',
+    'weight' => '3',
     'children' => array(
       0 => 'field_current_location',
       1 => 'field_hometown',
@@ -181,15 +177,13 @@ function video_user_field_group_info() {
       4 => 'field_about_me',
       5 => 'timezone',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Basic information',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 0,
         'classes' => '',
-        'description' => '',
+        'required_fields' => 1,
       ),
-      'formatter' => 'open',
     ),
   );
   $export['group_basic_information|user|user|form'] = $field_group;
@@ -232,19 +226,19 @@ function video_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'General',
-    'weight' => '3',
+    'weight' => '2',
     'children' => array(
       0 => 'group_audience',
+      1 => 'field_name',
+      2 => 'contact',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'General',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 0,
         'classes' => '',
-        'description' => '',
+        'required_fields' => 1,
       ),
-      'formatter' => 'open',
     ),
   );
   $export['group_general|user|user|form'] = $field_group;
@@ -289,21 +283,19 @@ function video_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Philosophy',
-    'weight' => '6',
+    'weight' => '5',
     'children' => array(
       0 => 'field_religion',
       1 => 'field_favourite_quotations',
       2 => 'field_people_who_inspire_you',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Philosophy',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 0,
         'classes' => '',
-        'description' => '',
+        'required_fields' => 1,
       ),
-      'formatter' => 'collapsible',
     ),
   );
   $export['group_philosophy|user|user|form'] = $field_group;
@@ -318,20 +310,18 @@ function video_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Profile picture',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
       0 => 'field_image',
       1 => 'picture',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Profile picture',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 1,
         'classes' => '',
-        'description' => '',
+        'required_fields' => 1,
       ),
-      'formatter' => 'open',
     ),
   );
   $export['group_profile_picture|user|user|form'] = $field_group;
@@ -376,21 +366,19 @@ function video_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Sport ',
-    'weight' => '8',
+    'weight' => '7',
     'children' => array(
       0 => 'field_favourite_sports',
       1 => 'field_favourite_teams',
       2 => 'field_favourite_athletes',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Sport ',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 0,
         'classes' => '',
-        'description' => '',
+        'required_fields' => 1,
       ),
-      'formatter' => 'open',
     ),
   );
   $export['group_sport|user|user|form'] = $field_group;

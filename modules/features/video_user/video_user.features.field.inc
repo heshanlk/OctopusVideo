@@ -1134,7 +1134,7 @@ function video_user_field_default_fields() {
           'size' => '80',
         ),
         'type' => 'text_textfield',
-        'weight' => 0,
+        'weight' => '0',
       ),
     ),
   );
