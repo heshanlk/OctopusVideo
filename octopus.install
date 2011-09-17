@@ -82,4 +82,6 @@ function octopus_install() {
   db_insert('users_roles')
       ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
       ->execute();
+  // set users path on pathauto
+  variable_set('pathauto_user_pattern', '[user:name]');
 }
