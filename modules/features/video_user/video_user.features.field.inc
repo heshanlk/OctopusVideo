@@ -76,7 +76,7 @@ function video_user_field_default_fields() {
   $fields['user-user-field_activities'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '10',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_activities',
@@ -122,14 +122,14 @@ function video_user_field_default_fields() {
       'entity_type' => 'user',
       'field_name' => 'field_activities',
       'label' => 'Activities',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'user_register_form' => FALSE,
+        'user_register_form' => 0,
       ),
       'widget' => array(
+        'active' => 0,
         'module' => 'taxonomy',
         'settings' => array(
-          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'taxonomy/autocomplete',
           'size' => 60,
         ),
