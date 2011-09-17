@@ -149,17 +149,14 @@ function video_video_default_page_manager_handlers() {
     $pane = new stdClass;
     $pane->pid = 'new-2';
     $pane->panel = 'right_region';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:group_group';
+    $pane->type = 'node_create_links';
+    $pane->subtype = 'node_create_links';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'og_group_subscribe',
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
+      'context' => 'relationship_og_group_from_node_1',
       'override_title' => 1,
-      'override_title_text' => 'Channel Membership',
+      'override_title_text' => 'Upload',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -173,14 +170,17 @@ function video_video_default_page_manager_handlers() {
     $pane = new stdClass;
     $pane->pid = 'new-3';
     $pane->panel = 'right_region';
-    $pane->type = 'node_create_links';
-    $pane->subtype = 'node_create_links';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:group_group';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'context' => 'relationship_og_group_from_node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'label' => 'title',
+      'formatter' => 'og_group_subscribe',
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 1,
+      'override_title_text' => 'Membership',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -202,8 +202,8 @@ function video_video_default_page_manager_handlers() {
       'context' => array(
         0 => 'relationship_og_group_from_node_1',
       ),
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Subscribers',
     );
     $pane->cache = array();
     $pane->style = array(
