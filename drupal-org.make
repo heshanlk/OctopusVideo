@@ -79,7 +79,7 @@ projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
 
 projects[video][subdir] = contrib
-projects[video][version] = 2.1-alpha2
+projects[video][version] = 2.1-alpha3
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
