@@ -115,6 +115,27 @@ function video_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: 50x50
+  $styles['50x50'] = array(
+    'name' => '50x50',
+    'effects' => array(
+      3 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '50',
+          'height' => '50',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported image style: 80x80
   $styles['80x80'] = array(
     'name' => '80x80',

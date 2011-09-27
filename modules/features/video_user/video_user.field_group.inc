@@ -146,14 +146,12 @@ function video_user_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Basic Information ',
+      'formatter' => 'collapsible',
       'instance_settings' => array(
-        'classes' => '',
-        'description' => '',
         'effect' => 'none',
         'speed' => 'fast',
+        'classes' => '',
       ),
-      'formatter' => 'collapsible',
     ),
   );
   $export['group_basic_information|user|user|default'] = $field_group;

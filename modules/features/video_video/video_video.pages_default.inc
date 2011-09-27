@@ -217,6 +217,28 @@ function video_video_default_page_manager_handlers() {
     $pane = new stdClass;
     $pane->pid = 'new-5';
     $pane->panel = 'top_region';
+    $pane->type = 'node_title';
+    $pane->subtype = 'node_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 0,
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 1,
+      'override_title_text' => '<No Title>',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $display->content['new-5'] = $pane;
+    $display->panels['top_region'][0] = 'new-5';
+    $pane = new stdClass;
+    $pane->pid = 'new-6';
+    $pane->panel = 'top_region';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:body';
     $pane->shown = TRUE;
@@ -237,11 +259,11 @@ function video_video_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
-    $display->content['new-5'] = $pane;
-    $display->panels['top_region'][0] = 'new-5';
+    $pane->position = 1;
+    $display->content['new-6'] = $pane;
+    $display->panels['top_region'][1] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-5';
+  $display->title_pane = 'new-6';
   $handler->conf['display'] = $display;
   $export['node_view_panel_context_2'] = $handler;
 
