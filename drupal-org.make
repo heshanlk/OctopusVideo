@@ -103,6 +103,12 @@ projects[wysiwyg][version] = 2.1
 
 ; Libraries ======================================================================
 
+;videojs
 libraries[video-js][type] = "libraries"
 libraries[video-js][download][type] = "git"
 libraries[video-js][download][url] = "https://github.com/zencoder/video-js.git"
+
+;ckeditor
+libraries[ckeditor][type] = "libraries"
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
