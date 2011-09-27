@@ -93,6 +93,9 @@ projects[views][version] = 3.0-rc1
 projects[votingapi][subdir] = contrib
 projects[votingapi][version] = 2.4
 
+projects[wysiwyg][subdir] = contrib
+projects[wysiwyg][version] = 2.1
+
 ; Themes ======================================================================
 
 ;projects[tao][version] = 3.0-beta3
