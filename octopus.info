@@ -67,3 +67,4 @@ dependencies[] = video_user
 
 ; custom
 dependencies[] = jwplayer
+dependencies[] = octopus_helper
