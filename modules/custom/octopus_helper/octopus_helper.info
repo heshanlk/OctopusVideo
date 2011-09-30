@@ -1,0 +1,6 @@
+name = Octopus Helper
+description = Helper module to handle some overrides and core functions
+package = Octopus
+core = 7.x
+files[] = octopus_helper.module
+

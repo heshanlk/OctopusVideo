@@ -213,7 +213,7 @@ function video_video_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'group_group',
-      'label' => 'Group type',
+      'label' => 'Channel type',
       'required' => TRUE,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -734,7 +734,7 @@ function video_video_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'group_audience',
-      'label' => 'Groups audience',
+      'label' => 'Channel audience',
       'required' => FALSE,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -860,7 +860,7 @@ function video_video_field_default_fields() {
       ),
       'entity_type' => 'user',
       'field_name' => 'group_audience',
-      'label' => 'Groups audience',
+      'label' => 'Channel audience',
       'required' => FALSE,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -894,8 +894,8 @@ function video_video_field_default_fields() {
   t('Body');
   t('Category');
   t('Description');
-  t('Group type');
-  t('Groups audience');
+  t('Channel type');
+  t('Channel audience');
   t('Image');
   t('Logo');
   t('Mission');
