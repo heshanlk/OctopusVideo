@@ -31,7 +31,7 @@ projects[entity][subdir] = contrib
 projects[entity][version] = 1.0-beta10
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-beta3
+projects[features][version] = 1.0-beta4
 
 projects[field_group][subdir] = contrib
 projects[field_group][version] = 1.0
@@ -67,10 +67,10 @@ projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.0
 
 projects[rules][subdir] = contrib
-projects[rules][version] = 2.0-rc1
+projects[rules][version] = 2.0-rc2
 
 projects[strongarm][subdir] = contrib
-projects[strongarm][version] = 2.0-beta2
+projects[strongarm][version] = 2.0-beta3
 
 projects[token][subdir] = contrib
 projects[token][version] = 1.0-beta5
@@ -79,7 +79,7 @@ projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
 
 projects[video][subdir] = contrib
-projects[video][version] = 2.1-alpha3
+projects[video][version] = 2.2-beta3
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
