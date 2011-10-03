@@ -105,8 +105,8 @@ projects[wysiwyg][version] = 2.1
 
 ;videojs
 libraries[video-js][type] = "libraries"
-libraries[video-js][download][type] = "git"
-libraries[video-js][download][url] = "https://github.com/zencoder/video-js.git"
+libraries[video-js][download][type] = "get"
+libraries[video-js][download][url] = "http://videojs.com/downloads/video-js-2.0.2.zip"
 
 ;ckeditor
 libraries[ckeditor][type] = "libraries"
