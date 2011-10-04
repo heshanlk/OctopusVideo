@@ -10,7 +10,7 @@ projects[amazons3][subdir] = contrib
 projects[amazons3][version] = 1.0-beta5
 
 projects[awssdk][subdir] = contrib
-projects[awssdk][version] = 4.2
+projects[awssdk][version] = 4.3
 
 projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta2
@@ -43,7 +43,7 @@ projects[flowplayer][subdir] = contrib
 projects[flowplayer][version] = 1.0-alpha1
 
 projects[libraries][subdir] = contrib
-projects[libraries][version] = 2.x-dev
+projects[libraries][version] = 2.0-alpha1
 
 projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.2
@@ -73,7 +73,7 @@ projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta3
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta5
+projects[token][version] = 1.0-beta6
 
 projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
@@ -85,7 +85,7 @@ projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
 
 projects[videojs][subdir] = contrib
-projects[videojs][version] = 1.9
+projects[videojs][version] = 1.10
 
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
