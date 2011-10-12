@@ -31,7 +31,7 @@ projects[drupal][patch][1067470] = http://drupal.org/files/issues/managed_file_1
 
 ; PECL uploadprogress bar doesn't appear.
 ; http://drupal.org/node/935208
-projects[drupal][patch][935208] = http://drupal.org/files/issues/935208-uploadprogress-bar-fix-67.patch
+; projects[drupal][patch][935208] = http://drupal.org/files/issues/935208-uploadprogress-bar-fix-67.patch
 
 projects[octopus][type] = profile
 projects[octopus][download][type] = git
