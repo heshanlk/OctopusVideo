@@ -5,9 +5,8 @@
  */
 function octopus_install() {
   // set themes
-  theme_enable(array('bartik'));
+  theme_enable(array('octopus'));
   variable_set('theme_default', 'octopus');
-  theme_enable(array('seven'));
   variable_set('admin_theme', 'seven');
   // Add text formats.
   $filtered_html_format = array(
