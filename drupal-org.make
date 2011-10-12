@@ -67,7 +67,7 @@ projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.0
 
 projects[rules][subdir] = contrib
-projects[rules][version] = 2.0-rc2
+projects[rules][version] = 2.0
 
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta3
