@@ -32,7 +32,7 @@ function video_user_context_default_contexts() {
         'views-video_by_user-block' => array(
           'module' => 'views',
           'delta' => 'video_by_user-block',
-          'region' => 'sidebar_second',
+          'region' => 'content',
           'weight' => '-10',
         ),
       ),

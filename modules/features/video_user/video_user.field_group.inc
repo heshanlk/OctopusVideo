@@ -11,35 +11,33 @@ function video_user_field_group_info() {
   $export = array();
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_activities_and_interests|user|user|default';
   $field_group->group_name = 'group_activities_and_interests';
   $field_group->entity_type = 'user';
   $field_group->bundle = 'user';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_user_infomation';
   $field_group->data = array(
     'label' => 'Activities and interests',
-    'weight' => '8',
+    'weight' => '7',
     'children' => array(
-      0 => 'field_interests',
-      1 => 'field_activities',
+      0 => 'field_activities',
+      1 => 'field_interests',
     ),
-    'format_type' => 'div',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Activities and interests',
+      'formatter' => 'closed',
       'instance_settings' => array(
         'classes' => '',
-        'description' => '',
-        'effect' => 'none',
-        'speed' => 'fast',
       ),
-      'formatter' => 'collapsed',
     ),
   );
   $export['group_activities_and_interests|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_activities_and_interests|user|user|form';
   $field_group->group_name = 'group_activities_and_interests';
@@ -51,8 +49,8 @@ function video_user_field_group_info() {
     'label' => 'Activities and interests',
     'weight' => '8',
     'children' => array(
-      0 => 'field_interests',
-      1 => 'field_activities',
+      0 => 'field_activities',
+      1 => 'field_interests',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -66,38 +64,36 @@ function video_user_field_group_info() {
   $export['group_activities_and_interests|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_arts_and_entertainment|user|user|default';
   $field_group->group_name = 'group_arts_and_entertainment';
   $field_group->entity_type = 'user';
   $field_group->bundle = 'user';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_user_infomation';
   $field_group->data = array(
     'label' => 'Arts and entertainment',
-    'weight' => '6',
+    'weight' => '5',
     'children' => array(
-      0 => 'field_music',
-      1 => 'field_books',
+      0 => 'field_books',
+      1 => 'field_games',
       2 => 'field_movies',
-      3 => 'field_television',
-      4 => 'field_games',
+      3 => 'field_music',
+      4 => 'field_television',
     ),
-    'format_type' => 'div',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Arts and entertainment',
+      'formatter' => 'closed',
       'instance_settings' => array(
         'classes' => '',
-        'description' => '',
-        'effect' => 'none',
-        'speed' => 'fast',
       ),
-      'formatter' => 'collapsed',
     ),
   );
   $export['group_arts_and_entertainment|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_arts_and_entertainment|user|user|form';
   $field_group->group_name = 'group_arts_and_entertainment';
@@ -109,11 +105,11 @@ function video_user_field_group_info() {
     'label' => 'Arts and entertainment',
     'weight' => '6',
     'children' => array(
-      0 => 'field_music',
-      1 => 'field_books',
+      0 => 'field_books',
+      1 => 'field_games',
       2 => 'field_movies',
-      3 => 'field_television',
-      4 => 'field_games',
+      3 => 'field_music',
+      4 => 'field_television',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -127,29 +123,29 @@ function video_user_field_group_info() {
   $export['group_arts_and_entertainment|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_basic_information|user|user|default';
   $field_group->group_name = 'group_basic_information';
   $field_group->entity_type = 'user';
   $field_group->bundle = 'user';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_user_infomation';
   $field_group->data = array(
     'label' => 'Basic Information ',
-    'weight' => '4',
+    'weight' => '3',
     'children' => array(
-      0 => 'field_current_location',
-      1 => 'field_hometown',
-      2 => 'field_gender',
-      3 => 'field_birthday',
-      4 => 'field_about_me',
+      0 => 'field_image',
+      1 => 'field_about_me',
+      2 => 'field_birthday',
+      3 => 'field_current_location',
+      4 => 'field_gender',
+      5 => 'field_hometown',
     ),
-    'format_type' => 'div',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'effect' => 'none',
-        'speed' => 'fast',
         'classes' => '',
       ),
     ),
@@ -157,6 +153,7 @@ function video_user_field_group_info() {
   $export['group_basic_information|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_basic_information|user|user|form';
   $field_group->group_name = 'group_basic_information';
@@ -168,11 +165,11 @@ function video_user_field_group_info() {
     'label' => 'Basic information',
     'weight' => '3',
     'children' => array(
-      0 => 'field_current_location',
-      1 => 'field_hometown',
-      2 => 'field_gender',
-      3 => 'field_birthday',
-      4 => 'field_about_me',
+      0 => 'field_about_me',
+      1 => 'field_birthday',
+      2 => 'field_current_location',
+      3 => 'field_gender',
+      4 => 'field_hometown',
       5 => 'timezone',
     ),
     'format_type' => 'tab',
@@ -187,34 +184,32 @@ function video_user_field_group_info() {
   $export['group_basic_information|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_channel|user|user|default';
   $field_group->group_name = 'group_channel';
   $field_group->entity_type = 'user';
   $field_group->bundle = 'user';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_user_infomation';
   $field_group->data = array(
     'label' => 'Channels',
-    'weight' => '14',
+    'weight' => '8',
     'children' => array(
       0 => 'group_audience',
     ),
-    'format_type' => 'div',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Channels',
+      'formatter' => 'closed',
       'instance_settings' => array(
         'classes' => '',
-        'description' => '',
-        'effect' => 'none',
-        'speed' => 'fast',
       ),
-      'formatter' => 'collapsed',
     ),
   );
   $export['group_channel|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_general|user|user|form';
   $field_group->group_name = 'group_general';
@@ -242,36 +237,34 @@ function video_user_field_group_info() {
   $export['group_general|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_philosophy|user|user|default';
   $field_group->group_name = 'group_philosophy';
   $field_group->entity_type = 'user';
   $field_group->bundle = 'user';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_user_infomation';
   $field_group->data = array(
     'label' => 'Philosophy',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
-      0 => 'field_religion',
-      1 => 'field_favourite_quotations',
-      2 => 'field_people_who_inspire_you',
+      0 => 'field_favourite_quotations',
+      1 => 'field_people_who_inspire_you',
+      2 => 'field_religion',
     ),
-    'format_type' => 'div',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Philosophy',
+      'formatter' => 'closed',
       'instance_settings' => array(
         'classes' => '',
-        'description' => '',
-        'effect' => 'none',
-        'speed' => 'fast',
       ),
-      'formatter' => 'collapsed',
     ),
   );
   $export['group_philosophy|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_philosophy|user|user|form';
   $field_group->group_name = 'group_philosophy';
@@ -283,9 +276,9 @@ function video_user_field_group_info() {
     'label' => 'Philosophy',
     'weight' => '5',
     'children' => array(
-      0 => 'field_religion',
-      1 => 'field_favourite_quotations',
-      2 => 'field_people_who_inspire_you',
+      0 => 'field_favourite_quotations',
+      1 => 'field_people_who_inspire_you',
+      2 => 'field_religion',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -299,6 +292,7 @@ function video_user_field_group_info() {
   $export['group_philosophy|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_profile_picture|user|user|form';
   $field_group->group_name = 'group_profile_picture';
@@ -325,36 +319,34 @@ function video_user_field_group_info() {
   $export['group_profile_picture|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_sport|user|user|default';
   $field_group->group_name = 'group_sport';
   $field_group->entity_type = 'user';
   $field_group->bundle = 'user';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_user_infomation';
   $field_group->data = array(
     'label' => 'Sport',
-    'weight' => '7',
+    'weight' => '6',
     'children' => array(
-      0 => 'field_favourite_sports',
-      1 => 'field_favourite_teams',
-      2 => 'field_favourite_athletes',
+      0 => 'field_favourite_athletes',
+      1 => 'field_favourite_sports',
+      2 => 'field_favourite_teams',
     ),
-    'format_type' => 'div',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Sport',
+      'formatter' => 'closed',
       'instance_settings' => array(
         'classes' => '',
-        'description' => '',
-        'effect' => 'none',
-        'speed' => 'fast',
       ),
-      'formatter' => 'collapsed',
     ),
   );
   $export['group_sport|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_sport|user|user|form';
   $field_group->group_name = 'group_sport';
@@ -366,9 +358,9 @@ function video_user_field_group_info() {
     'label' => 'Sport ',
     'weight' => '7',
     'children' => array(
-      0 => 'field_favourite_sports',
-      1 => 'field_favourite_teams',
-      2 => 'field_favourite_athletes',
+      0 => 'field_favourite_athletes',
+      1 => 'field_favourite_sports',
+      2 => 'field_favourite_teams',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -380,6 +372,57 @@ function video_user_field_group_info() {
     ),
   );
   $export['group_sport|user|user|form'] = $field_group;
+
+  $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_user_history|user|user|default';
+  $field_group->group_name = 'group_user_history';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '7',
+    'children' => array(),
+    'format_type' => 'hidden',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(),
+    ),
+  );
+  $export['group_user_history|user|user|default'] = $field_group;
+
+  $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_user_infomation|user|user|default';
+  $field_group->group_name = 'group_user_infomation';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'User Information',
+    'weight' => '2',
+    'children' => array(
+      0 => 'group_activities_and_interests',
+      1 => 'group_arts_and_entertainment',
+      2 => 'group_basic_information',
+      3 => 'group_channel',
+      4 => 'group_philosophy',
+      5 => 'group_sport',
+    ),
+    'format_type' => 'tabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_user_infomation|user|user|default'] = $field_group;
 
   return $export;
 }

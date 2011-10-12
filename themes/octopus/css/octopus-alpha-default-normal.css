@@ -1,0 +1,157 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+
+h1.title {
+  margin: 0px 0 20px;
+  font-size: 260%;
+  line-height:1;
+}
+
+#block-system-main-menu {
+  width: auto;
+}
+#block-system-main-menu ul.menu li {
+  width: auto;
+}
+ul#main-menu {
+  float: left;
+  width: auto;
+}
+ul#main-menu li {
+  float: left;
+}
+ul#main-menu li a {
+  padding: 10px 30px;
+}
+
+/* User menu */
+.region-user-menu {
+  border: none;
+}
+.block-user-menu ul.menu {
+  float: right;
+}
+
+/* Footer menu */
+.zone-footer .block-menu .content ul.menu {
+  float: left;
+}
+
+
+/* Block login */
+.block-login .item-list ul li {
+  margin-left: 0;
+  list-style: none;
+}
+.block-login input.form-text {
+  width: 178px;
+}
+
+
+/* List videos */
+.view-list-videos .views-row {
+  float: left;
+  width: 213px;
+  margin: 10px;
+}
+.view-list-videos .views-row-4,
+.view-list-videos .views-row-7,
+.view-list-videos .views-row-10,
+.view-list-videos .views-row-13,
+.view-list-videos .views-row-16
+.view-list-videos .views-row-19,
+.view-list-videos .views-row-22,
+.view-list-videos .views-row-25,
+.view-list-videos .views-row-28,
+.view-list-videos .views-row-31 {
+  clear: left;
+}
+.view-list-videos .views-field-field-video img {
+  width: 213px;
+}
+
+/* Feature video */
+.view-featured-video .views-row .views-field-field-video {
+    float: left;
+    margin-right: 20px;
+    width: 128px;
+}
+.view-featured-video .views-row .views-field-field-video img {
+  width: 128px;
+}
+
+/* List chanel */
+.view-og-list .views-row {
+  width: 213px;
+  max-width: 300px;
+}
+.view-og-list .views-row .views-field-field-image img {
+  width: 213px;
+}
+
+
+/* Block search */
+.block-search input.form-submit {
+  margin-right: 0;
+  padding: 0.4em 1em;
+}
+.block-search input.form-text {
+  width: 250px;
+}
+
+
+.view-blog .views-row img {
+  width: auto;
+}
+
+.views-field-service-links {
+  width: auto;
+}
+.views-field-service-links ul.links {
+  float: right;
+}
+.views-field-service-links ul.links li {
+  float: right;
+}
+
+.block-views-blog-block .views-field-title a,
+.view-list-articles .views-field-title a {
+  font-size: 180%;
+}
+article.node-article .field-name-field-image img {
+  width: 260px;
+}
+
+/* Block copyright */
+.block-copyright,
+.block-logo-footer,
+#block-block-1 {
+  text-align: right;
+}
+
+
+/* Contact form */
+.contact-form .form-item label {
+  float: left;
+  width: 180px;
+  font-size: 110%;
+  font-weight: bold;
+}
+.contact-form .form-item.form-type-checkbox label {
+  float: none;
+  font-size: 100%;
+  font-weight: normal;
+}
+.contact-form .form-item .form-textarea-wrapper {
+  float: left;
+  width: 70%;
+}
+.contact-form .form-item.form-type-checkbox,
+.contact-form .form-actions {
+  margin-left: 250px;
+  width: auto;
+  clear: left;
+  float: left;
+}
+.contact-form .form-actions {
+  margin-left: 260px;
+}

@@ -30,6 +30,15 @@ function video_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: access statistics
+  $permissions['access statistics'] = array(
+    'name' => 'access statistics',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'statistics',
+  );
+
   // Exported permission: access tweetbutton
   $permissions['access tweetbutton'] = array(
     'name' => 'access tweetbutton',
@@ -156,6 +165,17 @@ function video_permissions_user_default_permissions() {
     'module' => 'comment',
   );
 
+  // Exported permission: search content
+  $permissions['search content'] = array(
+    'name' => 'search content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+    ),
+    'module' => 'search',
+  );
+
   // Exported permission: select account cancellation method
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
@@ -171,6 +191,16 @@ function video_permissions_user_default_permissions() {
     'module' => 'video',
   );
 
+  // Exported permission: use advanced search
+  $permissions['use advanced search'] = array(
+    'name' => 'use advanced search',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'search',
+  );
+
   // Exported permission: view own unpublished content
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
@@ -178,6 +208,15 @@ function video_permissions_user_default_permissions() {
       0 => 'authenticated user',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: view post access counter
+  $permissions['view post access counter'] = array(
+    'name' => 'view post access counter',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'statistics',
   );
 
   return $permissions;

@@ -79,7 +79,7 @@ projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
 
 projects[video][subdir] = contrib
-projects[video][version] = 2.2-beta4
+projects[video][version] = 2.2-beta5
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
@@ -98,8 +98,7 @@ projects[wysiwyg][version] = 2.1
 
 ; Themes ======================================================================
 
-;projects[tao][version] = 3.0-beta3
-;projects[rubik][version] = 4.0-beta6
+projects[omega][version] = 3.0
 
 ; Libraries ======================================================================
 

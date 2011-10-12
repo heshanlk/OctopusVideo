@@ -1,0 +1,1262 @@
+@charset "utf-8";
+/* CSS Document */
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 81.25%; /* 13px */
+  line-height: 1.846;
+  font-family: Arial,Helvetica,Verdana,"Bitstream Vera Sans",sans-serif;
+}
+a,
+a:link,
+a:visited {
+  color:#230484;
+  text-decoration: none;
+}
+a:focus,
+a:hover,
+a:active {
+  color: #333;
+}
+h1, h2, h3, h4 {
+  color:#230484;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/*--- HEADINGS ---*/
+h1{
+  font-size:1.846em;      /* 24px */
+  margin-bottom:1em;  /* 24px */
+  line-height:1;    /* 24px */
+}
+h2{
+  font-size:1.4em;    /* 19.5px */
+  margin-bottom:1.3333em;    /* 24px */
+  line-height:1.3333;      /* 24px */
+}
+h3{
+  font-size:1.25em;    /* 16.25 */
+  margin-bottom:1.477em;  /* 24px */
+  line-height:1.477;    /* 24px */
+}
+h4{
+  font-size:1.125em;    /* 14.6px */
+  margin-bottom:1.64em;  /* 24px */
+  line-height:1.64;    /* 24px */
+}
+h5{
+  font-weight:bold;
+}
+h5,
+h6{
+  font-size:1em;      /* 16px */
+  margin-bottom:1.5em;  /* 24px */
+  line-height:1.5;    /* 24px */
+}
+p, address, pre, table {
+    margin-bottom: 1.846em;
+}
+ul, ol {
+  margin: 1em 1em 0 1em;
+}
+article.node ul, article.node ol {
+  margin: 0 0 1.846em 60px;
+}
+pre,
+div.code {
+  border-left: 5px solid #230484;
+  background: #282828;
+  color: #fff;
+  padding: 0.2em 10px;
+}
+.highlight {
+  background: #230484;
+  color: #000;
+}
+#node-page-11 {
+  background: url(../images/grid.gif) 0 0 repeat;
+  color: #000;
+}
+
+#node-page-11 .content {
+  padding: 6px 35px 0 40px;
+}
+
+.typo-label {
+  font-size:1.4em;    /* 18px */
+  margin-bottom:1.333em;    /* 24px */
+  line-height:1.333;  
+  padding: 0px 10px;
+  color: #fff;
+  background: #282828;
+  border: 0px solid #230484;
+}
+
+/*------------------------------------*\
+	Pages Background
+\*------------------------------------*/
+.zone-content-wrapper {
+}
+.zone-menu-wrapper {
+  border-top: 1px solid #aaa;
+  border-bottom: 3px solid #999;
+  margin: 20px 0;
+}
+.zone-postscript-wrapper,
+.section-footer {
+  background: #ddd;
+  padding-top: 20px;
+}
+.zone-postscript-wrapper {
+  border-bottom: 1px solid #999;
+}
+/*------------------------------------*\
+	Pages CSS
+\*------------------------------------*/
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/*
+ * Header
+ */
+#logo /* Wrapping link for logo */ {
+  margin: 0;
+  padding: 0;
+}
+
+#logo img {
+  vertical-align: bottom;
+}
+
+#name-and-slogan /* Wrapper for website name and slogan */ {
+  float: left;
+}
+
+h1#site-name,
+div#site-name /* The name of the website */ {
+  margin: 0;
+  font-size:1.4em;    /* 19.5px */
+  line-height:1.3333; 
+}
+
+#site-slogan /* The slogan (or tagline) of a website */ {
+}
+
+.breadcrumb /* The path to the current page in the form of a list of links */ {
+  padding-bottom: 1.846em;
+}
+.breadcrumb a,
+.breadcrumb a:link, .breadcrumb a:visited {
+  color: #000;
+}
+
+h2.node-title, /* Title of a piece of content when it is given in a list of content */
+h2.block-title, /* Block title */
+h2.title, /* Comment section heading */
+h2.comment-form, /* Comment form heading */
+h3.title /* Comment title */ {
+  margin: 0;
+}
+/* Page and full node titles */
+h1.title {
+  color: #333;
+  margin: 0px 0 20px;
+  font-size: 180%;
+  font-style: italic;
+}
+table.no-border {
+  margin: 0;
+}
+table.no-border tr,
+table.no-border td {
+  border: none;
+  background: none;
+}
+tr:hover td,
+tr.even:hover td.active,
+tr.odd:hover td.active {
+  background: none;
+} 
+tr.even /* Some tables have rows marked even or odd. */ {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
+  margin: 1.846em 0; /* Drupal core uses "6px 0" margin */
+}
+
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.status /* Normal priority messages */ {
+}
+
+div.warning,
+tr.warning /* Medium priority messages */ {
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error /* High priority messages. See also the .error declaration below. */ {
+}
+
+.error /* Errors that are separate from div.messages status messages. */ {
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages. */ {
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+div.tabs /* See also the tabs.css file. */ {
+}
+
+.more-help-link /* Link to more help */ {
+}
+
+
+ul.links /* List of links */ {
+}
+
+ul.links.inline {
+  display: block; /* Let the links be inline, but the container be a block. */
+}
+
+ul.links li {
+  padding: 0 1em 0 0; /* LTR */
+}
+li.comment-add a,
+li.comment-add a.active {
+  float: right;
+  background: #230484;
+  color: #fff;
+  padding: 0 10px;
+  font-weight: bold;
+}
+li.comment-add a:hover,
+li.comment-add a.active:hover {
+  background: #230484;
+  color: #fff;
+}
+
+li.comment_forbidden {
+  float: right;
+}
+.item-list .pager /* A list of page numbers when more than 1 page of content is available */ {
+  padding: 0;
+  text-align: right;
+  float: right;
+}
+
+.item-list .pager li /* Each page number in the pager list */ {
+  margin:0 2px 0 0;
+  padding:0;
+  border: 1px solid #605D5A;
+  float: left;
+}
+.item-list .pager .pager-current,
+.item-list .pager li a {
+  padding: 0px 10px;
+  float: left;
+  color: #333;
+}
+.item-list .pager .pager-current {
+  background:#230484;
+  color: #fff;
+}
+.item-list .pager li a:hover {
+  background:#230484;
+  color: #fff;
+}
+.feed-icon /* The link to the RSS or Atom feed for the current list of content */ {
+}
+
+.more-link /* Aggregator, blog, and forum more link */ {
+}
+
+/*------------------------------------*\
+	NAVIGATION CSS
+\*------------------------------------*/
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  color: #333;
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+  /* overflow: hidden; /* Sometimes you want to prevent overlapping with main div. */
+}
+
+#navigation ul.links, /* Main menu and secondary menu links */
+#navigation .content ul /* Menu block links */ {
+  margin: 0;
+  padding: 0;
+  text-align: left; /* LTR */
+}
+
+#navigation ul.links li, /* A simple method to get navigation links to appear in one line. */
+#navigation .content li {
+  float: left; /* LTR */
+  padding: 0 10px 0 0; /* LTR */
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/*
+ * Main menu links
+ */
+
+ul#main-menu {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+ul#main-menu li {
+  display: inline-block;
+  margin:0;
+  padding:0 1px 0 0;
+}
+ul#main-menu li a {
+  float: left;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #000;
+}
+ul#main-menu li a:hover,
+ul#main-menu li a.active {
+  color: #230484;
+}
+
+/* User menu */
+.region-user-menu {
+  border-top: 1px solid #aaa;
+}
+.region-user-menu .block-user-menu {
+  margin: 0;
+}
+.block-user-menu h2.block-title {
+  display: none;
+}
+.block-user-menu ul.menu {
+  text-align: center;
+  margin: 0;
+}
+.block-user-menu ul.menu li {
+  margin:0;
+  padding:0;
+  list-style: none;
+  display: inline-block;
+}
+.block-user-menu ul.menu li a {
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.block-user-menu ul.menu li a:hover,
+.block-user-menu ul.menu li a.active {
+  color: #000
+}
+
+/* Footer menu */
+.zone-footer .block-menu {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.zone-footer .block-menu .content ul.menu {
+  margin: 0px 0 0;
+  padding:0;
+  text-align: center;
+}
+.zone-footer ul.menu li {
+  margin:0;
+  padding:0;
+  list-style: none;
+  display: inline-block;
+}
+.zone-footer ul.menu li a {
+  display: block;
+  padding: 0px 25px;
+}
+.zone-footer ul.menu li a:hover,
+.zone-footer ul.menu li a.active {
+  color: #000
+}
+.zone-footer ul.menu li.last a {
+  border: none;
+}
+
+/*------------------------------------*\
+	NODES CSS
+\*------------------------------------*/
+
+.node /* Node wrapper */ {
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */ {
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+.node-promoted /* A node that has been promoted to the front page */ {
+}
+
+.node-sticky /* A sticky node (displayed before others in a list) */ {
+}
+
+.node-unpublished /* Unpublished nodes */ {
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-by-viewer /* A node created by the current user */ {
+}
+
+.node-teaser /* A node displayed as teaser */ {
+}
+
+/* All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+.node-page /* Page content node */ {
+}
+
+.node-article /* Article content node */ {
+  border-bottom: 1px dashed #605D5A;
+  margin-bottom: 20px;
+}
+
+h2.node-title /* Node title */ {
+}
+
+.node .user-picture /* The picture of the node author */ {
+}
+
+.node .node-links {
+}
+.node .submitted /* The "posted by" information */ {
+  color: #aaa;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.node .content /* Node's content wrapper */ {
+}
+
+.node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
+  margin-left: 0;
+}
+
+
+/* Services Links */
+.service-links ul.links {
+  float: left;
+  margin:0;
+  padding:0;
+}
+.service-links ul.links li {
+  list-style: none;
+  float: left;
+  padding-right: 20px;
+}
+
+
+
+/*------------------------------------*\
+	FIELDS CSS
+\*------------------------------------*/
+
+.field /* Wrapper for any field. */ {
+}
+
+/*
+ * Field types (Core)
+ */
+.field-type-text {
+}
+
+.field-type-text-long {
+}
+
+.field-type-text-with-summary {
+}
+
+.field-type-image {
+}
+
+.field-type-file {
+}
+
+.field-type-taxonomy-term-reference {
+}
+
+.field-type-number-integer {
+}
+
+.field-type-number-decimal {
+}
+
+.field-type-number-float {
+}
+
+.field-type-list-text {
+}
+
+.field-type-list-boolean {
+}
+
+.field-type-list-integer {
+}
+
+.field-type-list-float {
+}
+
+/*
+ * Field types (Contrib)
+ */
+.field-type-datetime /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */ {
+}
+
+.field-type-node-reference {
+}
+
+.field-type-user-reference {
+}
+
+
+/*
+ * Named fields
+ */
+.field-name-body {
+}
+
+.field-name-field-image {
+  margin: 10px 20px 10px 0;
+}
+.field-name-field-image img {
+  border: 1px solid #605D5A;
+  padding: 5px;
+}
+.field-name-field-tags {
+}
+
+.field-name-field-FIELDNAME /* Underscores in field name are replaced with dashes. */ {
+}
+
+
+/*------------------------------------*\
+	COMMENTS CSS
+\*------------------------------------*/
+#comments /* Wrapper for the list of comments and its title */ {
+  margin: 1.5em 0;
+}
+
+#comments h2.title /* Heading for the list of comments */ {
+  margin-bottom: 1.3333em;
+}
+
+#comments h2.comment-form /* Heading for the comment form */ {
+}
+
+.comment /* Wrapper for a single comment */ {
+}
+article.comment footer {
+  color: #aaa;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+.comment-preview /* Preview of the comment before submitting new or updated comment */ {
+  background-color: #ffffea; /* Drupal core will use a #ffffea background. See #1110842 */
+}
+
+.comment.new /* A new comment since the user last viewed the page. */ {
+}
+
+.comment.first /* The first comment in the list of comments */ {
+}
+
+.comment.last /* The last comment in the list of comments */ {
+}
+
+.comment.odd /* An odd-numbered comment in the list of comments */ {
+}
+
+.comment.even /* An even-numbered comment in the list of comments */ {
+}
+
+.comment-unpublished /* Unpublished comments */ {
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. See also the div.unpublished declaration in the nodes.css. */ {
+}
+
+.comment-by-anonymous /* A comment created by an anonymous user */ {
+}
+
+.comment-by-node-author /* A comment created by the node's author */ {
+}
+
+.comment-by-viewer /* A comment created by the current user */ {
+}
+
+article.comment h3 /* Comment title */ {
+  margin: 15px 0 10px;
+}
+
+.new /* "New" marker for comments that are new for the current user */ {
+  color: #c00;
+}
+
+.comment .user-picture /* The picture of the comment author */ {
+}
+
+.comment .submitted /* The "posted by" information */ {
+}
+
+.comment .content /* Comment's content wrapper */ {
+}
+
+.comment .user-signature /* The user's signature */ {
+}
+
+.comment ul.links /* Comment links. See also the ul.links declaration in the pages.css. */ {
+  margin-left: 0;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.indented /* Nested comments are indented */ {
+  /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+}
+
+
+/*------------------------------------*\
+	BLOCKS CSS
+\*------------------------------------*/
+
+.block /* Block wrapper */ {
+  margin-bottom: 1.5em;
+}
+.block-system-main {
+  margin-bottom: 0;
+}
+h2.block-title,
+h2.pane-title {
+  color:#000;
+  padding-bottom: 5px;
+  margin-bottom:0.5em;
+  border-bottom: 1px solid #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 150%;
+}
+.block .content /* Block's content wrapper */ {
+}
+.region-content-inner {
+  margin-bottom: 20px;
+}
+
+.block-box .block-inner {
+  background:#aaa;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+.block-box .block-inner h2.block-title {
+  border-bottom: 1px solid #999;
+  color: #230484;
+  margin:0;
+}
+
+/* Header */
+.branding-data {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Block search */
+.block-search {
+  float: right;
+  width: 100%;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+.block-search .form-items {
+  margin: 0;
+}
+.block-search input.form-submit {
+  margin-right: 0;
+}
+.block-search input.form-text {
+  width: 90%;
+  max-width: 300px;
+}
+
+/* Block login */
+.block-login .form-actions {
+  text-align: center;
+}
+.block-login .form-actions input {
+  margin: 0;
+}
+.block-login input.form-text {
+  width: 95%;
+}
+
+/* Block categories video */
+.block-categories-video-block .view-content .item-list ul li {
+  list-style: none;
+  background: url(../images/bullet.jpg) 0 14px no-repeat;
+  padding-left: 13px;
+  margin:0;
+  clear: left;
+}
+
+/* Block featured video */
+.view-featured-video .views-row {
+  float: left;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #aaa;
+}
+.view-featured-video .views-row .views-field-field-video {
+  float: left;
+  width: 128px;
+  margin-right: 20px;
+}
+.view-featured-video .views-row .views-field-title {
+  font-weight: bold;
+}
+
+
+/* Block list */
+.block-list ul {
+  margin:0;
+  padding: 0;
+}
+.block-list h2.block-title {
+  margin:0;
+}
+.block-list ul li {
+  list-style: none;
+  margin:0;
+  padding: 5px 0 5px 15px;
+  border-bottom:1px dashed #605D5A;
+  background: url(../images/black-bullet.png) 0 15px no-repeat;
+}
+.block-list.block-box ul li {
+  background: url(../images/bullet.png) 0 15px no-repeat;
+}
+.block-list ul li a {
+  color: #000;
+}
+.block-list.block-box ul li a {
+  color: #fff;
+}
+.block-list ul li a:hover {
+  color: #230484;
+}
+.block-list ul li li a {
+  text-indent: 15px;
+}
+.block-list ul li li li a {
+  text-indent: 30px;
+}
+
+/* Recent news */
+.main .field-field-image img,
+.block-views-blog-block .views-field-field-image img,
+.view-list-articles .views-field-field-image img {
+  float: left;
+  clear: left;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.block-views-blog-block .views-row,
+.view-list-articles .views-row {
+  float:left;
+  width: 100%;
+  clear: left;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #605D5A;
+}
+.block-views-blog-block .views-field-name,
+.block-views-blog-block .views-field-created,
+.view-list-articles .views-field-name,
+.view-list-articles .views-field-created,
+.view-list-articles .views-field-comment-count  {
+  padding-right: 10px;
+  font-style: italic;
+  color: #aaa;
+}
+.block-views-blog-block .views-field-field-image-fid,
+.view-list-articles .views-field-field-image-fid {
+  padding-top: 10px;
+  clear: left;
+}
+.block-views-blog-block .views-field-title a,
+.view-list-articles .views-field-title a {
+  font-size: 140%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  line-height: 1.2;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.view-list-articles .views-field-created {
+  text-align: center;
+}
+.view-list-articles .views-field-body,
+.view-list-articles .views-field-field-introtext {
+  margin-top: 15px;
+}
+.block-views-blog-block .views-field-view-node a,
+.view-list-articles .views-field-view-node a {
+  float: right;
+  background: url(../images/bullet.png) 0 9px no-repeat;
+  padding-left: 15px;
+  font-style: italic;
+}
+.view-list-articles .views-row img {
+  width: 150px;
+  border: 1px solid #605D5A;
+  padding: 5px;
+}
+.view-list-articles .views-field-comment-count {
+  float: left;
+}
+.views-field-service-links {
+  width: 100%;
+  text-align: center;
+}
+.views-field-service-links ul.links {
+  margin:0;
+  padding:0;
+  float: left;
+}
+.views-field-service-links ul.links li {
+  margin:0;
+  padding:0;
+  list-style: none;
+  float: left;
+}
+article.node-article .field-name-field-image img {
+  width: 150px;
+}
+
+/* List videos */
+.view-list-videos {
+  float: left;
+  width: 100%;
+}
+/* Video detail */
+.field-name-field-category .field-item,
+.field-name-field-tags .field-item {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+/* Block recent comments */
+.block-comments-recent-block li a {
+  color: #000;
+}
+.block-comments-recent-block li a:hover {
+  color: #230484;
+}
+.block-comments-recent-block li .views-field-timestamp {
+  color: #aaa;
+}
+.block-comment-recent-block ul li span {
+  font-style: italic;
+  color: #999;
+}
+
+/* Block newsleter */
+.block-simplenews p {
+  margin-bottom: 10px;
+}
+.block-simplenews .form-item {
+  text-align: left;
+  margin-top: 0;
+}
+.block-simplenews form {
+  text-align: center;
+}
+.block-simplenews input.form-text {
+  width: 100%;
+}
+
+.view-frontpage-video .views-field-counter,
+.view-frontpage-video .views-field-view-node,
+.view-frontpage-video .views-field-comment-count {
+  padding-right: 20px;
+}
+.view-frontpage-video .views-field-comment-count {
+  float: right;
+}
+
+/* View list chanels */
+.view-og-list .views-row {
+  float: left;
+  margin: 10px;
+  max-width: 150px;
+}
+.view-og-list .views-row .views-field-title {
+  font-weight: bold;
+}
+
+/* block-quicktabs block-home-page */
+.block-quicktabs.block-home-page {
+  border-top: 1px dashed #aaa;
+  margin-top: 20px;
+}
+
+/* Block copyright */
+.block-copyright,
+.block-logo-footer,
+#block-block-1 {
+  text-align: center;
+}
+
+/* Contact form */
+.contact-form .form-item {
+  padding: 10px 10px;
+  margin:0;
+  float: left;
+  width: 90%;
+}
+.contact-form .form-item:hover,
+.contact-form .form-item:active {
+  background: #171717;
+}
+.contact-form .form-actions {
+  margin-left: 10px;
+}
+
+/*------------------------------------*\
+	User profile
+\*------------------------------------*/
+div.profile {
+  margin: 0 0 30px 0;
+}
+div.profile .field-name-field-name {
+  color: #000000;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-size: 150%;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+div.profile .group-user-history h3 {
+  border: none;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+div.profile .ui-accordion h3.ui-accordion-header {
+  padding: 7px 0 7px 30px;
+  margin-top: 7px;
+  background: #F1ECE3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+div.profile .ui-accordion h3.h3.ui-state-active {
+  color: #230484;
+  font-weight: bold;
+}
+div.profile .ui-accordion .ui-accordion-content {
+  padding: 10px 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+div.profile .ui-accordion .ui-accordion-content p {
+  margin: 15px 0;
+}
+div.profile .field {
+  padding: 5px 0;
+}
+div.profile .field-item {
+  padding: 0 10px 0 0;
+  display: inline;
+}
+div.profile .field-name-field-image {
+  margin: 0 20px 0 0;
+  float: left;
+}
+div.profile .field-name-field-image .field-item {
+  padding: 0;
+}
+div.profile .field-name-field-current-location .field-label,
+div.profile .field-name-field-hometown .field-label,
+div.profile .field-name-field-gender .field-label,
+div.profile .field-name-field-birthday .field-label {
+  float: left;
+  margin-right: 5px;
+}
+
+/*------------------------------------*\
+	FORMS CSS
+\*------------------------------------*/
+
+.form-item /* Wrapper for a form element (or group of form elements) and its label */ {
+  margin: 1em 0;
+}
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error /* Highlight the form elements that caused a form submission error */ {
+  border: 1px solid #c00;
+}
+
+.form-item label /* The label for a form element */ {
+  display: block;
+  font-weight: bold;
+}
+
+.form-item label.option /* The label for a radio button or checkbox */ {
+  display: inline;
+  font-weight: normal;
+}
+
+.form-required /* The part of the label that indicates a required field */ {
+  color: #c00;
+}
+
+.form-item .description /* The descriptive help text (separate from the label) */ {
+  font-size: 0.85em;
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item /* Pack groups of checkboxes and radio buttons closer together */ {
+  margin: 0; /* Drupal core uses "0.4em 0" */
+}
+
+
+/* Typography and backgrounds for all form buttons */
+button, input[type="reset"], input[type="submit"], input[type="button"] {
+  background:#230484 none repeat scroll 0 0;
+  border:none;
+  color:#fff;
+  padding:0.5em 1.7em;
+  margin: 2px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  text-shadow: none;
+}
+
+input.form-submit:hover {
+  background: #300484;
+}
+
+.container-inline div,
+.container-inline label /* Inline labels and form divs */ {
+  display: inline;
+}
+
+.tips /* Tips for Drupal's input formats */ {
+}
+
+
+/*
+ * Password confirmation
+ */
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+
+/*
+ * Search (search-block-form.tpl.php)
+ */
+#block-search-form /* Wrapper for the search form */ {
+}
+
+
+/*
+ * Drupal's default login form block
+ */
+#user-login-form {
+  text-align: left; /* LTR */
+}
+
+
+/*
+ * OpenID
+ *
+ * The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+ */
+
+#user-login-form ul /* OpenID creates a new ul above the login form's links. */ {
+  margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
+}
+
+html.js #user-login-form li.openid-link,
+#user-login-form li.openid-link /* The "Log in using OpenID" link. */ {
+  margin-top: 1.5em;
+  margin-left: -20px; /* LTR */ /* Un-do some of the padding on the ul list. */
+}
+
+#user-login-form li.user-link /* The "Cancel OpenID login" link. */ {
+  margin-top: 1.5em;
+}
+
+#user-login ul {
+  margin: 1.5em 0;
+}
+
+
+/*
+ * Drupal admin tables
+ *
+ * We overrode these styles in html-reset.css, but restore them for the admin
+ * section of the site.
+ */
+
+form th {
+  text-align: left; /* LTR */
+  padding-right: 1em; /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+
+form tbody {
+  border-top: 1px solid #ccc;
+}
+
+form tr.even {
+  background-color: #fff;
+}
+
+form table .item-list ul {
+  margin: 0;
+}
+
+
+/* --------------- System Tabs  --------------- */
+.tabs {
+}
+ul.quicktabs-tabs,
+.tabs ul.primary {
+  padding: 0 3px;
+  margin: 20px 0;
+  overflow: hidden;
+  border: none;
+  background: transparent url(../images/tabs-border.png) repeat-x left bottom;
+}
+ul.quicktabs-tabs li,
+.tabs ul.primary li {
+  display: block;
+  float: left; /* LTR */
+  vertical-align: bottom;
+  margin: 0 5px 0 0; /* LTR */
+  padding:0;
+}
+
+ul.quicktabs-tabs li a,
+.tabs ul.primary li a {
+  color: #000;
+  background: #F1ECE3;
+  border: 1px solid #CEC9BB;
+  height: 1.8em;
+  line-height: 1.9;
+  display: block;
+  font-size: 0.929em;
+  float: left; /* not LTR */
+  padding: 3px 10px 5px;
+  margin: 0;
+  border-top-right-radius: 5px;-moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+}
+
+ul.quicktabs-tabs li.active a,
+ul.quicktabs-tabs li.active a:hover,
+.tabs ul.primary li.active a,
+.tabs ul.primary li a:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #CEC9BB;
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+}
+.tabs ul.secondary {
+  border-bottom: none;
+  padding: 0.5em 0;
+}
+.tabs ul.secondary li {
+  display: block;
+  float: left; /* LTR */
+}
+.tabs ul.secondary li:last-child {
+  border-right: none; /* LTR */
+}
+.tabs ul.secondary li:first-child {
+  padding-left: 0; /* LTR */
+}
+.tabs ul.secondary li a {
+  padding: 0.25em 0.5em;
+}
+.tabs ul.secondary li a.active {
+  background: #f2f2f2;
+  border-bottom: none;
+}
+ul.action-links {
+  list-style: none;
+  margin: 5px;
+  padding: 0.5em 1em;
+}
+ul.action-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+ul.action-links li a {
+  padding-left: 15px;
+  background: url(../images/add.png) no-repeat left center;
+  margin: 0 10px 0 0;
+}

@@ -19,6 +19,41 @@ function video_flags_ctools_plugin_api() {
  */
 function video_flags_flag_default_flags() {
   $flags = array();
+  // Exported flag: "Featured videos".
+  $flags['featured_videos'] = array(
+    'content_type' => 'node',
+    'title' => 'Featured videos',
+    'global' => '1',
+    'types' => array(
+      0 => 'video',
+    ),
+    'flag_short' => 'Add to Featured',
+    'flag_long' => '',
+    'flag_message' => '',
+    'unflag_short' => 'Remove from Featured',
+    'unflag_long' => '',
+    'unflag_message' => '',
+    'unflag_denied_text' => '',
+    'link_type' => 'toggle',
+    'roles' => array(
+      'flag' => array(
+        0 => '3',
+      ),
+      'unflag' => array(
+        0 => '3',
+      ),
+    ),
+    'show_on_page' => 1,
+    'show_on_teaser' => 1,
+    'show_on_form' => 0,
+    'access_author' => '',
+    'i18n' => 0,
+    'api_version' => 2,
+    'module' => 'video_flags',
+    'locked' => array(
+      0 => 'name',
+    ),
+  );
   // Exported flag: "Follow".
   $flags['follow'] = array(
     'content_type' => 'user',

@@ -28,7 +28,7 @@ function video_video_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_video';
-  $strongarm->value = 0;
+  $strongarm->value = '0';
   $export['comment_anonymous_video'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -147,14 +147,14 @@ function video_video_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_video';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['comment_subject_field_video'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_video';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
   $export['comment_video'] = $strongarm;
 
   $strongarm = new stdClass;

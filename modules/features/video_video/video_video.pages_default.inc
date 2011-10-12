@@ -231,7 +231,10 @@ function video_video_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'channel-title',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $display->content['new-5'] = $pane;
@@ -337,7 +340,6 @@ function video_video_default_page_manager_handlers() {
         'contains' => 'region',
         'children' => array(
           0 => 'center',
-          1 => 'right_region',
         ),
         'parent' => 'main',
       ),
@@ -347,14 +349,6 @@ function video_video_default_page_manager_handlers() {
         'width' => '100',
         'width_type' => '%',
         'parent' => 'main-row',
-      ),
-      'right_region' => array(
-        'type' => 'region',
-        'title' => 'Right region',
-        'width' => '220',
-        'width_type' => 'px',
-        'parent' => 'main-row',
-        'class' => '',
       ),
     ),
   );
@@ -611,31 +605,6 @@ function video_video_default_page_manager_handlers() {
     $pane->position = 13;
     $display->content['new-14'] = $pane;
     $display->panels['center'][13] = 'new-14';
-    $pane = new stdClass;
-    $pane->pid = 'new-15';
-    $pane->panel = 'right_region';
-    $pane->type = 'term_list';
-    $pane->subtype = 'term_list';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'title' => NULL,
-      'type' => 'sibling',
-      'list_type' => 'ul',
-      'path' => 'taxonomy/term',
-      'context' => 'argument_term_1',
-      'override_title' => 1,
-      'override_title_text' => 'Recommended Pages',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $display->content['new-15'] = $pane;
-    $display->panels['right_region'][0] = 'new-15';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -700,7 +669,6 @@ function video_video_default_page_manager_handlers() {
         'contains' => 'region',
         'children' => array(
           0 => 'center',
-          1 => 'right_region',
         ),
         'parent' => 'main',
       ),
@@ -710,14 +678,6 @@ function video_video_default_page_manager_handlers() {
         'width' => '100',
         'width_type' => '%',
         'parent' => 'main-row',
-      ),
-      'right_region' => array(
-        'type' => 'region',
-        'title' => 'Right region',
-        'width' => '220',
-        'width_type' => 'px',
-        'parent' => 'main-row',
-        'class' => '',
       ),
     ),
   );
@@ -770,31 +730,6 @@ function video_video_default_page_manager_handlers() {
     $pane->position = 1;
     $display->content['new-2'] = $pane;
     $display->panels['center'][1] = 'new-2';
-    $pane = new stdClass;
-    $pane->pid = 'new-3';
-    $pane->panel = 'right_region';
-    $pane->type = 'term_list';
-    $pane->subtype = 'term_list';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'title' => NULL,
-      'type' => 'sibling',
-      'list_type' => 'ul',
-      'path' => 'taxonomy/term',
-      'context' => 'argument_term_1',
-      'override_title' => 1,
-      'override_title_text' => 'Recommended Pages',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $display->content['new-3'] = $pane;
-    $display->panels['right_region'][0] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -855,25 +790,13 @@ function video_video_default_page_manager_pages() {
     $pane = new stdClass;
     $pane->pid = 'new-1';
     $pane->panel = 'center';
-    $pane->type = 'views';
-    $pane->subtype = 'video';
+    $pane->type = 'block';
+    $pane->subtype = 'quicktabs-home_page';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'block_8',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => '<No Title>',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -893,72 +816,8 @@ function video_video_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'block_7',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $display->content['new-2'] = $pane;
-    $display->panels['center'][1] = 'new-2';
-    $pane = new stdClass;
-    $pane->pid = 'new-3';
-    $pane->panel = 'center';
-    $pane->type = 'views';
-    $pane->subtype = 'video';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'block_5',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $display->content['new-3'] = $pane;
-    $display->panels['center'][2] = 'new-3';
-    $pane = new stdClass;
-    $pane->pid = 'new-4';
-    $pane->panel = 'center';
-    $pane->type = 'views';
-    $pane->subtype = 'video';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
+      'use_pager' => 1,
+      'nodes_per_page' => '10',
       'pager_id' => '0',
       'offset' => '0',
       'more_link' => 0,
@@ -969,7 +828,7 @@ function video_video_default_page_manager_pages() {
       'url' => '',
       'display' => 'block_4',
       'override_title' => 0,
-      'override_title_text' => '',
+      'override_title_text' => 'Recently Uploadded',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -977,75 +836,11 @@ function video_video_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
-    $display->content['new-4'] = $pane;
-    $display->panels['center'][3] = 'new-4';
-    $pane = new stdClass;
-    $pane->pid = 'new-5';
-    $pane->panel = 'center';
-    $pane->type = 'views';
-    $pane->subtype = 'video';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'block_3',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $display->content['new-5'] = $pane;
-    $display->panels['center'][4] = 'new-5';
-    $pane = new stdClass;
-    $pane->pid = 'new-6';
-    $pane->panel = 'center';
-    $pane->type = 'views';
-    $pane->subtype = 'video';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'block_6',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 5;
-    $display->content['new-6'] = $pane;
-    $display->panels['center'][5] = 'new-6';
+    $pane->position = 1;
+    $display->content['new-2'] = $pane;
+    $display->panels['center'][1] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-1';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['front_page'] = $page;

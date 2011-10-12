@@ -1,0 +1,24 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+
+#block-views-view-slideshow-block .views-field-field-image img {
+  display: none;
+}
+
+#block-views-view-slideshow-block .views-field-body {
+  background:none;
+  font-size:100%;
+  padding:10px 0 10px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.block-search input.form-text {
+  width: 95%;
+}
+.block-login input.form-text {
+  width: 95%;
+}
+
+.view-blog .views-row img {
+  width: 120px;
+}
