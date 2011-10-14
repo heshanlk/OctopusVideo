@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * video_rules.rules_defaults.inc
+ * video_video.rules_defaults.inc
  */
 
 /**
- * Implementation of hook_default_rules_configuration().
+ * Implements hook_default_rules_configuration().
  */
-function video_rules_default_rules_configuration() {
+function video_video_default_rules_configuration() {
   $items = array();
   $items['rules_video_node_creation'] = entity_import('rules_config', '{ "rules_video_node_creation" : {
       "LABEL" : "Video node creation",

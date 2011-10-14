@@ -41,14 +41,6 @@ function video_video_views_api() {
  */
 function video_video_node_info() {
   $items = array(
-    'page' => array(
-      'name' => t('Page'),
-      'base' => 'node_content',
-      'description' => t('Basic pages of the website.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
     'video' => array(
       'name' => t('Video'),
       'base' => 'node_content',

@@ -17,8 +17,10 @@ function octopus_helper_menu_alter(&$items) {
  */
 function octopus_helper_field_info_alter(&$info) {
   // Add a setting to all field types.
-  $info['group']['label'] = t('Channel');
-  $info['group']['description'] = t('This field stores channels associated with the content.');
+  if (isset($info['group']) && is_array($info['group'])) {
+    $info['group']['label'] = t('Channel');
+    $info['group']['description'] = t('This field stores channels associated with the content.');
+  }
 }
 
 /**
@@ -26,8 +28,10 @@ function octopus_helper_field_info_alter(&$info) {
  */
 function octopus_helper_field_widget_info_alter(&$info) {
   // Add a setting to all field types.
-  $info['group_audience']['label'] = t('Channel audiance');
-  $info['group_audience_autocomplete']['description'] = t('Display the list of referenceable channels as a textfield with autocomplete behaviour.');
+  if (isset($info['group_audience']) && is_array($info['group_audience'])) {
+    $info['group_audience']['label'] = t('Channel audiance');
+    $info['group_audience_autocomplete']['description'] = t('Display the list of referenceable channels as a textfield with autocomplete behaviour.');
+  }
 }
 
 /**
@@ -43,6 +47,8 @@ function octopus_helper_field_formatter_info_alter(&$info) {
  * Implements hook_form_FORM_ID_alter().
  */
 function octopus_helper_form_video_node_form_alter(&$form, &$form_state) {
-  $form['group_audience']['und']['#options']['My channels'] = $form['group_audience']['und']['#options']['My groups'];
-  unset($form['group_audience']['und']['#options']['My groups']);
+  if (isset($form['group_audience']['und']['#options']) && !empty($form['group_audience']['und']['#options'])) {
+    $form['group_audience']['und']['#options']['My channels'] = $form['group_audience']['und']['#options']['My groups'];
+    unset($form['group_audience']['und']['#options']['My groups']);
+  }
 }

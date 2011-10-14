@@ -1,21 +1,14 @@
 <?php
 /**
  * @file
- * video_settings.strongarm.inc
+ * video_core.strongarm.inc
  */
 
 /**
- * Implementation of hook_strongarm().
+ * Implements hook_strongarm().
  */
-function video_settings_strongarm() {
+function video_core_strongarm() {
   $export = array();
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'flag_watch_later_default_video';
-  $strongarm->value = 0;
-  $export['flag_watch_later_default_video'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -97,41 +90,6 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'og_group_content_type_channel';
-  $strongarm->value = 'omitted';
-  $export['og_group_content_type_channel'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'og_group_content_type_page';
-  $strongarm->value = 'omitted';
-  $export['og_group_content_type_page'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'og_group_type_page';
-  $strongarm->value = 'omitted';
-  $export['og_group_type_page'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'og_group_type_video';
-  $strongarm->value = 'omitted';
-  $export['og_group_type_video'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'page_manager_node_view_disabled';
-  $strongarm->value = FALSE;
-  $export['page_manager_node_view_disabled'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_blog_pattern';
   $strongarm->value = 'blogs/[user:name]';
   $export['pathauto_blog_pattern'] = $strongarm;
@@ -156,6 +114,13 @@ function video_settings_strongarm() {
   $strongarm->name = 'pathauto_node_page_pattern';
   $strongarm->value = '';
   $export['pathauto_node_page_pattern'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_pattern';
+  $strongarm->value = 'content/[node:title]';
+  $export['pathauto_node_pattern'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -195,6 +160,13 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_user_pattern';
+  $strongarm->value = '[user:name]';
+  $export['pathauto_user_pattern'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'plus1_add_css';
   $strongarm->value = 1;
   $export['plus1_add_css'] = $strongarm;
@@ -223,16 +195,16 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_comment_vote_text';
-  $strongarm->value = 'Like';
-  $export['plus1_comment_vote_text'] = $strongarm;
+  $strongarm->name = 'plus1_comment_voted_text';
+  $strongarm->value = 'You Like';
+  $export['plus1_comment_voted_text'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_comment_voted_text';
-  $strongarm->value = 'You Like';
-  $export['plus1_comment_voted_text'] = $strongarm;
+  $strongarm->name = 'plus1_comment_vote_text';
+  $strongarm->value = 'Like';
+  $export['plus1_comment_vote_text'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -288,16 +260,16 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_vote_text';
-  $strongarm->value = 'Like';
-  $export['plus1_node_vote_text'] = $strongarm;
+  $strongarm->name = 'plus1_node_voted_text';
+  $strongarm->value = 'You Like';
+  $export['plus1_node_voted_text'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_voted_text';
-  $strongarm->value = 'You Like';
-  $export['plus1_node_voted_text'] = $strongarm;
+  $strongarm->name = 'plus1_node_vote_text';
+  $strongarm->value = 'Like';
+  $export['plus1_node_vote_text'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -323,16 +295,16 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_term_vote_text';
-  $strongarm->value = 'Vote';
-  $export['plus1_taxonomy_term_vote_text'] = $strongarm;
+  $strongarm->name = 'plus1_taxonomy_term_voted_text';
+  $strongarm->value = 'You voted';
+  $export['plus1_taxonomy_term_voted_text'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_term_voted_text';
-  $strongarm->value = 'You voted';
-  $export['plus1_taxonomy_term_voted_text'] = $strongarm;
+  $strongarm->name = 'plus1_taxonomy_term_vote_text';
+  $strongarm->value = 'Vote';
+  $export['plus1_taxonomy_term_vote_text'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -360,23 +332,16 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'frontpage';
-  $export['site_frontpage'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'site_slogan';
-  $strongarm->value = 'The social video platform';
-  $export['site_slogan'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'statistics_count_content_views';
   $strongarm->value = 1;
   $export['statistics_count_content_views'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'statistics_day_timestamp';
+  $strongarm->value = 1318598861;
+  $export['statistics_day_timestamp'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -472,13 +437,6 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'user_email_verification';
-  $strongarm->value = FALSE;
-  $export['user_email_verification'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_default';
   $strongarm->value = '';
   $export['user_picture_default'] = $strongarm;
@@ -486,30 +444,9 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'user_picture_dimensions';
-  $strongarm->value = '85x85';
-  $export['user_picture_dimensions'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_picture_file_size';
-  $strongarm->value = '2048';
-  $export['user_picture_file_size'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_picture_style';
-  $strongarm->value = '180x295';
-  $export['user_picture_style'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_pictures';
-  $strongarm->value = 0;
-  $export['user_pictures'] = $strongarm;
+  $strongarm->name = 'videojs_directory';
+  $strongarm->value = 'profiles/octopus/libraries/video-js/video-js';
+  $export['videojs_directory'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -990,67 +927,6 @@ function video_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_ffmpeg_instances';
-  $strongarm->value = '5';
-  $export['video_ffmpeg_instances'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_metadata';
-  $strongarm->value = 'flvtool2';
-  $export['video_metadata'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_metadata_dimensions';
-  $strongarm->value = '176x144
-352x288
-704x576
-1408x1152
-128x96
-160x120
-320x240
-640x480
-800x600
-1024x768
-1600x1200
-2048x1024
-1280x1024
-2560x2048
-5120x4096
-852x480
-1366x768
-1600x1024
-1920x1200
-2560x1600
-3200x2048
-3840x2400
-6400x4096
-7680x4800
-320x200
-640x350
-852x480
-1280x720
-1920x1080
-640x360
-320x180
-640x264
-960x396
-930x373';
-  $export['video_metadata_dimensions'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_metadata_path';
-  $strongarm->value = '/usr/bin/flvtool2';
-  $export['video_metadata_path'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_preset';
   $strongarm->value = array(
     'Mp4' => 'Mp4',
@@ -1059,69 +935,6 @@ function video_settings_strongarm() {
     'WebM' => 0,
   );
   $export['video_preset'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_publish_on_complete';
-  $strongarm->value = 1;
-  $export['video_publish_on_complete'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_queue_timeout';
-  $strongarm->value = '90';
-  $export['video_queue_timeout'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_thumbnail_count';
-  $strongarm->value = '5';
-  $export['video_thumbnail_count'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_thumbnail_path';
-  $strongarm->value = 'videos/thumbnails';
-  $export['video_thumbnail_path'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_thumbnail_size';
-  $strongarm->value = '320x240';
-  $export['video_thumbnail_size'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_use_default_thumb';
-  $strongarm->value = 0;
-  $export['video_use_default_thumb'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_use_preset_wxh';
-  $strongarm->value = 0;
-  $export['video_use_preset_wxh'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'videojs_directory';
-  $strongarm->value = 'profiles/octopus/libraries/video-js';
-  $export['videojs_directory'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'videojs_skin';
-  $strongarm->value = 'tube-css';
-  $export['videojs_skin'] = $strongarm;
 
   return $export;
 }
