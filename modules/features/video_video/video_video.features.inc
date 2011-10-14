@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_ctools_plugin_api().
+ * Implements hook_ctools_plugin_api().
  */
 function video_video_ctools_plugin_api() {
   list($module, $api) = func_get_args();
@@ -27,7 +27,7 @@ function video_video_ctools_plugin_api() {
 }
 
 /**
- * Implementation of hook_views_api().
+ * Implements hook_views_api().
  */
 function video_video_views_api() {
   list($module, $api) = func_get_args();
@@ -37,18 +37,10 @@ function video_video_views_api() {
 }
 
 /**
- * Implementation of hook_node_info().
+ * Implements hook_node_info().
  */
 function video_video_node_info() {
   $items = array(
-    'channel' => array(
-      'name' => t('Channel'),
-      'base' => 'node_content',
-      'description' => t('Channels where users can publish their contents and subscribe in the same time.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
     'page' => array(
       'name' => t('Page'),
       'base' => 'node_content',

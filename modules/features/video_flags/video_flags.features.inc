@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_ctools_plugin_api().
+ * Implements hook_ctools_plugin_api().
  */
 function video_flags_ctools_plugin_api() {
   list($module, $api) = func_get_args();
@@ -15,7 +15,17 @@ function video_flags_ctools_plugin_api() {
 }
 
 /**
- * Implementation of hook_flag_default_flags().
+ * Implements hook_views_api().
+ */
+function video_flags_views_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "views" && $api == "views_default") {
+    return array("version" => "3.0");
+  }
+}
+
+/**
+ * Implements hook_flag_default_flags().
  */
 function video_flags_flag_default_flags() {
   $flags = array();
@@ -48,11 +58,11 @@ function video_flags_flag_default_flags() {
     'show_on_form' => 0,
     'access_author' => '',
     'i18n' => 0,
-    'api_version' => 2,
     'module' => 'video_flags',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 2,
   );
   // Exported flag: "Follow".
   $flags['follow'] = array(

@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_quicktabs_default_quicktabs().
+ * Implements hook_quicktabs_default_quicktabs().
  */
 function video_video_quicktabs_default_quicktabs() {
   $export = array();
