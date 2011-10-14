@@ -56,13 +56,10 @@ dependencies[] = date_api
 dependencies[] = date
 
 ; Features
-dependencies[] = video_permissions
-dependencies[] = video_settings
-dependencies[] = video_styles
+dependencies[] = video_core
 dependencies[] = video_video
+dependencies[] = video_channels
 dependencies[] = video_flags
-dependencies[] = video_rules
-dependencies[] = video_menu
 dependencies[] = video_user
 
 ; custom
