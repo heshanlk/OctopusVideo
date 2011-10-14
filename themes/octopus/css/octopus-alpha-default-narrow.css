@@ -2,6 +2,7 @@
 .branding-data {
   float: left;
   width: auto;
+  padding-top: 30px;
 }
 h1.title {
   margin: 0px 0 20px;
@@ -41,6 +42,11 @@ ul#main-menu li {
 /* Block search */
 .block-search {
   width: auto;
+  padding: 10px;
+  background: #EEE;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 .block-search input.form-submit {
   margin-right: 0;
@@ -72,10 +78,17 @@ article.node-article .field-name-field-image img {
 /* List videos */
 .view-list-videos .views-row {
   float: left;
-  width: 153px;
+  width: 151px;
   margin: 10px;
+  padding: 0;
+  border: none;
 }
 
+.view-list-videos .views-field-field-video {
+  float: left;
+  width: 100%;
+  margin-right: 0px;
+}
 .view-list-videos .views-row-4,
 .view-list-videos .views-row-7,
 .view-list-videos .views-row-10,
@@ -89,7 +102,7 @@ article.node-article .field-name-field-image img {
   clear: left;
 }
 .view-list-videos .views-field-field-video img {
-  width: 153px;
+  width: 151px;
 }
 
 

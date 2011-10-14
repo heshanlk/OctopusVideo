@@ -673,6 +673,7 @@ function video_video_views_default_views() {
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Watch Later';
+  $handler->display->display_options['css_class'] = 'view-list-videos';
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     2 => 2,
@@ -1661,6 +1662,7 @@ function video_video_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['css_class'] = 'view-list-videos';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -1703,7 +1705,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_video']['type'] = 'video_formatter_thumbnail';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
-    'image_style' => '128x72',
+    'image_style' => '288x162',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;

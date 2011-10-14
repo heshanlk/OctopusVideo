@@ -271,7 +271,7 @@ li.comment_forbidden {
 .item-list .pager li /* Each page number in the pager list */ {
   margin:0 2px 0 0;
   padding:0;
-  border: 1px solid #605D5A;
+  border: 1px solid #aaa;
   float: left;
 }
 .item-list .pager .pager-current,
@@ -281,12 +281,12 @@ li.comment_forbidden {
   color: #333;
 }
 .item-list .pager .pager-current {
-  background:#230484;
-  color: #fff;
+  background:#ddd;
+  color: #000;
 }
 .item-list .pager li a:hover {
-  background:#230484;
-  color: #fff;
+  background:#ddd;
+  color: #000;
 }
 .feed-icon /* The link to the RSS or Atom feed for the current list of content */ {
 }
@@ -730,6 +730,9 @@ h2.pane-title {
 .block-search input.form-text {
   width: 90%;
   max-width: 300px;
+  background: #fff url(../images/search-icon.png) 5px center no-repeat;
+  padding-left: 25px;
+  height: 26px;
 }
 
 /* Block login */
@@ -893,6 +896,21 @@ article.node-article .field-name-field-image img {
   float: left;
   width: 100%;
 }
+.view-list-videos .views-row {
+  float: left;
+  width: 100%;
+  border-bottom: 1px dashed #aaa;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.view-list-videos .views-field-field-video {
+  float: left;
+  width: 150px;
+  margin-right: 20px;
+}
+.view-list-videos .views-field-title {
+  font-weight: bold;
+}
 /* Video detail */
 .field-name-field-category .field-item,
 .field-name-field-tags .field-item {
@@ -990,6 +1008,10 @@ div.profile .field-name-field-name {
   font-style: italic;
   margin-bottom: 0.5em;
 }
+div.profile .vertical-tabs ul.vertical-tabs-list li {
+  float: left;
+  width: 100%;
+}
 div.profile .group-user-history h3 {
   border: none;
   color: #000;
@@ -999,7 +1021,7 @@ div.profile .group-user-history h3 {
 div.profile .ui-accordion h3.ui-accordion-header {
   padding: 7px 0 7px 30px;
   margin-top: 7px;
-  background: #F1ECE3;
+  background: #EEE;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 div.profile .ui-accordion h3.h3.ui-state-active {
@@ -1011,7 +1033,7 @@ div.profile .ui-accordion .ui-accordion-content {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
-div.profile .ui-accordion .ui-accordion-content p {
+div.profile .field-type-text-with-summary p {
   margin: 15px 0;
 }
 div.profile .field {
@@ -1020,6 +1042,9 @@ div.profile .field {
 div.profile .field-item {
   padding: 0 10px 0 0;
   display: inline;
+}
+div.profile .field-type-text-with-summary .field-item {
+  padding: 0;
 }
 div.profile .field-name-field-image {
   margin: 0 20px 0 0;
@@ -1076,7 +1101,7 @@ div.profile .field-name-field-birthday .field-label {
 
 /* Typography and backgrounds for all form buttons */
 button, input[type="reset"], input[type="submit"], input[type="button"] {
-  background:#230484 none repeat scroll 0 0;
+  background:#999;
   border:none;
   color:#fff;
   padding:0.5em 1.7em;
@@ -1088,7 +1113,7 @@ button, input[type="reset"], input[type="submit"], input[type="button"] {
 }
 
 input.form-submit:hover {
-  background: #300484;
+  background: #666;
 }
 
 .container-inline div,
@@ -1199,7 +1224,7 @@ ul.quicktabs-tabs li,
 ul.quicktabs-tabs li a,
 .tabs ul.primary li a {
   color: #000;
-  background: #F1ECE3;
+  background: #EEE;
   border: 1px solid #CEC9BB;
   height: 1.8em;
   line-height: 1.9;

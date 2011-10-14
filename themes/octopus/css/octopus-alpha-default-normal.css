@@ -1,5 +1,9 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
-
+.branding-data {
+  float: left;
+  width: auto;
+  padding-top: 30px;
+}
 h1.title {
   margin: 0px 0 20px;
   font-size: 260%;
@@ -50,8 +54,16 @@ ul#main-menu li a {
 /* List videos */
 .view-list-videos .views-row {
   float: left;
-  width: 213px;
+  width: 211px;
   margin: 10px;
+  padding: 0;
+  border: none;
+}
+
+.view-list-videos .views-field-field-video {
+  float: left;
+  width: 100%;
+  margin-right: 0px;
 }
 .view-list-videos .views-row-4,
 .view-list-videos .views-row-7,
@@ -66,7 +78,7 @@ ul#main-menu li a {
   clear: left;
 }
 .view-list-videos .views-field-field-video img {
-  width: 213px;
+  width: 211px;
 }
 
 /* Feature video */
@@ -90,6 +102,14 @@ ul#main-menu li a {
 
 
 /* Block search */
+.block-search {
+  width: auto;
+  padding: 10px;
+  background: #EEE;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
 .block-search input.form-submit {
   margin-right: 0;
   padding: 0.4em 1em;
