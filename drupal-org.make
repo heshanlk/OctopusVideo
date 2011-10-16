@@ -10,7 +10,7 @@ projects[amazons3][subdir] = contrib
 projects[amazons3][version] = 1.0-beta5
 
 projects[awssdk][subdir] = contrib
-projects[awssdk][version] = 4.3
+projects[awssdk][version] = 4.4
 
 projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta2
