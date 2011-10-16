@@ -941,6 +941,44 @@ function video_core_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'video_metadata_dimensions';
+  $strongarm->value = '176x144
+352x288
+704x576
+1408x1152
+128x96
+160x120
+320x240
+640x480
+800x600
+1024x768
+1600x1200
+2048x1024
+1280x1024
+2560x2048
+5120x4096
+852x480
+1366x768
+1600x1024
+1920x1200
+2560x1600
+3200x2048
+3840x2400
+6400x4096
+7680x4800
+320x200
+640x350
+852x480
+1280x720
+1920x1080
+640x360
+320x180
+800x320';
+  $export['video_metadata_dimensions'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'video_preset';
   $strongarm->value = array(
     'Mp4' => 'Mp4',

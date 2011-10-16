@@ -427,7 +427,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = FALSE;
-  $handler->display->display_options['empty']['area']['content'] = 'No Video has been added yet, <a href="/node/add/video">click here</a> to add a new Video.';
+  $handler->display->display_options['empty']['area']['content'] = 'You have not yet featured any videos. Click the "Add to featured" link when viewing a piece of content to add it to this list.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['empty']['area']['tokenize'] = 0;
   /* Relationship: Flags: featured_videos */
@@ -461,7 +461,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_video']['type'] = 'video_formatter_player';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
-    'widthxheight' => '930x373',
+    'widthxheight' => '800x320',
   );
   $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;
   /* Field: Global: View result counter */

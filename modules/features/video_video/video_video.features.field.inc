@@ -272,7 +272,7 @@ function video_video_field_default_fields() {
           'label' => 'hidden',
           'module' => 'video',
           'settings' => array(
-            'widthxheight' => '930x373',
+            'widthxheight' => '800x320',
           ),
           'type' => 'video_formatter_player',
           'weight' => '0',
