@@ -90,6 +90,13 @@ function video_core_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_secondary_links_source';
+  $strongarm->value = '';
+  $export['menu_secondary_links_source'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_blog_pattern';
   $strongarm->value = 'blogs/[user:name]';
   $export['pathauto_blog_pattern'] = $strongarm;
@@ -340,7 +347,7 @@ function video_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'statistics_day_timestamp';
-  $strongarm->value = 1318598861;
+  $strongarm->value = 1318766374;
   $export['statistics_day_timestamp'] = $strongarm;
 
   $strongarm = new stdClass;
