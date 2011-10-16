@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_field_default_fields().
+ * Implements hook_field_default_fields().
  */
 function video_user_field_default_fields() {
   $fields = array();
@@ -842,7 +842,7 @@ function video_user_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '',
+            'image_style' => '180x295',
           ),
           'type' => 'image',
           'weight' => '1',
