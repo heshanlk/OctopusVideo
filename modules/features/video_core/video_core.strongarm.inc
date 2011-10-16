@@ -13,6 +13,20 @@ function video_core_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_default_timezone';
+  $strongarm->value = 'America/Chicago';
+  $export['date_default_timezone'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_first_day';
+  $strongarm->value = '0';
+  $export['date_first_day'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_confirm_email_at_registration';
   $strongarm->value = '1';
   $export['logintoboggan_confirm_email_at_registration'] = $strongarm;
@@ -335,6 +349,13 @@ function video_core_strongarm() {
     0 => 1,
   );
   $export['plus1_taxonomy_vocabularies'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_frontpage';
+  $strongarm->value = 'frontpage';
+  $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
