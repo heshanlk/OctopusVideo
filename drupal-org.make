@@ -34,7 +34,7 @@ projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta4
 
 projects[field_group][subdir] = contrib
-projects[field_group][version] = 1.0
+projects[field_group][version] = 1.1
 
 projects[flag][subdir] = contrib
 projects[flag][version] = 2.0-beta6
