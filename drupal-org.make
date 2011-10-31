@@ -73,7 +73,7 @@ projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta4
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta6
+projects[token][version] = 1.0-beta7
 
 projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
