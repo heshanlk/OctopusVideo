@@ -49,7 +49,7 @@ projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.2
 
 projects[og][subdir] = contrib
-projects[og][version] = 1.1
+projects[og][version] = 1.2
 
 projects[openidadmin][subdir] = contrib
 projects[openidadmin][version] = 1.0
