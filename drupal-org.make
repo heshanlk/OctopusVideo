@@ -70,7 +70,7 @@ projects[rules][subdir] = contrib
 projects[rules][version] = 2.0
 
 projects[strongarm][subdir] = contrib
-projects[strongarm][version] = 2.0-beta3
+projects[strongarm][version] = 2.0-beta4
 
 projects[token][subdir] = contrib
 projects[token][version] = 1.0-beta6
