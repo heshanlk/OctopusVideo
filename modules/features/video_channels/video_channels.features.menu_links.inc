@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_menu_default_menu_links().
+ * Implements hook_menu_default_menu_links().
  */
 function video_channels_menu_default_menu_links() {
   $menu_links = array();

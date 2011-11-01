@@ -11,6 +11,7 @@ function video_user_field_group_info() {
   $export = array();
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_activities_and_interests|user|user|default';
   $field_group->group_name = 'group_activities_and_interests';
@@ -36,6 +37,7 @@ function video_user_field_group_info() {
   $export['group_activities_and_interests|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_activities_and_interests|user|user|form';
   $field_group->group_name = 'group_activities_and_interests';
@@ -62,6 +64,7 @@ function video_user_field_group_info() {
   $export['group_activities_and_interests|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_arts_and_entertainment|user|user|default';
   $field_group->group_name = 'group_arts_and_entertainment';
@@ -90,6 +93,7 @@ function video_user_field_group_info() {
   $export['group_arts_and_entertainment|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_arts_and_entertainment|user|user|form';
   $field_group->group_name = 'group_arts_and_entertainment';
@@ -119,6 +123,7 @@ function video_user_field_group_info() {
   $export['group_arts_and_entertainment|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_basic_information|user|user|default';
   $field_group->group_name = 'group_basic_information';
@@ -148,6 +153,7 @@ function video_user_field_group_info() {
   $export['group_basic_information|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_basic_information|user|user|form';
   $field_group->group_name = 'group_basic_information';
@@ -178,6 +184,7 @@ function video_user_field_group_info() {
   $export['group_basic_information|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_channel|user|user|default';
   $field_group->group_name = 'group_channel';
@@ -202,6 +209,7 @@ function video_user_field_group_info() {
   $export['group_channel|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_general|user|user|form';
   $field_group->group_name = 'group_general';
@@ -229,6 +237,7 @@ function video_user_field_group_info() {
   $export['group_general|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_philosophy|user|user|default';
   $field_group->group_name = 'group_philosophy';
@@ -255,6 +264,7 @@ function video_user_field_group_info() {
   $export['group_philosophy|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_philosophy|user|user|form';
   $field_group->group_name = 'group_philosophy';
@@ -282,6 +292,7 @@ function video_user_field_group_info() {
   $export['group_philosophy|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_profile_picture|user|user|form';
   $field_group->group_name = 'group_profile_picture';
@@ -308,6 +319,7 @@ function video_user_field_group_info() {
   $export['group_profile_picture|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_sport|user|user|default';
   $field_group->group_name = 'group_sport';
@@ -334,6 +346,7 @@ function video_user_field_group_info() {
   $export['group_sport|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_sport|user|user|form';
   $field_group->group_name = 'group_sport';
@@ -361,6 +374,7 @@ function video_user_field_group_info() {
   $export['group_sport|user|user|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_user_history|user|user|default';
   $field_group->group_name = 'group_user_history';
@@ -381,6 +395,7 @@ function video_user_field_group_info() {
   $export['group_user_history|user|user|default'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_user_infomation|user|user|default';
   $field_group->group_name = 'group_user_infomation';

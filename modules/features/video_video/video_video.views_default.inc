@@ -680,7 +680,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -756,7 +755,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
@@ -855,8 +854,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
-  $handler->display->display_options['fields']['duration']['suffix'] = ' sec';
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
@@ -1059,8 +1056,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
-  $handler->display->display_options['fields']['duration']['suffix'] = ' sec';
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
@@ -1187,7 +1182,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['title'] = 'Related videos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
@@ -1217,7 +1212,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_video']['type'] = 'video_formatter_thumbnail';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
-    'image_style' => '96x54',
+    'image_style' => '200x104',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;
@@ -1258,8 +1253,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
-  $handler->display->display_options['fields']['duration']['suffix'] = 'sec';
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
@@ -1438,7 +1431,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_video']['type'] = 'video_formatter_thumbnail';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
-    'image_style' => '96x54',
+    'image_style' => '200x104',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;
@@ -1479,8 +1472,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
-  $handler->display->display_options['fields']['duration']['suffix'] = 'sec';
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -1647,8 +1638,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
-  $handler->display->display_options['fields']['duration']['suffix'] = ' sec';
   /* Field: Search: Score */
   $handler->display->display_options['fields']['score']['id'] = 'score';
   $handler->display->display_options['fields']['score']['table'] = 'search_index';
@@ -1872,8 +1861,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
-  $handler->display->display_options['fields']['duration']['suffix'] = ' sec';
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
@@ -2068,8 +2055,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
-  $handler->display->display_options['fields']['duration']['suffix'] = ' sec';
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
@@ -2240,14 +2225,14 @@ function video_video_views_default_views() {
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Video by user';
+  $view->human_name = 'Videos by user';
   $view->core = 7;
   $view->api_version = '3.0-alpha1';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Video by user';
+  $handler->display->display_options['title'] = 'Videos by user';
   $handler->display->display_options['css_class'] = 'view-list-videos';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -2275,22 +2260,6 @@ function video_video_views_default_views() {
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   $handler->display->display_options['relationships']['uid']['required'] = 0;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Field: Content: Video */
   $handler->display->display_options['fields']['field_video']['id'] = 'field_video';
   $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
@@ -2320,6 +2289,22 @@ function video_video_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

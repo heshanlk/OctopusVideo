@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_ctools_plugin_api().
+ * Implements hook_ctools_plugin_api().
  */
 function video_flags_ctools_plugin_api() {
   list($module, $api) = func_get_args();
@@ -15,7 +15,7 @@ function video_flags_ctools_plugin_api() {
 }
 
 /**
- * Implementation of hook_views_api().
+ * Implements hook_views_api().
  */
 function video_flags_views_api() {
   list($module, $api) = func_get_args();
@@ -25,7 +25,7 @@ function video_flags_views_api() {
 }
 
 /**
- * Implementation of hook_flag_default_flags().
+ * Implements hook_flag_default_flags().
  */
 function video_flags_flag_default_flags() {
   $flags = array();

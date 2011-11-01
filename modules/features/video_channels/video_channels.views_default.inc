@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_views_default_views().
+ * Implements hook_views_default_views().
  */
 function video_channels_views_default_views() {
   $export = array();
@@ -96,7 +96,7 @@ function video_channels_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_image']['field_api_classes'] = 0;
-  /* Field: Organic groups group: Created */
+  /* Field: OG group: Created */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'og';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -112,7 +112,7 @@ function video_channels_views_default_views() {
   $handler->display->display_options['fields']['created']['hide_empty'] = 0;
   $handler->display->display_options['fields']['created']['empty_zero'] = 0;
   $handler->display->display_options['fields']['created']['date_format'] = 'time ago';
-  /* Filter criterion: Organic groups group: State */
+  /* Filter criterion: OG group: State */
   $handler->display->display_options['filters']['state']['id'] = 'state';
   $handler->display->display_options['filters']['state']['table'] = 'og';
   $handler->display->display_options['filters']['state']['field'] = 'state';
@@ -420,7 +420,6 @@ function video_channels_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';

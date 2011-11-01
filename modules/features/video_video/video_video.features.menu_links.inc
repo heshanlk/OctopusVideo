@@ -28,25 +28,6 @@ function video_video_menu_default_menu_links() {
     'expanded' => '1',
     'weight' => '-47',
   );
-  // Exported menu link: main-menu:node/add/channel
-  $menu_links['main-menu:node/add/channel'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/add/channel',
-    'router_path' => 'node/add/channel',
-    'link_title' => 'Create a Channel',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
-    'parent_path' => 'node/add',
-  );
   // Exported menu link: main-menu:node/add/video
   $menu_links['main-menu:node/add/video'] = array(
     'menu_name' => 'main-menu',
@@ -87,7 +68,6 @@ function video_video_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('All Videos');
-  t('Create a Channel');
   t('Upload');
   t('Upload a video');
 

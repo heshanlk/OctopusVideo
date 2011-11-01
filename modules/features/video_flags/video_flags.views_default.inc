@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_views_default_views().
+ * Implements hook_views_default_views().
  */
 function video_flags_views_default_views() {
   $export = array();
@@ -184,7 +184,6 @@ function video_flags_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
@@ -436,7 +435,6 @@ function video_flags_views_default_views() {
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
   $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';

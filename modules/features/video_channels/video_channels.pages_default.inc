@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_default_page_manager_handlers().
+ * Implements hook_default_page_manager_handlers().
  */
 function video_channels_default_page_manager_handlers() {
   $export = array();
