@@ -49,7 +49,7 @@ projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.2
 
 projects[og][subdir] = contrib
-projects[og][version] = 1.2
+projects[og][version] = 1.3
 
 projects[openidadmin][subdir] = contrib
 projects[openidadmin][version] = 1.0
@@ -58,7 +58,7 @@ projects[panels][subdir] = contrib
 projects[panels][version] = 3.0-alpha3
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 1.0-rc2
+projects[pathauto][version] = 1.0
 
 projects[plus1][subdir] = contrib
 projects[plus1][version] = 1.x-dev
@@ -79,7 +79,7 @@ projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
 
 projects[video][subdir] = contrib
-projects[video][version] = 2.2
+projects[video][version] = 2.3
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
