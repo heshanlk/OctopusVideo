@@ -90,6 +90,9 @@ projects[videojs][version] = 1.10
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
 
+projects[views_slideshow][subdir] = contrib
+projects[views_slideshow][version] = 3.0
+
 projects[votingapi][subdir] = contrib
 projects[votingapi][version] = 2.4
 
@@ -111,3 +114,7 @@ libraries[video-js][download][url] = "http://videojs.com/downloads/video-js-2.0.
 libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
+
+libraries[jquery.cycle][type] = "libraries"
+libraries[jquery.cycle][download][type] = "file"
+libraries[jquery.cycle][download][url] = "https://raw.github.com/malsup/cycle/master/jquery.cycle.all.js"
