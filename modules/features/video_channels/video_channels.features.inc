@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook_ctools_plugin_api().
+ * Implementation of hook_ctools_plugin_api().
  */
 function video_channels_ctools_plugin_api() {
   list($module, $api) = func_get_args();
@@ -19,7 +19,7 @@ function video_channels_ctools_plugin_api() {
 }
 
 /**
- * Implements hook_views_api().
+ * Implementation of hook_views_api().
  */
 function video_channels_views_api() {
   list($module, $api) = func_get_args();
@@ -29,7 +29,7 @@ function video_channels_views_api() {
 }
 
 /**
- * Implements hook_node_info().
+ * Implementation of hook_node_info().
  */
 function video_channels_node_info() {
   $items = array(
