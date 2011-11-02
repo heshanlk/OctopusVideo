@@ -54,6 +54,8 @@ dependencies[] = logintoboggan_rules
 dependencies[] = field_group
 dependencies[] = date_api
 dependencies[] = date
+dependencies[] = views_slideshow
+dependencies[] = views_slideshow_cycle
 
 ; Features
 dependencies[] = video_core
