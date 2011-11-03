@@ -36,6 +36,9 @@ projects[features][version] = 1.0-beta4
 projects[field_group][subdir] = contrib
 projects[field_group][version] = 1.1
 
+projects[fivestar][subdir] = contrib
+projects[fivestar][version] = 2.0-alpha1
+
 projects[flag][subdir] = contrib
 projects[flag][version] = 2.0-beta6
 
@@ -59,9 +62,6 @@ projects[panels][version] = 3.0-alpha3
 
 projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0
-
-projects[plus1][subdir] = contrib
-projects[plus1][version] = 1.x-dev
 
 projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.0
