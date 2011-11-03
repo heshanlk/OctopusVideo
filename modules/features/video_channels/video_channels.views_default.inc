@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_views_default_views().
+ * Implements hook_views_default_views().
  */
 function video_channels_views_default_views() {
   $export = array();
@@ -96,7 +96,7 @@ function video_channels_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_image']['field_api_classes'] = 0;
-  /* Field: Organic groups group: Created */
+  /* Field: OG group: Created */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'og';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -112,7 +112,7 @@ function video_channels_views_default_views() {
   $handler->display->display_options['fields']['created']['hide_empty'] = 0;
   $handler->display->display_options['fields']['created']['empty_zero'] = 0;
   $handler->display->display_options['fields']['created']['date_format'] = 'time ago';
-  /* Filter criterion: Organic groups group: State */
+  /* Filter criterion: OG group: State */
   $handler->display->display_options['filters']['state']['id'] = 'state';
   $handler->display->display_options['filters']['state']['table'] = 'og';
   $handler->display->display_options['filters']['state']['field'] = 'state';
@@ -351,6 +351,29 @@ function video_channels_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;
+  /* Field: Video: Duration */
+  $handler->display->display_options['fields']['duration']['id'] = 'duration';
+  $handler->display->display_options['fields']['duration']['table'] = 'video_queue';
+  $handler->display->display_options['fields']['duration']['field'] = 'duration';
+  $handler->display->display_options['fields']['duration']['label'] = '';
+  $handler->display->display_options['fields']['duration']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['text'] = '<span class="video-duration">Duration : <span>[duration]<span>sec</span></span></span>';
+  $handler->display->display_options['fields']['duration']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['duration']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['duration']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['duration']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['duration']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['duration']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -397,30 +420,6 @@ function video_channels_views_default_views() {
   $handler->display->display_options['fields']['field_category']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_category']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_category']['field_api_classes'] = 0;
-  /* Field: Video: Duration */
-  $handler->display->display_options['fields']['duration']['id'] = 'duration';
-  $handler->display->display_options['fields']['duration']['table'] = 'video_queue';
-  $handler->display->display_options['fields']['duration']['field'] = 'duration';
-  $handler->display->display_options['fields']['duration']['label'] = '';
-  $handler->display->display_options['fields']['duration']['alter']['alter_text'] = 1;
-  $handler->display->display_options['fields']['duration']['alter']['text'] = '<span class="video-duration">Duration : <span>[duration]<span>sec</span></span></span>';
-  $handler->display->display_options['fields']['duration']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['duration']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['duration']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['duration']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['duration']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['duration']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['duration']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['duration']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['duration']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['duration']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['duration']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['duration']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['duration']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['duration']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['duration']['format_plural'] = 0;
   /* Field: User: Name */
   $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
   $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
@@ -454,7 +453,7 @@ function video_channels_views_default_views() {
   $handler->display->display_options['fields']['uid']['relationship'] = 'uid';
   $handler->display->display_options['fields']['uid']['label'] = '';
   $handler->display->display_options['fields']['uid']['alter']['alter_text'] = 1;
-  $handler->display->display_options['fields']['uid']['alter']['text'] = '<a href="/user/[uid]">[field_name]</a>';
+  $handler->display->display_options['fields']['uid']['alter']['text'] = 'by <a href="/user/[uid]">[field_name]</a>';
   $handler->display->display_options['fields']['uid']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['uid']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['uid']['alter']['external'] = 0;
@@ -472,6 +471,29 @@ function video_channels_views_default_views() {
   $handler->display->display_options['fields']['uid']['empty_zero'] = 0;
   $handler->display->display_options['fields']['uid']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['uid']['link_to_user'] = 1;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['created']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['created']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['created']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['created']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['created']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['created']['date_format'] = 'time ago';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

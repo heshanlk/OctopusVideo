@@ -153,6 +153,67 @@ function video_video_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-video-field_fivestar'
+  $fields['node-video-field_fivestar'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_fivestar',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'fivestar',
+      'settings' => array(
+        'axis' => 'vote',
+      ),
+      'translatable' => '0',
+      'type' => 'fivestar',
+    ),
+    'field_instance' => array(
+      'bundle' => 'video',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'fivestar',
+          'settings' => array(
+            'expose' => 1,
+            'style' => 'average',
+            'text' => 'average',
+            'widget' => array(
+              'fivestar_widget' => 'sites/all/modules/fivestar/widgets/oxygen/oxygen.css',
+            ),
+          ),
+          'type' => 'fivestar_formatter_default',
+          'weight' => '5',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_fivestar',
+      'label' => 'Rate',
+      'required' => FALSE,
+      'settings' => array(
+        'stars' => 5,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'fivestar',
+        'settings' => array(),
+        'type' => 'exposed',
+        'weight' => '31',
+      ),
+    ),
+  );
+
   // Exported field: 'node-video-field_tags'
   $fields['node-video-field_tags'] = array(
     'field_config' => array(
@@ -387,6 +448,7 @@ function video_video_field_default_fields() {
   t('Category');
   t('Description');
   t('Groups audience');
+  t('Rate');
   t('Tags');
   t('Video');
 

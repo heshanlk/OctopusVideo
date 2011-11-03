@@ -13,6 +13,13 @@ function video_core_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'fivestar_tags';
+  $strongarm->value = 'vote';
+  $export['fivestar_tags'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_confirm_email_at_registration';
   $strongarm->value = '1';
   $export['logintoboggan_confirm_email_at_registration'] = $strongarm;
@@ -112,7 +119,7 @@ function video_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_channel_pattern';
-  $strongarm->value = 'channels/[node:title]';
+  $strongarm->value = 'channel/[node:title]';
   $export['pathauto_node_channel_pattern'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -133,7 +140,7 @@ function video_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_video_pattern';
-  $strongarm->value = 'videos/[node:title]';
+  $strongarm->value = 'video/[node:title]';
   $export['pathauto_node_video_pattern'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -174,171 +181,6 @@ function video_core_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_add_css';
-  $strongarm->value = 1;
-  $export['plus1_add_css'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_add_js';
-  $strongarm->value = 1;
-  $export['plus1_add_js'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_comment_undo_vote';
-  $strongarm->value = 0;
-  $export['plus1_comment_undo_vote'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_comment_undo_vote_text';
-  $strongarm->value = '';
-  $export['plus1_comment_undo_vote_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_comment_voted_text';
-  $strongarm->value = 'You Like';
-  $export['plus1_comment_voted_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_comment_vote_text';
-  $strongarm->value = 'Like';
-  $export['plus1_comment_vote_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_comment_widget_show';
-  $strongarm->value = 0;
-  $export['plus1_comment_widget_show'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_comment_widget_weight';
-  $strongarm->value = '100';
-  $export['plus1_comment_widget_weight'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_in_full_view';
-  $strongarm->value = 1;
-  $export['plus1_node_in_full_view'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_in_teaser';
-  $strongarm->value = 0;
-  $export['plus1_node_in_teaser'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_types';
-  $strongarm->value = array(
-    0 => 'video',
-  );
-  $export['plus1_node_types'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_undo_vote';
-  $strongarm->value = 0;
-  $export['plus1_node_undo_vote'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_undo_vote_text';
-  $strongarm->value = '';
-  $export['plus1_node_undo_vote_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_voted_text';
-  $strongarm->value = 'You Like';
-  $export['plus1_node_voted_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_vote_text';
-  $strongarm->value = 'Like';
-  $export['plus1_node_vote_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_node_widget_weight';
-  $strongarm->value = '100';
-  $export['plus1_node_widget_weight'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_term_undo_vote';
-  $strongarm->value = 0;
-  $export['plus1_taxonomy_term_undo_vote'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_term_undo_vote_text';
-  $strongarm->value = '';
-  $export['plus1_taxonomy_term_undo_vote_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_term_voted_text';
-  $strongarm->value = 'You voted';
-  $export['plus1_taxonomy_term_voted_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_term_vote_text';
-  $strongarm->value = 'Vote';
-  $export['plus1_taxonomy_term_vote_text'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_term_widget_show';
-  $strongarm->value = 0;
-  $export['plus1_taxonomy_term_widget_show'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_term_widget_weight';
-  $strongarm->value = '100';
-  $export['plus1_taxonomy_term_widget_weight'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'plus1_taxonomy_vocabularies';
-  $strongarm->value = array(
-    0 => 1,
-  );
-  $export['plus1_taxonomy_vocabularies'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
   $strongarm->value = 'frontpage';
   $export['site_frontpage'] = $strongarm;
@@ -349,6 +191,13 @@ function video_core_strongarm() {
   $strongarm->name = 'statistics_count_content_views';
   $strongarm->value = 1;
   $export['statistics_count_content_views'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'statistics_day_timestamp';
+  $strongarm->value = 1320236002;
+  $export['statistics_day_timestamp'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -966,7 +815,7 @@ function video_core_strongarm() {
 1920x1080
 640x360
 320x180
-800x320';
+700x320';
   $export['video_metadata_dimensions'] = $strongarm;
 
   $strongarm = new stdClass;
