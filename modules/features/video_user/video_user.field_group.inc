@@ -223,7 +223,7 @@ function video_user_field_group_info() {
     'children' => array(
       0 => 'group_audience',
       1 => 'field_name',
-      2 => 'contact',
+      2 => 'account',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -305,7 +305,6 @@ function video_user_field_group_info() {
     'weight' => '4',
     'children' => array(
       0 => 'field_image',
-      1 => 'picture',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
