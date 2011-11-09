@@ -49,7 +49,7 @@ function video_video_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -78,7 +78,7 @@ function video_video_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '5',
+        'weight' => '2',
       ),
     ),
   );
@@ -123,11 +123,11 @@ function video_video_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -148,7 +148,7 @@ function video_video_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '3',
+        'weight' => '0',
       ),
     ),
   );
@@ -188,7 +188,7 @@ function video_video_field_default_fields() {
             ),
           ),
           'type' => 'fivestar_formatter_default',
-          'weight' => '5',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -209,7 +209,7 @@ function video_video_field_default_fields() {
         'module' => 'fivestar',
         'settings' => array(),
         'type' => 'exposed',
-        'weight' => '31',
+        'weight' => '4',
       ),
     ),
   );
@@ -258,7 +258,7 @@ function video_video_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '3',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -282,7 +282,7 @@ function video_video_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '4',
+        'weight' => '1',
       ),
     ),
   );
@@ -367,7 +367,7 @@ function video_video_field_default_fields() {
           'progress_indicator' => 'bar',
         ),
         'type' => 'video_upload',
-        'weight' => '1',
+        'weight' => '3',
       ),
     ),
   );
@@ -396,14 +396,14 @@ function video_video_field_default_fields() {
       'bundle' => 'video',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Select the channel this content should be associated with.',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'module' => 'og',
           'settings' => array(),
           'type' => 'og_list_default',
-          'weight' => '4',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -414,8 +414,8 @@ function video_video_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'group_audience',
-      'label' => 'Groups audience',
-      'required' => FALSE,
+      'label' => 'Channel',
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -432,12 +432,13 @@ function video_video_field_default_fields() {
         ),
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'og',
         'settings' => array(
           'opt_group' => 'auto',
         ),
         'type' => 'group_audience',
-        'weight' => '7',
+        'weight' => '3',
       ),
       'widget_type' => 'group_audience',
     ),
@@ -446,9 +447,10 @@ function video_video_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Category');
+  t('Channel');
   t('Description');
-  t('Groups audience');
   t('Rate');
+  t('Select the channel this content should be associated with.');
   t('Tags');
   t('Video');
 

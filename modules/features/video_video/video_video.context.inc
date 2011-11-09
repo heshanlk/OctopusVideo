@@ -101,9 +101,9 @@ function video_video_context_default_contexts() {
           'region' => 'user_menu',
           'weight' => '-10',
         ),
-        'views-featured_video-block' => array(
-          'module' => 'views',
-          'delta' => 'featured_video-block',
+        'block-1' => array(
+          'module' => 'block',
+          'delta' => 1,
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -111,7 +111,13 @@ function video_video_context_default_contexts() {
           'module' => 'views',
           'delta' => 'categories_video-block',
           'region' => 'sidebar_second',
-          'weight' => '-10',
+          'weight' => '-9',
+        ),
+        'views-featured_video-block' => array(
+          'module' => 'views',
+          'delta' => 'featured_video-block',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
         ),
         'menu-menu-footer-menu' => array(
           'module' => 'menu',

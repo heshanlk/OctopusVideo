@@ -658,7 +658,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_video']['type'] = 'video_formatter_thumbnail';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
-    'image_style' => '288x162',
+    'image_style' => '200x104',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_video']['field_api_classes'] = 0;
@@ -849,7 +849,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
@@ -1080,7 +1080,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '30';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
@@ -1134,6 +1134,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['id'] = 'duration';
   $handler->display->display_options['fields']['duration']['table'] = 'video_queue';
   $handler->display->display_options['fields']['duration']['field'] = 'duration';
+  $handler->display->display_options['fields']['duration']['label'] = '';
   $handler->display->display_options['fields']['duration']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['duration']['alter']['text'] = '<span class="video-duration">Duration : <span>[duration]<span>sec</span></span></span>';
   $handler->display->display_options['fields']['duration']['alter']['make_link'] = 0;
@@ -1147,7 +1148,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['fields']['duration']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['duration']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['duration']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['duration']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['duration']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['duration']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['duration']['hide_empty'] = 0;
   $handler->display->display_options['fields']['duration']['empty_zero'] = 0;
@@ -1277,7 +1278,7 @@ function video_video_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Related videos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';

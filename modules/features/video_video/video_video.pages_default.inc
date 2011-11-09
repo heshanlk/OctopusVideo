@@ -524,7 +524,7 @@ function video_video_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '<No Title>';
+  $display->title = 'Welcome to Octopus Video';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass;
