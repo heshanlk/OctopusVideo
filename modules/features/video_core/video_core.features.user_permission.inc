@@ -37,8 +37,6 @@ function video_core_user_default_permissions() {
     'name' => 'access statistics',
     'roles' => array(
       0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
     ),
     'module' => 'statistics',
   );
