@@ -14,7 +14,7 @@ body {
 a,
 a:link,
 a:visited {
-  color:#230484;
+  color:#0033CC;
   text-decoration: none;
 }
 a:focus,
@@ -23,7 +23,7 @@ a:active {
   color: #333;
 }
 h1, h2, h3, h4 {
-  color:#230484;
+  color:#0033CC;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 /*--- HEADINGS ---*/
@@ -67,13 +67,13 @@ article.node ul, article.node ol {
 }
 pre,
 div.code {
-  border-left: 5px solid #230484;
+  border-left: 5px solid #0033CC;
   background: #282828;
   color: #fff;
   padding: 0.2em 10px;
 }
 .highlight {
-  background: #230484;
+  background: #0033CC;
   color: #000;
 }
 #node-page-11 {
@@ -92,7 +92,7 @@ div.code {
   padding: 0px 10px;
   color: #fff;
   background: #282828;
-  border: 0px solid #230484;
+  border: 0px solid #0033CC;
 }
 
 /*------------------------------------*\
@@ -104,15 +104,18 @@ div.code {
   border-top: 1px solid #aaa;
   border-bottom: 3px solid #999;
   margin: 20px 0;
+  background: #eee;
 }
 .zone-postscript-wrapper,
 .section-footer {
   background: #ddd;
   padding-top: 20px;
+  border-top: 1px solid #999;
 }
-.zone-postscript-wrapper {
-  border-bottom: 1px solid #999;
+.section-footer {
+  padding-bottom: 20px;
 }
+
 /*------------------------------------*\
 	Pages CSS
 \*------------------------------------*/
@@ -172,7 +175,8 @@ h3.title /* Comment title */ {
   margin: 0;
 }
 /* Page and full node titles */
-h1.title {
+h1.title,
+.channel-title {
   color: #333;
   margin: 0px 0 20px;
   font-size: 180%;
@@ -248,14 +252,14 @@ ul.links li {
 li.comment-add a,
 li.comment-add a.active {
   float: right;
-  background: #230484;
+  background: #0033CC;
   color: #fff;
   padding: 0 10px;
   font-weight: bold;
 }
 li.comment-add a:hover,
 li.comment-add a.active:hover {
-  background: #230484;
+  background: #0033CC;
   color: #fff;
 }
 
@@ -263,21 +267,19 @@ li.comment_forbidden {
   float: right;
 }
 .item-list .pager /* A list of page numbers when more than 1 page of content is available */ {
-  padding: 0;
-  text-align: right;
-  float: right;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .item-list .pager li /* Each page number in the pager list */ {
   margin:0 2px 0 0;
   padding:0;
   border: 1px solid #aaa;
-  float: left;
+  display: inline-block;
 }
 .item-list .pager .pager-current,
 .item-list .pager li a {
   padding: 0px 10px;
-  float: left;
   color: #333;
 }
 .item-list .pager .pager-current {
@@ -348,7 +350,7 @@ ul#main-menu li a {
 }
 ul#main-menu li a:hover,
 ul#main-menu li a.active {
-  color: #230484;
+  color: #0033CC;
 }
 
 /* User menu */
@@ -481,8 +483,8 @@ h2.node-title /* Node title */ {
 
 .node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
   margin-left: 0;
+  width: 100%;
 }
-
 
 /* Services Links */
 .service-links ul.links {
@@ -703,7 +705,7 @@ h2.pane-title {
 }
 .block-box .block-inner h2.block-title {
   border-bottom: 1px solid #999;
-  color: #230484;
+  color: #0033CC;
   margin:0;
 }
 
@@ -762,6 +764,7 @@ h2.pane-title {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px dashed #aaa;
+  position: relative;
 }
 .view-featured-video .views-row .views-field-field-video {
   float: left;
@@ -771,7 +774,18 @@ h2.pane-title {
 .view-featured-video .views-row .views-field-title {
   font-weight: bold;
 }
-
+.view-featured-video .views-row .views-field-duration {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: #ddd;
+  font-size: 90%;
+  background: #000;
+  padding: 0 5px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
 
 /* Block list */
 .block-list ul {
@@ -798,7 +812,7 @@ h2.pane-title {
   color: #fff;
 }
 .block-list ul li a:hover {
-  color: #230484;
+  color: #0033CC;
 }
 .block-list ul li li a {
   text-indent: 15px;
@@ -902,6 +916,19 @@ article.node-article .field-name-field-image img {
   border-bottom: 1px dashed #aaa;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  position: relative;
+}
+.view-list-videos .views-field-duration {
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  font-weight: bold;
+  color: #ddd;
+  background: #000;
+  padding: 0 5px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 .view-list-videos .views-field-field-video {
   float: left;
@@ -912,10 +939,46 @@ article.node-article .field-name-field-image img {
   font-weight: bold;
 }
 /* Video detail */
-.field-name-field-category .field-item,
-.field-name-field-tags .field-item {
+.node-video .field-name-field-category .field-item,
+.node-video .field-name-field-tags .field-item,
+.node-video .field-name-group-audience .field-item {
   display: inline-block;
   padding: 0 5px;
+}
+.node-video .field-name-field-fivestar {
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+}
+.node-video form.fivestar-widget {
+  float: right;
+}
+.node-video .field-name-field-fivestar .fivestar-widget,
+.node-video .field-name-field-fivestar .description {
+  display: inline-block;
+}
+.node-video .field-name-field-fivestar .fivestar-widget {
+  padding-right: 10px;
+}
+.node-video .field-name-field-fivestar .description {
+}
+.node-video ul.links {
+  float: left;
+  width: 100%;
+}
+.node-video ul.links li.flag-featured_videos,
+.node-video ul.links li.flag-watch_later {
+  float: left;
+  padding: 0px 10px;
+  border: 1px solid #CEC9BB;
+  background: #eee;
+  margin-right: 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.node-video ul.links li.statistics_counter {
+  float: left;
 }
 
 /* Block recent comments */
@@ -923,7 +986,7 @@ article.node-article .field-name-field-image img {
   color: #000;
 }
 .block-comments-recent-block li a:hover {
-  color: #230484;
+  color: #0033CC;
 }
 .block-comments-recent-block li .views-field-timestamp {
   color: #aaa;
@@ -956,7 +1019,23 @@ article.node-article .field-name-field-image img {
 .view-frontpage-video .views-field-comment-count {
   float: right;
 }
-
+.view-frontpage-video .views-field-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-weight: bold;
+  color: #ddd;
+  z-index: 100;
+  font-size: 120%;
+  background: #000;
+  padding: 0 5px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.view-frontpage-video .views-slideshow-cycle-main-frame-row-item .views-field-field-video img {
+  width: 100%;
+}
 /* View list chanels */
 .view-og-list .views-row {
   float: left;
@@ -975,11 +1054,23 @@ article.node-article .field-name-field-image img {
 
 /* Block copyright */
 .block-copyright,
-.block-logo-footer,
-#block-block-1 {
+.block-logo-footer {
   text-align: center;
 }
 
+/* List user */
+.view-og-members table.views-view-grid,
+.view-taxonomy-users  table.views-view-grid{
+  margin-bottom: 0;
+}
+.view-og-members table.views-view-grid tr,
+.view-taxonomy-users  table.views-view-grid tr {
+  background: none;
+}
+.view-og-members table.views-view-grid tr td,
+.view-taxonomy-users  table.views-view-grid tr td {
+  border: none;
+}
 /* Contact form */
 .contact-form .form-item {
   padding: 10px 10px;
@@ -1011,6 +1102,7 @@ div.profile .field-name-field-name {
 div.profile .vertical-tabs ul.vertical-tabs-list li {
   float: left;
   width: 100%;
+  list-style: none;
 }
 div.profile .group-user-history h3 {
   border: none;
@@ -1025,7 +1117,7 @@ div.profile .ui-accordion h3.ui-accordion-header {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 div.profile .ui-accordion h3.h3.ui-state-active {
-  color: #230484;
+  color: #0033CC;
   font-weight: bold;
 }
 div.profile .ui-accordion .ui-accordion-content {

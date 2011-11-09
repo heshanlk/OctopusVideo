@@ -41,6 +41,11 @@ h1.title {
   width: 200px;
 }
 
+.view-list-videos .views-field-duration {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+}
 /* List chanel */
 .view-og-list .views-row {
   width: 273px;

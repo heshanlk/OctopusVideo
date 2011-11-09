@@ -2,9 +2,9 @@
 .branding-data {
   float: left;
   width: auto;
-  padding-top: 30px;
 }
-h1.title {
+h1.title,
+.channel-title  {
   margin: 0px 0 20px;
   font-size: 200%;
   line-height:1;
@@ -43,6 +43,7 @@ ul#main-menu li {
 .block-search {
   width: auto;
   padding: 10px;
+  margin-top: 40px;
   background: #EEE;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -89,6 +90,11 @@ article.node-article .field-name-field-image img {
   width: 100%;
   margin-right: 0px;
 }
+.view-list-videos .views-field-duration {
+  position: absolute;
+  top: 50px;
+  left: 85px;
+}
 .view-list-videos .views-row-4,
 .view-list-videos .views-row-7,
 .view-list-videos .views-row-10,
@@ -115,7 +121,11 @@ article.node-article .field-name-field-image img {
 .view-featured-video .views-row .views-field-field-video img {
   width: 160px;
 }
-
+.view-featured-video .views-row .views-field-duration {
+  position: absolute;
+  top: 62px;
+  left: 95px;
+}
 
 /* List chanel */
 .view-og-list .views-row {
@@ -128,8 +138,7 @@ article.node-article .field-name-field-image img {
 
 /* Block copyright */
 .block-copyright,
-.block-logo-footer,
-#block-block-1 {
+.block-logo-footer {
   text-align: right;
 }
 
