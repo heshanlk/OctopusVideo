@@ -86,7 +86,7 @@ function video_flags_flag_default_flags() {
         0 => '2',
       ),
     ),
-    'show_on_profile' => 1,
+    'show_on_profile' => 0,
     'access_uid' => 'others',
     'module' => 'video_flags',
     'locked' => array(

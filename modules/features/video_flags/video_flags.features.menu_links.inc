@@ -16,8 +16,12 @@ function video_flags_menu_default_menu_links() {
     'link_path' => 'watch-later',
     'router_path' => 'watch-later',
     'link_title' => 'Watch Later',
-    'options' => array(),
-    'module' => 'system',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
