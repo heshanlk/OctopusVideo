@@ -101,12 +101,6 @@ function video_video_context_default_contexts() {
           'region' => 'user_menu',
           'weight' => '-10',
         ),
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => 1,
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
         'views-categories_video-block' => array(
           'module' => 'views',
           'delta' => 'categories_video-block',
