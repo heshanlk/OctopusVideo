@@ -6,6 +6,17 @@
  */
 
 /**
+ * Implements hook_preprocess_page().
+ */
+function octopus_helper_preprocess_page(&$variables) {
+  if (isset($variables['node']) && $variables['node']->type == 'video') {
+    // Add js
+    drupal_add_js(drupal_get_path('module', 'octopus_helper') . '/js/octopus_helper.preprocess.js');
+    $variables['scripts'] = drupal_get_js();
+  }
+}
+
+/**
  * Implements hook_menu_alter().
  */
 function octopus_helper_menu_alter(&$items) {
