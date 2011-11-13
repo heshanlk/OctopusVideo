@@ -304,9 +304,12 @@ img.right  { margin:0 0 0 20px; }
 
 /*--- FLASH/VIDEO ---*/
 object,
-embed,
-video{
+embed{
   max-width:100%;
+}
+video { 
+  width: 100% !important; 
+  height: auto !important; 
 }
 
 /*------------------------------------*\
@@ -412,10 +415,10 @@ Assuming IE has an 'implied' colspan of one on cells without an explicit colspan
 See http://jsfiddle.net/csswizardry/UJJay/
 */
 [colspan="1"]{
-    text-align:left;
+  text-align:left;
 }
 [rowspan="1"]{
-    vertical-align:top;
+  vertical-align:top;
 }
 tbody tr:nth-of-type(odd){
   background:rgba(0,0,0,0.05);
@@ -453,40 +456,40 @@ Some not-too-pretty and insemantic classes to do odd jobs.
 
 
 @media (max-width: 720px){
-/*------------------------------------*\
-  MAIN
-\*------------------------------------*/
-html{
-}
-body{
-  -webkit-text-size-adjust:none;
-}
+  /*------------------------------------*\
+    MAIN
+  \*------------------------------------*/
+  html{
+  }
+  body{
+    -webkit-text-size-adjust:none;
+  }
 
-/*------------------------------------*\
-  TYPE
-\*------------------------------------*/
-/*--- LISTS ---*/
-ul,
-ol{
-  margin:0 0 1.5em 25px;
-}
-ul ul,
-ol ol,
-ul ol,
-ol ul{
-  /* Let’s take care of lists in lists */
-  margin:0 0 0 25px;
-}
-dd{
-  margin-left:25px;
-}
+  /*------------------------------------*\
+    TYPE
+  \*------------------------------------*/
+  /*--- LISTS ---*/
+  ul,
+  ol{
+    margin:0 0 1.5em 25px;
+  }
+  ul ul,
+  ol ol,
+  ul ol,
+  ol ul{
+    /* Let’s take care of lists in lists */
+    margin:0 0 0 25px;
+  }
+  dd{
+    margin-left:25px;
+  }
 
 
-/*------------------------------------*\
-  IMAGES
-\*------------------------------------*/
-img.left,
-img.right  { max-width:50%; height:auto; }
+  /*------------------------------------*\
+    IMAGES
+  \*------------------------------------*/
+  img.left,
+  img.right  { max-width:50%; height:auto; }
 }
 /*--- END MOBILE ---*/
 
@@ -499,35 +502,35 @@ Good ol’ fashioned paper...
 */
 
 @media print{
-/*------------------------------------*\
-  MAIN
-\*------------------------------------*/
-/*
-Give everything some decent contrast.
-*/
-*{
-  background:#fff;
-  color:#000;
-  text-shadow:none!important;
-}
-/*
-Set a nice measure and take the font down to print-acceptable sizes.
-*/
-body{
-  font-size:0.75em; /* 12px (if base font-size was 16px) */
-}
-/*
-Don’t let images break anything.
-*/
-img{
-  max-width:100%;
-  height:auto;
-}
-/*
-Try to avoid tables spanning multiple pages. Not failsafe, but a good start.
-*/
-table{
-  page-break-before:always;
-}
+  /*------------------------------------*\
+    MAIN
+  \*------------------------------------*/
+  /*
+  Give everything some decent contrast.
+  */
+  *{
+    background:#fff;
+    color:#000;
+    text-shadow:none!important;
+  }
+  /*
+  Set a nice measure and take the font down to print-acceptable sizes.
+  */
+  body{
+    font-size:0.75em; /* 12px (if base font-size was 16px) */
+  }
+  /*
+  Don’t let images break anything.
+  */
+  img{
+    max-width:100%;
+    height:auto;
+  }
+  /*
+  Try to avoid tables spanning multiple pages. Not failsafe, but a good start.
+  */
+  table{
+    page-break-before:always;
+  }
 }
 /*--- END PRINT ---*/
