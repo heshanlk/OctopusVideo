@@ -13,223 +13,9 @@ function video_core_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_action';
-  $strongarm->value = 'like';
-  $export['fblikebutton_action'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_block_url';
-  $strongarm->value = 'http://demo.octopusvideo.org';
-  $export['fblikebutton_block_url'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_action';
-  $strongarm->value = 'like';
-  $export['fblikebutton_bl_action'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_color_scheme';
-  $strongarm->value = 'light';
-  $export['fblikebutton_bl_color_scheme'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_font';
-  $strongarm->value = 'arial';
-  $export['fblikebutton_bl_font'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_iframe_css';
-  $strongarm->value = '';
-  $export['fblikebutton_bl_iframe_css'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_iframe_height';
-  $strongarm->value = '80';
-  $export['fblikebutton_bl_iframe_height'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_iframe_width';
-  $strongarm->value = '450';
-  $export['fblikebutton_bl_iframe_width'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_language';
-  $strongarm->value = 'en_US';
-  $export['fblikebutton_bl_language'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_layout';
-  $strongarm->value = 'button_count';
-  $export['fblikebutton_bl_layout'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_bl_show_faces';
-  $strongarm->value = 'show';
-  $export['fblikebutton_bl_show_faces'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_color_scheme';
-  $strongarm->value = 'light';
-  $export['fblikebutton_color_scheme'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_font';
-  $strongarm->value = 'arial';
-  $export['fblikebutton_font'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_iframe_css';
-  $strongarm->value = 'float: right;';
-  $export['fblikebutton_iframe_css'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_iframe_height';
-  $strongarm->value = '20';
-  $export['fblikebutton_iframe_height'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_iframe_width';
-  $strongarm->value = '100';
-  $export['fblikebutton_iframe_width'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_language';
-  $strongarm->value = 'en_US';
-  $export['fblikebutton_language'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_layout';
-  $strongarm->value = 'button_count';
-  $export['fblikebutton_layout'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_node_types';
-  $strongarm->value = array(
-    'video' => 'video',
-    'channel' => 0,
-  );
-  $export['fblikebutton_node_types'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_showonteasers';
-  $strongarm->value = '0';
-  $export['fblikebutton_showonteasers'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_show_faces';
-  $strongarm->value = 'hide';
-  $export['fblikebutton_show_faces'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'fblikebutton_weight';
-  $strongarm->value = '50';
-  $export['fblikebutton_weight'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'fivestar_tags';
   $strongarm->value = 'vote';
   $export['fivestar_tags'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'google_plusone_advanced_settings';
-  $strongarm->value = array(
-    'lang' => '',
-    'scope' => 'page_bottom',
-    'async' => 1,
-    'parsetags' => 'onload',
-  );
-  $export['google_plusone_advanced_settings'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'google_plusone_button_settings';
-  $strongarm->value = array(
-    'annotation' => 'bubble',
-    'width' => '250',
-    'size' => 'medium',
-    'css' => 'margin: 0 1em 1em 1em;float:right',
-    'syntax' => 'g:plusone',
-  );
-  $export['google_plusone_button_settings'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'google_plusone_node_location';
-  $strongarm->value = array(
-    'full' => 'full',
-    'teaser' => 0,
-    'rss' => 0,
-    'search_index' => 0,
-    'search_result' => 0,
-    'token' => 0,
-    'links' => 0,
-  );
-  $export['google_plusone_node_location'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'google_plusone_node_types';
-  $strongarm->value = array(
-    'video' => 'video',
-    'channel' => 0,
-  );
-  $export['google_plusone_node_types'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'google_plusone_weight';
-  $strongarm->value = '50';
-  $export['google_plusone_weight'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -514,14 +300,14 @@ function video_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'video_autobuffering';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['video_autobuffering'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'video_autoplay';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['video_autoplay'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -801,7 +587,7 @@ function video_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_mp4';
-  $strongarm->value = 'video_play_flv';
+  $strongarm->value = 'video_play_html5';
   $export['video_extension_mp4'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -1021,7 +807,8 @@ function video_core_strongarm() {
 1920x1080
 640x360
 320x180
-700x320';
+700x320
+700x395';
   $export['video_metadata_dimensions'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -1030,6 +817,7 @@ function video_core_strongarm() {
   $strongarm->name = 'video_preset';
   $strongarm->value = array(
     'Mp4' => 'Mp4',
+    'Ogv' => 'Ogv',
     'FLV' => 0,
     'Ogg' => 0,
     'WebM' => 0,
