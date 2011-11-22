@@ -304,13 +304,16 @@ img.right  { margin:0 0 0 20px; }
 
 /*--- FLASH/VIDEO ---*/
 object,
-embed{
+embed,
+video {
   max-width:100%;
 }
+/*
 video { 
   width: 100% !important; 
   height: auto !important; 
 }
+*/
 
 /*------------------------------------*\
   FORMS
