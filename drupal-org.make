@@ -70,7 +70,7 @@ projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0
 
 projects[quicktabs][subdir] = contrib
-projects[quicktabs][version] = 3.0
+projects[quicktabs][version] = 3.1
 
 projects[rules][subdir] = contrib
 projects[rules][version] = 2.0
@@ -85,7 +85,7 @@ projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
 
 projects[video][subdir] = contrib
-projects[video][version] = 2.3
+projects[video][version] = 2.4
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
@@ -94,7 +94,7 @@ projects[videojs][subdir] = contrib
 projects[videojs][version] = 1.10
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.0-rc1
+projects[views][version] = 3.0-rc3
 
 projects[views_slideshow][subdir] = contrib
 projects[views_slideshow][version] = 3.0
