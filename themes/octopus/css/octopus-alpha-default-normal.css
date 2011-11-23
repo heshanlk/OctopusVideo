@@ -87,15 +87,15 @@ ul#main-menu li a {
 }
 
 /* Feature video */
-.view-featured-video .views-row .views-field-field-video {
+.block-views-featured-video-block .views-row .views-field-field-video {
     float: left;
     margin-right: 20px;
     width: 128px;
 }
-.view-featured-video .views-row .views-field-field-video img {
+.block-views-featured-video-block .views-row .views-field-field-video img {
   width: 128px;
 }
-.view-featured-video .views-row .views-field-duration {
+.block-views-featured-video-block .views-row .views-field-duration {
   position: absolute;
   top: 45px;
   left: 65px;
