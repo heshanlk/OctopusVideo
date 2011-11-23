@@ -277,13 +277,14 @@ li.comment_forbidden {
   border: 1px solid #aaa;
   display: inline-block;
 }
-.item-list .pager .pager-current,
 .item-list .pager li a {
   padding: 0px 10px;
   color: #333;
+  display: block;
 }
 .item-list .pager .pager-current {
   background:#ddd;
+  padding: 0px 10px;
   color: #000;
 }
 .item-list .pager li a:hover {
@@ -758,7 +759,7 @@ h2.pane-title {
 }
 
 /* Block featured video */
-.view-featured-video .views-row {
+.block-views-featured-video-block .views-row {
   float: left;
   width: 100%;
   padding-bottom: 10px;
@@ -766,15 +767,15 @@ h2.pane-title {
   border-bottom: 1px dashed #aaa;
   position: relative;
 }
-.view-featured-video .views-row .views-field-field-video {
+.block-views-featured-video-block .views-row .views-field-field-video {
   float: left;
   width: 128px;
   margin-right: 20px;
 }
-.view-featured-video .views-row .views-field-title {
+.block-views-featured-video-block .views-row .views-field-title {
   font-weight: bold;
 }
-.view-featured-video .views-row .views-field-duration {
+.block-views-featured-video-block .views-row .views-field-duration {
   position: absolute;
   top: 45px;
   left: 65px;
