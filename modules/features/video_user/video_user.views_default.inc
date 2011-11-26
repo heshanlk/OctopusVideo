@@ -17,7 +17,7 @@ function video_user_views_default_views() {
   $view->base_table = 'users';
   $view->human_name = 'Taxonomy users';
   $view->core = 7;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
@@ -36,7 +36,7 @@ function video_user_views_default_views() {
   $handler->display->display_options['relationships']['field_books_tid']['id'] = 'field_books_tid';
   $handler->display->display_options['relationships']['field_books_tid']['table'] = 'field_data_field_books';
   $handler->display->display_options['relationships']['field_books_tid']['field'] = 'field_books_tid';
-  /* Field: Field: Picture */
+  /* Field: User: Picture */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';

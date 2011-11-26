@@ -32,6 +32,15 @@ function video_core_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: access fblikebutton
+  $permissions['access fblikebutton'] = array(
+    'name' => 'access fblikebutton',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'fblikebutton',
+  );
+
   // Exported permission: access statistics
   $permissions['access statistics'] = array(
     'name' => 'access statistics',
@@ -83,6 +92,15 @@ function video_core_user_default_permissions() {
       2 => 'authenticated user',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: view google plusone
+  $permissions['view google plusone'] = array(
+    'name' => 'view google plusone',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'google_plusone',
   );
 
   // Exported permission: view own unpublished content
