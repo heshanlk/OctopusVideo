@@ -70,7 +70,7 @@ projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0
 
 projects[quicktabs][subdir] = contrib
-projects[quicktabs][version] = 3.1
+projects[quicktabs][version] = 3.2
 
 projects[rules][subdir] = contrib
 projects[rules][version] = 2.0
