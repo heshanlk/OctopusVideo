@@ -52,9 +52,9 @@ zones[postscript] = Postscript
 zones[footer] = Footer
 
 ; OPTIONAL STYLESHEETS
-css[octopus-reset.css][name] = Octopus reset styles
-css[octopus-reset.css][description] = This file holds all the Reset CSS of conch theme.
-css[octopus-reset.css][options][weight] = 9
+css[octopus_video-reset.css][name] = Octopus reset styles
+css[octopus_video-reset.css][description] = This file holds all the Reset CSS of conch theme.
+css[octopus_video-reset.css][options][weight] = 9
 
 css[global.css][name] = Your custom global styles
 css[global.css][description] = This file holds all the globally active custom CSS of Octopus theme.

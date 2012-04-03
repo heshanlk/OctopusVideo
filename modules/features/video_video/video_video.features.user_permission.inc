@@ -103,17 +103,6 @@ function video_video_user_default_permissions() {
     'module' => 'video',
   );
 
-  // Exported permission: transocder postback
-  $permissions['transocder postback'] = array(
-    'name' => 'transocder postback',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
-    ),
-    'module' => 'video',
-  );
-
   // Exported permission: use default thumb
   $permissions['use default thumb'] = array(
     'name' => 'use default thumb',
