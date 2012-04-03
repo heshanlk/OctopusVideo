@@ -4,14 +4,17 @@
  * Implements hook_install_tasks().
  */
 function octopus_video_install_tasks($install_state) {
-  $tasks['create_categories_form'] = array(
-    'display_name' => st('Set up categories'),
-    'type' => 'form'
-  );
-  $tasks['configure_zencoder_form'] = array(
-    'display_name' => st('Configure Zencoder'),
-    'type' => 'form',
-  );
+  $tasks = array();
+  if (!defined('DRUSH_BASE_PATH')) {
+    $tasks['create_categories_form'] = array(
+      'display_name' => st('Set up categories'),
+      'type' => 'form'
+    );
+    $tasks['configure_zencoder_form'] = array(
+      'display_name' => st('Configure Zencoder'),
+      'type' => 'form',
+    );
+  }
   return $tasks;
 }
 
