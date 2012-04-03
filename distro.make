@@ -33,6 +33,6 @@ projects[drupal][patch][1067470] = http://drupal.org/files/issues/managed_file_1
 ; http://drupal.org/node/935208
 ; projects[drupal][patch][935208] = http://drupal.org/files/issues/935208-uploadprogress-bar-fix-67.patch
 
-projects[octopus][type] = profile
-projects[octopus][download][type] = git
-projects[octopus][download][url] = https://github.com/heidisoft/Octopus.git
+projects[octopus_video][type] = profile
+projects[octopus_video][download][type] = git
+projects[octopus_video][download][url] = https://github.com/heidisoft/Octopus.git

@@ -1,7 +1,7 @@
-name = Octopus
+name = Octopus Video
 core = 7.x
 description = Social video platform.
-files[] = octopus.profile
+files[] = octopus_video.profile
 
 ; Core
 dependencies[] = comment
@@ -60,11 +60,11 @@ dependencies[] = views_slideshow_cycle
 dependencies[] = votingapi
 
 ; Features
-dependencies[] = video_core
-dependencies[] = video_video
+dependencies[]  = video_core
+dependencies[]  = video_video
 ;dependencies[] = video_channels
-dependencies[] = video_flags
-dependencies[] = video_user
+dependencies[]  = video_flags
+dependencies[]  = video_user
 
 ; custom
 dependencies[] = jwplayer

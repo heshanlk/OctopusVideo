@@ -3,7 +3,7 @@
 /**
  * Implements hook_install_tasks().
  */
-function octopus_install_tasks($install_state) {
+function octopus_video_install_tasks($install_state) {
   $tasks['create_categories_form'] = array(
     'display_name' => st('Set up categories'),
     'type' => 'form'
@@ -152,7 +152,7 @@ function configure_zencoder_form_submit($form, $form_state) {
  *
  * Allows the profile to alter the site configuration form.
  */
-function octopus_form_install_configure_form_alter(&$form, $form_state) {
+function octopus_video_form_install_configure_form_alter(&$form, $form_state) {
   $form['site_information']['site_name']['#default_value'] = 'Octopus';
   $form['site_information']['site_mail']['#default_value'] = 'admin@' . $_SERVER['HTTP_HOST'];
   $form['admin_account']['account']['name']['#default_value'] = 'admin';

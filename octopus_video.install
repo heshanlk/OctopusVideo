@@ -3,10 +3,10 @@
 /**
  * Implements hook_install().
  */
-function octopus_install() {
+function octopus_video_install() {
   // set themes
-  theme_enable(array('octopus'));
-  variable_set('theme_default', 'octopus');
+  theme_enable(array('octopus_video'));
+  variable_set('theme_default', 'octopus_video');
   variable_set('admin_theme', 'seven');
   // Add text formats.
   $filtered_html_format = array(
