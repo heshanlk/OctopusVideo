@@ -58,6 +58,7 @@ dependencies[] = views_content
 dependencies[] = views_slideshow
 dependencies[] = views_slideshow_cycle
 dependencies[] = votingapi
+dependencies[] = zencoderapi
 
 ; Features
 dependencies[]  = video_core

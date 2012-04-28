@@ -121,6 +121,12 @@ libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 
+;jquery cycle
 libraries[jquery.cycle][type] = "libraries"
 libraries[jquery.cycle][download][type] = "file"
 libraries[jquery.cycle][download][url] = "https://raw.github.com/malsup/cycle/master/jquery.cycle.all.js"
+
+;zencoder
+libraries[zencoder][download][type] = git
+libraries[zencoder][download][url] = https://github.com/zencoder/zencoder-php.git
+libraries[zencoder][download][tag] = v2.0.2
