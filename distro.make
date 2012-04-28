@@ -36,3 +36,4 @@ projects[drupal][patch][1067470] = http://drupal.org/files/issues/managed_file_1
 projects[octopus_video][type] = profile
 projects[octopus_video][download][type] = git
 projects[octopus_video][download][url] = https://github.com/heidisoft/Octopus.git
+projects[octopus_video][download][tag] = 1.0-alpha6
