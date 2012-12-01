@@ -15,7 +15,7 @@ projects[drupal][version] = "7.17"
 
 ; Make system directories configurable to allow tests in profiles/[name]/modules to be run.
 ; http://drupal.org/node/911354
-projects[drupal][patch][911354] = http://drupal.org/files/issues/911354.43.patch
+; projects[drupal][patch][911354] = http://drupal.org/files/issues/911354.43.patch
 
 ; Missing drupal_alter() for text formats and filters
 ; http://drupal.org/node/903730
