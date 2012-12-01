@@ -16,7 +16,7 @@ projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta2
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.0
+projects[ctools][version] = 1.2
 
 projects[date][subdir] = contrib
 projects[date][version] = 2.3
@@ -25,7 +25,7 @@ projects[devel][subdir] = contrib
 projects[devel][version] = 1.2
 
 projects[diff][subdir] = contrib
-projects[diff][version] = 2.0
+projects[diff][version] = 3.2
 
 projects[entity][subdir] = contrib
 projects[entity][version] = 1.0-rc1
@@ -58,7 +58,7 @@ projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.3
 
 projects[og][subdir] = contrib
-projects[og][version] = 1.3
+projects[og][version] = 1.5
 
 projects[openidadmin][subdir] = contrib
 projects[openidadmin][version] = 1.0
@@ -79,7 +79,7 @@ projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-rc1
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta7
+projects[token][version] = 1.4
 
 projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
