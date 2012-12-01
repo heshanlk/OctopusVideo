@@ -4,37 +4,37 @@ core = 7.x
 ; Modules =====================================================================
 
 projects[admin_menu][subdir] = contrib
-projects[admin_menu][version] = 3.0-rc1
+projects[admin_menu][version] = 3.0-rc3
 
 projects[amazons3][subdir] = contrib
-projects[amazons3][version] = 1.0-beta6
+projects[amazons3][version] = 1.0-beta7
 
 projects[awssdk][subdir] = contrib
-projects[awssdk][version] = 4.8
+projects[awssdk][version] = 5.4
 
 projects[context][subdir] = contrib
-projects[context][version] = 3.0-beta2
+projects[context][version] = 3.0-beta4
 
 projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.2
 
 projects[date][subdir] = contrib
-projects[date][version] = 2.3
+projects[date][version] = 2.6
 
 projects[devel][subdir] = contrib
-projects[devel][version] = 1.2
+projects[devel][version] = 1.3
 
 projects[diff][subdir] = contrib
 projects[diff][version] = 3.2
 
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.0-rc1
+projects[entity][version] = 1.0-rc3
 
 projects[fblikebutton][subdir] = contrib
-projects[fblikebutton][version] = 2.0
+projects[fblikebutton][version] = 2.3
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-rc1
+projects[features][version] = 1.0
 
 projects[field_group][subdir] = contrib
 projects[field_group][version] = 1.1
@@ -43,7 +43,7 @@ projects[fivestar][subdir] = contrib
 projects[fivestar][version] = 2.0-alpha2
 
 projects[flag][subdir] = contrib
-projects[flag][version] = 2.0-beta6
+projects[flag][version] = 2.0
 
 projects[flowplayer][subdir] = contrib
 projects[flowplayer][version] = 1.0-alpha1
@@ -52,7 +52,7 @@ projects[google_plusone][subdir] = contrib
 projects[google_plusone][version] = 1.3
 
 projects[libraries][subdir] = contrib
-projects[libraries][version] = 2.0-alpha2
+projects[libraries][version] = 2.0
 
 projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.3
@@ -64,19 +64,19 @@ projects[openidadmin][subdir] = contrib
 projects[openidadmin][version] = 1.0
 
 projects[panels][subdir] = contrib
-projects[panels][version] = 3.2
+projects[panels][version] = 3.3
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 1.0
+projects[pathauto][version] = 1.2
 
 projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.4
 
 projects[rules][subdir] = contrib
-projects[rules][version] = 2.1
+projects[rules][version] = 2.2
 
 projects[strongarm][subdir] = contrib
-projects[strongarm][version] = 2.0-rc1
+projects[strongarm][version] = 2.0
 
 projects[token][subdir] = contrib
 projects[token][version] = 1.4
@@ -85,22 +85,22 @@ projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
 
 projects[video][subdir] = contrib
-projects[video][version] = 2.5
+projects[video][version] = 2.8
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
 
 projects[videojs][subdir] = contrib
-projects[videojs][version] = 2.0
+projects[videojs][version] = 2.2
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.3
+projects[views][version] = 3.5
 
 projects[views_slideshow][subdir] = contrib
 projects[views_slideshow][version] = 3.0
 
 projects[votingapi][subdir] = contrib
-projects[votingapi][version] = 2.6
+projects[votingapi][version] = 2.10
 
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.1
