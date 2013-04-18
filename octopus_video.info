@@ -67,4 +67,4 @@ dependencies[] = zencoderapi
 ; dependencies[]  = video_user
 
 ; custom
-dependencies[] = octopus_helper
+; dependencies[] = octopus_helper
