@@ -173,6 +173,7 @@ function configure_zencoder_form_validate($form, $form_state) {
  */
 function configure_zencoder_form_submit($form, $form_state) {
   $transcodername = $form_state['values']['video_convertor'];
+  variable_set('video_convertor', $transcodername);
   if ($transcodername == 'TranscoderAbstractionFactoryZencoder') {
     $amazons3_key    = $form_state['values']['amazons3_key'];
     $amazons3_secret = $form_state['values']['amazons3_secret'];
@@ -196,4 +197,3 @@ function octopus_video_form_install_configure_form_alter(&$form, $form_state) {
   $form['admin_account']['account']['name']['#default_value'] = 'admin';
   $form['admin_account']['account']['mail']['#default_value'] = 'admin@' . $_SERVER['HTTP_HOST'];
 }
-
