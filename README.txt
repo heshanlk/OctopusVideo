@@ -15,7 +15,7 @@ make use of Octopus:
 Getting started
 ---------------
 Octopus video for 7.x requires several patches to be applied to Drupal core. It
-provides a `drupal-org-core.make` file for building a full Drupal distro including core
+provides a `build-octopus-video.make` file for building a full Drupal distro including core
 patches as well as a copy of the `Octopus video` install profile.
 
 1. Grab the `build-octopus-video.make.make` file from Octopus Video and run:

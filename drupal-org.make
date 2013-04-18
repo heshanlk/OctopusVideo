@@ -4,7 +4,7 @@ core = 7.x
 ; Modules =====================================================================
 
 projects[admin_menu][subdir] = contrib
-projects[admin_menu][version] = 3.0-rc3
+projects[admin_menu][version] = 3.0-rc4
 
 projects[amazons3][subdir] = contrib
 projects[amazons3][version] = 1.0-beta7
@@ -13,10 +13,10 @@ projects[awssdk][subdir] = contrib
 projects[awssdk][version] = 5.4
 
 projects[context][subdir] = contrib
-projects[context][version] = 3.0-beta4
+projects[context][version] = 3.0-beta6
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.2
+projects[ctools][version] = 1.3
 
 projects[date][subdir] = contrib
 projects[date][version] = 2.6
@@ -28,7 +28,7 @@ projects[diff][subdir] = contrib
 projects[diff][version] = 3.2
 
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.0-rc3
+projects[entity][version] = 1.0
 
 projects[fblikebutton][subdir] = contrib
 projects[fblikebutton][version] = 2.3
@@ -52,13 +52,13 @@ projects[google_plusone][subdir] = contrib
 projects[google_plusone][version] = 1.3
 
 projects[libraries][subdir] = contrib
-projects[libraries][version] = 2.0
+projects[libraries][version] = 2.1
 
 projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.3
 
 projects[og][subdir] = contrib
-projects[og][version] = 1.5
+projects[og][version] = 2.1
 
 projects[openidadmin][subdir] = contrib
 projects[openidadmin][version] = 1.0
@@ -73,19 +73,19 @@ projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.4
 
 projects[rules][subdir] = contrib
-projects[rules][version] = 2.2
+projects[rules][version] = 2.3
 
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.4
+projects[token][version] = 1.5
 
 projects[tweetbutton][subdir] = contrib
 projects[tweetbutton][version] = 1.1
 
 projects[video][subdir] = contrib
-projects[video][version] = 2.8
+projects[video][version] = 2.9
 
 projects[video_presets][subdir] = contrib
 projects[video_presets][version] = 2.1
@@ -100,7 +100,7 @@ projects[views_slideshow][subdir] = contrib
 projects[views_slideshow][version] = 3.0
 
 projects[votingapi][subdir] = contrib
-projects[votingapi][version] = 2.10
+projects[votingapi][version] = 2.11
 
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.1
