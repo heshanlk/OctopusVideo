@@ -1,4 +1,4 @@
-name = Octopus Video
+name = Octopus Video Theme
 description = Octopus theme created and design by <a href="http://symphonythemes.com">SymphonyThemes</a>
 core = 7.x
 engine = phptemplate
@@ -435,3 +435,9 @@ settings[alpha_region_footer_second_position] = '0'
 settings[alpha_region_footer_second_css] = ''
 settings[alpha_region_footer_second_equal_height_element] = '0'
 settings[alpha_region_footer_second_equal_height_container] = '0'
+
+; Information added by drush on 2013-04-17
+version = "unknown"
+project = "octopus_video"
+datestamp = "1366255411"
+
