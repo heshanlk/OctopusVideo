@@ -61,7 +61,7 @@ dependencies[] = votingapi
 dependencies[] = zencoderapi
 
 ; Features
-; dependencies[]  = video_core
+dependencies[]  = video_core
 ; dependencies[]  = video_video
 ; dependencies[]  = video_flags
 ; dependencies[]  = video_user
