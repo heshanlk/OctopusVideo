@@ -372,82 +372,9 @@ function video_video_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-video-group_audience'
-  $fields['node-video-group_audience'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'group_audience',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'gid' => array(
-          0 => 'gid',
-        ),
-      ),
-      'module' => 'og',
-      'no_ui' => TRUE,
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'group',
-    ),
-    'field_instance' => array(
-      'bundle' => 'video',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => 'Select the channel this content should be associated with.',
-      'display' => array(
-        'default' => array(
-          'label' => 'inline',
-          'module' => 'og',
-          'settings' => array(),
-          'type' => 'og_list_default',
-          'weight' => '5',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '0',
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'group_audience',
-      'label' => 'Channel',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'view modes' => array(
-        'full' => array(
-          'custom settings' => FALSE,
-          'label' => 'Full',
-          'type' => 'og_list_default',
-        ),
-        'teaser' => array(
-          'custom settings' => FALSE,
-          'label' => 'Teaser',
-          'type' => 'og_list_default',
-        ),
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'og',
-        'settings' => array(
-          'opt_group' => 'auto',
-        ),
-        'type' => 'group_audience',
-        'weight' => '3',
-      ),
-      'widget_type' => 'group_audience',
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Category');
-  t('Channel');
   t('Description');
   t('Rate');
   t('Select the channel this content should be associated with.');
