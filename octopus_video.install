@@ -5,8 +5,8 @@
  */
 function octopus_video_install() {
   // set themes
-  theme_enable(array('octopus_video'));
-  variable_set('theme_default', 'octopus_video');
+  theme_enable(array('octopus_theme'));
+  variable_set('theme_default', 'octopus_theme');
   variable_set('admin_theme', 'seven');
   // Add text formats.
   $filtered_html_format = array(
