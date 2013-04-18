@@ -1,4 +1,4 @@
-Octopus 1.x for Drupal 7.x
+Octopus video 1.x for Drupal 7.x
 ----------------------------
 Social video platform.
 
@@ -14,20 +14,20 @@ make use of Octopus:
 
 Getting started
 ---------------
-Octopus for 7.x requies several patches to be applied to Drupal core. It
-provides a `distro.make` file for building a full Drupal distro including core
-patches as well as a copy of the `videokit` install profile.
+Octopus video for 7.x requires several patches to be applied to Drupal core. It
+provides a `drupal-org-core.make` file for building a full Drupal distro including core
+patches as well as a copy of the `Octopus video` install profile.
 
-1. Grab the `distro.make` file from Build Kit and run:
+1. Grab the `build-octopus-video.make.make` file from Octopus Video and run:
 
-        $ drush make distro.make [directory]
+        $ drush make build-octopus-video.make [directory]
 
    or use its url on Drupal.org directly:
 
-        $ drush make https://raw.github.com/heidisoft/Octopus/master/distro.make [directory]
+        $ drush make https://raw.github.com/heidisoft/Octopus/master/build-octopus-video.make [directory]
 
-2. Choose the "Octopus" install profile when installing Drupal
+2. Choose the "Octopus Video" install profile when installing Drupal
 
 Maintainers
 -----------
-- Heshan Wanigasooriya (heshan.lk)
+- Heshan Wanigasooriya (heshand@heidisoft.com)
