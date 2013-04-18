@@ -40,7 +40,7 @@ dependencies[] = libraries
 dependencies[] = list
 dependencies[] = logintoboggan
 dependencies[] = logintoboggan_rules
-dependencies[] = og
+; dependencies[] = og
 dependencies[] = page_manager
 dependencies[] = panels
 dependencies[] = pathauto
@@ -61,10 +61,10 @@ dependencies[] = votingapi
 dependencies[] = zencoderapi
 
 ; Features
-dependencies[]  = video_core
-dependencies[]  = video_video
-dependencies[]  = video_flags
-dependencies[]  = video_user
+; dependencies[]  = video_core
+; dependencies[]  = video_video
+; dependencies[]  = video_flags
+; dependencies[]  = video_user
 
 ; custom
 dependencies[] = octopus_helper
