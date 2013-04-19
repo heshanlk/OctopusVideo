@@ -1,6 +1,6 @@
 name = Octopus Video
 core = 7.x
-description = Social video platform.
+description = Install with video specific features pre-configured..
 files[] = octopus_video.profile
 
 ; Core
