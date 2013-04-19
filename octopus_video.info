@@ -20,14 +20,10 @@ dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 dependencies[] = amazons3
 dependencies[] = awssdk
-dependencies[] = awssdk_ui
 dependencies[] = context
-dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_api
-dependencies[] = devel
-dependencies[] = diff
 dependencies[] = entity
 dependencies[] = fblikebutton
 dependencies[] = features
@@ -50,7 +46,6 @@ dependencies[] = token
 dependencies[] = tweetbutton
 dependencies[] = video
 dependencies[] = video_presets
-dependencies[] = video_ui
 dependencies[] = videojs
 dependencies[] = views
 dependencies[] = views_content
@@ -59,11 +54,6 @@ dependencies[] = views_slideshow_cycle
 dependencies[] = votingapi
 dependencies[] = zencoderapi
 
-; Features
-dependencies[]  = video_core
+; Custom
 dependencies[]  = video_video
-dependencies[]  = video_flags
 dependencies[]  = video_user
-
-; custom
-; dependencies[] = octopus_helper

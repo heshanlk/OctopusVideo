@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Octopus channels feature.
- */
-
-include_once('video_channels.features.inc');

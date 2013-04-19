@@ -54,11 +54,17 @@ projects[flowplayer][version] = 1.0-alpha1
 projects[google_plusone][subdir] = contrib
 projects[google_plusone][version] = 1.3
 
+projects[jw_player][subdir] = contrib
+projects[jw_player][version] = 1.0-alpha1
+
 projects[libraries][subdir] = contrib
 projects[libraries][version] = 2.1
 
 projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.3
+
+projects[module_filter][subdir] = contrib
+projects[module_filter][version] = 1.7
 
 projects[og][subdir] = contrib
 projects[og][version] = 2.1
@@ -97,7 +103,10 @@ projects[videojs][subdir] = contrib
 projects[videojs][version] = 2.2
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.5
+projects[views][version] = 3.7
+
+projects[views_bulk_operations][subdir] = contrib
+projects[views_bulk_operations][version] = 3.1
 
 projects[views_slideshow][subdir] = contrib
 projects[views_slideshow][version] = 3.0

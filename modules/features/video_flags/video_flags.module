@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Video flags feature.
- */
-
-include_once('video_flags.features.inc');
