@@ -27,7 +27,9 @@ function video_video_user_default_permissions() {
     'roles' => array(
       0 => 'administrator',
       1 => 'anonymous user',
-      2 => 'authenticated user',
+      2 => 'approver',
+      3 => 'authenticated user',
+      4 => 'publisher',
     ),
     'module' => 'node',
   );
@@ -93,7 +95,9 @@ function video_video_user_default_permissions() {
     'name' => 'create video content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'authenticated user',
+      1 => 'approver',
+      2 => 'authenticated user',
+      3 => 'publisher',
     ),
     'module' => 'node',
   );
@@ -103,6 +107,7 @@ function video_video_user_default_permissions() {
     'name' => 'delete any video content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'approver',
     ),
     'module' => 'node',
   );
@@ -112,7 +117,9 @@ function video_video_user_default_permissions() {
     'name' => 'delete own video content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'authenticated user',
+      1 => 'approver',
+      2 => 'authenticated user',
+      3 => 'publisher',
     ),
     'module' => 'node',
   );
@@ -122,6 +129,7 @@ function video_video_user_default_permissions() {
     'name' => 'edit any video content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'approver',
     ),
     'module' => 'node',
   );
@@ -131,7 +139,9 @@ function video_video_user_default_permissions() {
     'name' => 'edit own video content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'authenticated user',
+      1 => 'approver',
+      2 => 'authenticated user',
+      3 => 'publisher',
     ),
     'module' => 'node',
   );
@@ -210,7 +220,8 @@ function video_video_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'authenticated user',
+      1 => 'approver',
+      2 => 'authenticated user',
     ),
     'module' => 'node',
   );

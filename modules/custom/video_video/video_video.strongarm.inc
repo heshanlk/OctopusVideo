@@ -189,7 +189,8 @@ function video_video_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_video';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_video'] = $strongarm;
 
@@ -454,37 +455,9 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_3g2_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_3g2_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_3g2_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_3g2_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_3gp';
   $strongarm->value = 'video_play_quicktime';
   $export['video_extension_3gp'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_3gp_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_3gp_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_3gp_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_3gp_html5_player'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -496,37 +469,9 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_asf_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_asf_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_asf_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_asf_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_avi';
   $strongarm->value = 'video_play_windowsmedia';
   $export['video_extension_avi'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_avi_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_avi_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_avi_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_avi_html5_player'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -538,20 +483,6 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_dcr_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_dcr_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_dcr_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_dcr_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_dir';
   $strongarm->value = 'video_play_dcr';
   $export['video_extension_dir'] = $strongarm;
@@ -559,37 +490,9 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_dir_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_dir_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_dir_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_dir_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_divx';
   $strongarm->value = 'video_play_divx';
   $export['video_extension_divx'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_divx_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_divx_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_divx_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_divx_html5_player'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -608,13 +511,6 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_f4v_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_f4v_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_flv';
   $strongarm->value = 'video_play_flv';
   $export['video_extension_flv'] = $strongarm;
@@ -629,30 +525,9 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_flv_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_flv_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_m4v';
   $strongarm->value = 'video_play_quicktime';
   $export['video_extension_m4v'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_m4v_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_m4v_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_m4v_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_m4v_html5_player'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -664,20 +539,6 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mkv_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_mkv_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mkv_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_mkv_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_mov';
   $strongarm->value = 'video_play_quicktime';
   $export['video_extension_mov'] = $strongarm;
@@ -685,22 +546,8 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mov_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_mov_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mov_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_mov_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_mp4';
-  $strongarm->value = 'video_play_html5';
+  $strongarm->value = 'video_play_flv';
   $export['video_extension_mp4'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -713,30 +560,9 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mp4_html5_player';
-  $strongarm->value = 'videojs';
-  $export['video_extension_mp4_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_mpeg';
   $strongarm->value = 'video_play_windowsmedia';
   $export['video_extension_mpeg'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mpeg_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_mpeg_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mpeg_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_mpeg_html5_player'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -748,30 +574,9 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mpg_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_mpg_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_mpg_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_mpg_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_ogg';
   $strongarm->value = 'video_play_html5';
   $export['video_extension_ogg'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_ogg_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_ogg_flash_player'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -790,13 +595,6 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_ogv_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_ogv_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_ogv_html5_player';
   $strongarm->value = 'videojs';
   $export['video_extension_ogv_html5_player'] = $strongarm;
@@ -811,20 +609,6 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_rm_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_rm_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_rm_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_rm_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_swf';
   $strongarm->value = 'video_play_flash';
   $export['video_extension_swf'] = $strongarm;
@@ -832,30 +616,9 @@ function video_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_swf_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_swf_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_swf_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_swf_html5_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'video_extension_webm';
   $strongarm->value = 'video_play_html5';
   $export['video_extension_webm'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_webm_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_webm_flash_player'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -870,20 +633,6 @@ function video_video_strongarm() {
   $strongarm->name = 'video_extension_wmv';
   $strongarm->value = 'video_play_windowsmedia';
   $export['video_extension_wmv'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_wmv_flash_player';
-  $strongarm->value = '';
-  $export['video_extension_wmv_flash_player'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'video_extension_wmv_html5_player';
-  $strongarm->value = '';
-  $export['video_extension_wmv_html5_player'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

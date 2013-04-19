@@ -12,7 +12,6 @@ dependencies[] = field_group
 dependencies[] = image
 dependencies[] = list
 dependencies[] = menu
-dependencies[] = og
 dependencies[] = taxonomy
 dependencies[] = views
 datestamp = 1366335457

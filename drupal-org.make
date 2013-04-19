@@ -66,12 +66,6 @@ projects[logintoboggan][version] = 1.3
 projects[module_filter][subdir] = contrib
 projects[module_filter][version] = 1.7
 
-projects[og][subdir] = contrib
-projects[og][version] = 2.1
-
-projects[openidadmin][subdir] = contrib
-projects[openidadmin][version] = 1.0
-
 projects[panels][subdir] = contrib
 projects[panels][version] = 3.3
 
@@ -114,6 +108,12 @@ projects[views_slideshow][version] = 3.0
 projects[votingapi][subdir] = contrib
 projects[votingapi][version] = 2.11
 
+projects[workbench][subdir] = contrib
+projects[workbench][version] = 1.2
+
+projects[workbench_moderation][subdir] = contrib
+projects[workbench_moderation][version] = 1.3
+
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.1
 
@@ -142,3 +142,16 @@ libraries[jquery.cycle][download][url] = "https://raw.github.com/malsup/cycle/ma
 libraries[zencoder][download][type] = git
 libraries[zencoder][download][url] = https://github.com/zencoder/zencoder-php.git
 libraries[zencoder][download][tag] = v2.0.2
+
+; jwplayer
+libraries[jwplayer][download][type] = "get"
+libraries[jwplayer][download][url] = "http://www.longtailvideo.com/jw/upload/mediaplayer.zip"
+libraries[jwplayer][directory_name] = "jwplayer"
+
+libraries[jwplayer_skin_modieus][download][type] = "get"
+libraries[jwplayer_skin_modieus][download][url] = "http://www.longtailvideo.com/files/skins/modieus/5/modieus.zip"
+libraries[jwplayer_skin_modieus][directory_name] = "jwplayer_skins/modieus"
+
+libraries[jwplayer_skin_snel][download][type] = "get"
+libraries[jwplayer_skin_snel][download][url] = "http://www.longtailvideo.com/files/skins/snel/5/snel.zip"
+libraries[jwplayer_skin_snel][directory_name] = "jwplayer_skins/snel"

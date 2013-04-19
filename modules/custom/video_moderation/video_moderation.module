@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Moderation feature.
+ */
+
+include_once 'video_moderation.features.inc';

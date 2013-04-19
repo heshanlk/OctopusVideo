@@ -16,22 +16,30 @@ dependencies[] = statistics
 dependencies[] = syslog
 
 ; Contrib
+; Admin
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
+dependencies[] = module_filter
+; Video
 dependencies[] = amazons3
 dependencies[] = awssdk
+dependencies[] = video
+dependencies[] = video_presets
+dependencies[] = videojs
+dependencies[] = zencoderapi
+; Social
+dependencies[] = fblikebutton
+dependencies[] = google_plusone
+
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_api
 dependencies[] = entity
-dependencies[] = fblikebutton
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = fivestar
-dependencies[] = flowplayer
 dependencies[] = flag
-dependencies[] = google_plusone
 dependencies[] = libraries
 dependencies[] = list
 dependencies[] = logintoboggan
@@ -44,15 +52,13 @@ dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = tweetbutton
-dependencies[] = video
-dependencies[] = video_presets
-dependencies[] = videojs
+; Views
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = views_slideshow
 dependencies[] = views_slideshow_cycle
+; User interface
 dependencies[] = votingapi
-dependencies[] = zencoderapi
 
 ; Custom
 dependencies[]  = video_video
