@@ -126,7 +126,7 @@ projects[omega][version] = 3.1
 ;videojs
 libraries[video-js][type] = "libraries"
 libraries[video-js][download][type] = "get"
-libraries[video-js][download][url] = "https://github.com/downloads/zencoder/video-js/video-js-3.2.0.zip"
+libraries[video-js][download][url] = "https://github.com/videojs/video.js/archive/3.2.0.zip"
 
 ;ckeditor
 libraries[ckeditor][type] = "libraries"
