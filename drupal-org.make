@@ -145,13 +145,13 @@ libraries[zencoder][download][tag] = v2.0.2
 
 ; jwplayer
 libraries[jwplayer][download][type] = "get"
-libraries[jwplayer][download][url] = "http://www.longtailvideo.com/jw/upload/mediaplayer.zip"
+libraries[jwplayer][download][url] = "https://account.jwplayer.com/static/download/jwplayer-6.10.zip"
 libraries[jwplayer][directory_name] = "jwplayer"
 
-libraries[jwplayer_skin_modieus][download][type] = "get"
-libraries[jwplayer_skin_modieus][download][url] = "http://www.longtailvideo.com/files/skins/modieus/5/modieus.zip"
-libraries[jwplayer_skin_modieus][directory_name] = "jwplayer_skins/modieus"
+; libraries[jwplayer_skin_modieus][download][type] = "get"
+; libraries[jwplayer_skin_modieus][download][url] = "http://www.longtailvideo.com/files/skins/modieus/5/modieus.zip"
+; libraries[jwplayer_skin_modieus][directory_name] = "jwplayer_skins/modieus"
 
 libraries[jwplayer_skin_snel][download][type] = "get"
-libraries[jwplayer_skin_snel][download][url] = "http://www.longtailvideo.com/files/skins/snel/5/snel.zip"
-libraries[jwplayer_skin_snel][directory_name] = "jwplayer_skins/snel"
+libraries[jwplayer_skin_snel][download][url] = "https://account.jwplayer.com/static/download/jwplayer-skins-free.zip"
+libraries[jwplayer_skin_snel][directory_name] = "jwplayer_skins/free"
