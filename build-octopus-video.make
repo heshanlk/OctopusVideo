@@ -17,5 +17,5 @@ projects[drupal][patch][995156] = http://drupal.org/files/issues/995156-5_portab
 ; Download the Octopus video install profile
 projects[octopus_video][type] = profile
 projects[octopus_video][download][type] = git
-projects[octopus_video][download][url] = https://github.com/silveryseven/Octopus.git
+projects[octopus_video][download][url] = https://github.com/heidisoft/Octopus.git
 ; projects[octopus_video][download][branch] = 7.x-2.x
