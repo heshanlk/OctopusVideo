@@ -145,7 +145,7 @@ libraries[zencoder][download][tag] = v2.0.2
 
 ; jwplayer
 libraries[jwplayer][download][type] = "get"
-libraries[jwplayer][download][url] = "https://account.jwplayer.com/static/download/jwplayer-6.11.zip"
+libraries[jwplayer][download][url] = "https://account.jwplayer.com/static/download/jwplayer-6.12.zip"
 libraries[jwplayer][directory_name] = "jwplayer"
 
 ; libraries[jwplayer_skin_modieus][download][type] = "get"
