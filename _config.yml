@@ -1,0 +1,8 @@
+title: Octopus Video
+description: The open source video transcoding and delivering platform based on Drupal
+google_analytics: UA-56252269-1
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
